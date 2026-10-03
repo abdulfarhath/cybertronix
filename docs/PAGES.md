@@ -13,5 +13,14 @@
 | P9 | Pharma & healthcare (D28) | `/industries/pharma-healthcare` | cleanroom gowning compliance AI, surgeon PPE detection, pharma GMP AI India | Boards `[P9]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
 | P10 | Team (D27) | `/team` | Cybertronix team, robotics engineers Hyderabad | — | — |
 | P11 | Retail & malls (D28) | `/industries/retail` | AI vision for supermarkets, floor cleaning robot for malls | — | — |
+| P12 | Software & projects (D31) | `/software` | AI software Hyderabad, Cybertronix tools | — | — |
+| P13 | Raqib (D30) | `/software/raqib` | AI workload monitor, GPU VRAM monitor for local LLMs, Raqib | — | — |
+
+## Product design boards (not site pages)
+| ID | Board | Design |
+|---|---|---|
+| R1 | Raqib logo | — |
+| R2 | Raqib terminal app redesign | — |
+| R3 | Raqib web dashboard (localhost:7070) | — |
 
 SEO Content may add industry pages (`/industries/...`) after keyword research. Add them here first.
