@@ -161,4 +161,4 @@ New components on the boards: status pill (hero + section), people card ("Photo 
 **Regenerating the boards:** `design/boards/gen.py` builds every page board from one component set
 (`pages.py` = page data from `content/`, `raqib.py` = R1–R3). Run `python3 gen.py` in a folder holding the canvas's
 `project/` files, then `node measure.cjs > m.json && python3 fit.py` to fit frame heights, and publish to the canvas.
-P4 has no spec table yet (D8 vs D29: cleaning modes hidden until the founder answers).
+P4 has no spec table until the cleaning modes are confirmed (hub ruling 2026-10-03, D8 vs D29).
