@@ -1,74 +1,80 @@
 ---
 id: P6
 url: /about
-title: "About Cybertronix · Robotics Team in Hyderabad"
-description: "Meet Cybertronix, a Hyderabad robotics team building humanoid robots, a robotic arm, a cleaning robot and AI vision for India."
+canonical: https://cybertronix.tech/about
+title: "About Cybertronix · Robotics Engineering, Hyderabad"
+description: "Cybertronix is a Hyderabad robotics engineering company with in-house AI, mechatronics, mechanical and electronics engineers. Meet the team."
 h1: "About Cybertronix"
 keyword: "about Cybertronix robotics"
 schema: [AboutPage, Organization, BreadcrumbList]
 ---
 
+> Build note (D19): never show a founding year, company age or "since ____", and no `foundingDate` in
+> schema. Organization `url` = https://cybertronix.tech (D15).
+
 ## P6.1 Hero
 
 # About Cybertronix
 
-We are a robotics team in Hyderabad. We build robots that take on repeat, tiring and risky work, so
-people can do the work that needs a person.
+Cybertronix is a robotics engineering company in Hyderabad. We build AI vision systems and design custom
+robots to order, all with our own in-house team.
 
-## P6.2 Our story
+## P6.2 What we do
 
-`TODO(founder)`: 3–5 sentences, in your words:
-- When and where Cybertronix started (year, area of Hyderabad)
-- Why you started it: the problem you saw
-- What you built first
-- Where you are now
+- **[AI vision](/ai-vision):** AI video analytics that works with your existing CCTV. Available now.
+- **[Cleaning robot](/cleaning-robot):** our own autonomous cleaning robot. In development.
+- **[Custom humanoid robots](/humanoid-robots):** designed and built to your requirement.
+- **[Custom robotic arms](/robotic-arm):** designed and built for your task.
 
-## P6.3 What we build
+## P6.3 Our engineering team
 
-- [Humanoid robots](/humanoid-robots) for reception, guidance and events
-- An [industrial robotic arm](/robotic-arm) for repeat factory tasks
-- A [cleaning robot](/cleaning-robot) for large spaces
-- [AI vision](/ai-vision) that turns camera video into safety alerts
+Everything we make is designed and built by our own engineers in Hyderabad:
 
-## P6.4 The team
+| Discipline | What they do |
+|---|---|
+| AI engineering | Computer vision, machine learning and decision software |
+| Mechatronics | Motors, sensors and control systems |
+| Mechanical | Frames, joints, grippers and enclosures |
+| Electronics | Circuit boards, power and wiring |
 
-`TODO(founder)`: founder name(s), role, one line of background each, photo. Only with each person's
-permission. Real photos only; no stock people.
+`TODO(founder)`: optional names, roles and photos, only with each person's permission. Real photos
+only, no stock people.
 
-## P6.5 Our lab in Hyderabad
+## P6.4 How we work
 
-`TODO(founder)`: area of the city, what happens there (design, assembly, testing), whether visitors can
+- **Honest about what's ready.** We say clearly what is available, what is in development and what we
+  build to order.
+- **Requirement first.** We start from your problem, not from a product we need to sell.
+- **One team, start to finish.** The engineers who design your system build it and support it.
+
+## P6.5 Our base in Hyderabad
+
+`TODO(founder)`: area of Hyderabad, what happens there (design, build, testing), and whether visitors can
 book a visit. Real photo when available (F8).
 
-## P6.6 How we work
+## P6.6 Careers
 
-- **Honest specs.** We publish real numbers. If something isn't tested yet, we say so.
-- **Show, don't tell.** Every product can be seen working before you buy. `TODO(founder)`: confirm.
-- **Close support.** The team that builds the robot helps set it up. `TODO(founder)`: confirm.
+`TODO(founder)`: are you hiring? If yes, the roles and an email address. If not, remove this section.
 
-## P6.7 Careers
+## P6.7 Questions about Cybertronix
 
-`TODO(founder)`: are you hiring? If yes: roles and an email. If no, remove this section.
+### Where is Cybertronix based?
+In Hyderabad, Telangana. See the [contact page](/contact) for the address.
 
-## P6.8 Questions about Cybertronix
-
-### When was Cybertronix founded?
-`TODO(founder)`
-
-### Who founded Cybertronix?
-`TODO(founder)`
-
-### Are your robots designed in India?
-`TODO(founder)`: e.g. "Yes. Our robots are designed and assembled in Hyderabad. Some parts, such as
-motors and chips, are imported." Only what is true.
+### What kind of engineers work at Cybertronix?
+AI engineers, mechatronics engineers, mechanical engineers and electronics engineers, all in-house.
 
 ### Is Cybertronix related to Cybertronix Technologies LLC in Dubai?
-`TODO(founder)`: likely "No. Cybertronix in Hyderabad is a separate robotics company with no link to
-Cybertronix Technologies LLC." Confirm before publishing.
+`TODO(founder)`: likely "No. Cybertronix in Hyderabad is a separate robotics company." Confirm before
+publishing.
+
+### Do you take on custom projects?
+Yes. Custom robots and vision systems built to your requirement are a core part of our work.
+[Tell us your requirement](/contact).
 
 ### Is Cybertronix hiring?
 `TODO(founder)`
 
-## P6.9 Talk to us
+## P6.8 Talk to us
 
-**CTA:** Contact us → /contact
+**CTA:** Tell us your requirement → /contact

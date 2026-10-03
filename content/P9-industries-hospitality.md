@@ -1,59 +1,57 @@
 ---
 id: P9
 url: /industries/hospitality
-status: "APPROVED (D13). Keep claims general until real use cases come in."
-title: "Robots for Hotels & Hospitality in India · Cybertronix"
-description: "Humanoid reception robots and cleaning robots for hotels, malls and offices in India, from Cybertronix, Hyderabad. See uses and book a demo."
-h1: "Robots for hotels, malls and offices"
-keyword: "robots for hotels India · reception robot for hotel"
+canonical: https://cybertronix.tech/industries/hospitality
+status: "APPROVED (D13). Rewritten for D16: AI vision is ready; cleaning robot is in development; humanoid is built to order."
+title: "AI CCTV & Robots for Hotels, Malls, Offices · Cybertronix"
+description: "AI vision for your existing CCTV, a cleaning robot in pilot, and custom humanoid robots built to order, for hotels, malls and offices. Hyderabad."
+h1: "AI vision and robots for hotels, malls and offices"
+keyword: "AI CCTV for hotels and malls · robots for hotels India"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
 
+> Build note (D16): each section carries its status label: Available now / In development / Built to order.
+
 ## P9.1 Hero
 
-# Robots for hotels, malls and offices
+# AI vision and robots for hotels, malls and offices
 
-A humanoid robot to welcome guests. A cleaning robot to keep floors clean. Both from one Hyderabad team.
+Make the cameras you already have smarter today, and plan the robots you'll want tomorrow.
 
-**CTA:** Book a demo → /contact
+**CTA:** Book an AI vision demo → /contact?topic=ai-vision
 
-## P9.2 Greet guests with a humanoid robot
+## P9.2 AI vision on your existing CCTV: available now
 
-Our [humanoid robot](/humanoid-robots) welcomes guests, answers common questions and points the way.
-`TODO(founder)`: confirm uses and languages.
+[AI vision](/ai-vision) works with your existing CCTV and alerts your team about the events you choose.
+`TODO(founder)`: which detections suit hotels and malls (restricted areas, crowding)?
 
-## P9.3 Keep floors clean with a cleaning robot
+## P9.3 Cleaning robot: in development, pilot partners welcome
 
-Our [cleaning robot](/cleaning-robot) cleans lobbies and corridors on a schedule. `TODO(founder)`:
-confirm it is a floor robot (hub Q4). If not, remove this section.
+We're building an autonomous [cleaning robot](/cleaning-robot) for large spaces. If you run a hotel,
+mall or office, you can help test it as a pilot partner.
 
-## P9.4 Guest safety with AI vision
+**CTA:** Become a pilot partner → /contact?topic=cleaning-pilot
 
-[AI vision](/ai-vision) watches camera feeds for restricted-area entry. `TODO(founder)`: confirm, or
-remove this section.
+## P9.4 Custom humanoid robots: built to order
 
-## P9.5 Getting started
+Want a robot to greet guests or guide visitors? We can design and build a [humanoid
+robot](/humanoid-robots) to your requirement.
 
-1. Tell us your space and what you want the robot to do.
-2. See a demo. `TODO(founder)`: at your site or ours?
-3. We set it up and train your staff.
+## P9.5 Questions
 
-## P9.6 Questions
+### Do you have a reception robot I can buy now?
+No. We build humanoid robots to order. Tell us what you need and we'll tell you what it would take.
 
-### What can a reception robot do in a hotel?
-It can greet guests, answer common questions (Wi-Fi, check-out time, restaurant hours) and guide them
-to the right place. `TODO(founder)`: confirm.
+### Does AI vision need new cameras?
+No. It works with your existing CCTV.
 
-### Do guests like talking to robots?
-`TODO(founder)`: only answer with a real observation from your own demos. No invented statistics.
+### Can my hotel or mall join the cleaning robot pilot?
+Yes, you can register your interest. `TODO(founder)`: pilot terms.
 
-### Can it speak local languages?
+### How much does it cost?
+We quote on request.
+
+### Do you work outside Hyderabad?
 `TODO(founder)`
 
-### How much floor can the cleaning robot cover?
-`TODO(founder)`
-
-### Can we try it before buying?
-`TODO(founder)`
-
-**CTA:** Book a demo → /contact
+**CTA:** Tell us your requirement → /contact

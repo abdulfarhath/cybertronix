@@ -1,103 +1,92 @@
 ---
 id: P1
 url: /
+canonical: https://cybertronix.tech/
 title: "Cybertronix · Robotics Company in Hyderabad, India"
-description: "Cybertronix is a robotics company in Hyderabad building humanoid robots, a robotic arm, a cleaning robot and AI vision. Book a demo."
+description: "Cybertronix is a Hyderabad robotics engineering company. AI vision for your existing CCTV, and custom robots designed and built to order."
 h1: "Cybertronix: robotics company in Hyderabad"
 keyword: "robotics company in Hyderabad · Cybertronix"
 schema: [Organization, LocalBusiness, WebSite, FAQPage]
 ---
 
+> Build note (D15, D19): Organization `url` = https://cybertronix.tech, `sameAs` = real social profiles
+> only (`TODO(founder)`: LinkedIn, Instagram, YouTube links). **No `foundingDate`.** Canonical host
+> (www or not) `TODO(Build)`: match what cybertronix.tech serves today so existing rankings carry over.
+
 ## P1.1 Hero
 
 # Cybertronix: robotics company in Hyderabad
 
-Humanoid robots, a robotic arm, a cleaning robot and AI vision, built by a robotics team in Hyderabad
-for businesses across India.
-
-**CTA:** Book a demo → /contact
-**CTA (secondary):** See our robots → #robots
-
-> Build note: H1 is real text above the hero video. Video alt/label: "Robotic arm in a lab (stock footage)".
-
-## P1.2 Robots we build in Hyderabad
-
-Four products, one team. Every robot is supported from our Hyderabad base.
-
-> Build note: card uses are SEO Content's best reading of the product list. Founder confirms (hub Q2).
-
-| Card | Text | Link |
-|---|---|---|
-| Humanoid robots | A humanoid robot that greets, guides and talks with people at reception desks, showrooms and events. | /humanoid-robots |
-| Robotic arm | An industrial robotic arm for repeat tasks on the factory floor. | /robotic-arm |
-| Cleaning robot | An autonomous cleaning robot that keeps large spaces clean on a schedule. `TODO(founder)`: floors or solar panels? | /cleaning-robot |
-| AI vision | AI video analytics that spots missing helmets and safety vests and alerts your team. | /ai-vision |
-
-## P1.3 Humanoid robots
-
-A humanoid robot gives your front desk a face that never gets tired. It can welcome visitors, answer
-common questions and point people the right way.
-
-**CTA:** Explore humanoid robots → /humanoid-robots
-
-## P1.4 Robotic arm for industry
-
-Our robotic arm takes over repeat, precise work so your people can do the jobs that need judgement.
-See its specs and the tasks it handles.
-
-**CTA:** Explore the robotic arm → /robotic-arm
-
-## P1.5 Cleaning robot
-
-The Cybertronix cleaning robot works on its own, on a schedule you set, so your space stays clean
-between shifts.
-
-**CTA:** Explore the cleaning robot → /cleaning-robot
-
-## P1.6 AI vision and surveillance
-
-Cameras record. AI vision watches. Our system checks video for missing PPE such as helmets and vests, and sends an alert while there is
-still time to act. `TODO(founder)`: other detections (intrusion, fire, face recognition)?
+We turn the CCTV cameras you already have into a safety system that watches for you, and our engineers
+design and build custom robots to your requirement.
 
 **CTA:** See AI vision → /ai-vision
+**CTA (secondary):** Tell us your requirement → /contact
 
-## P1.7 Who we work with
+> Build note (D20): the hero footage is mood only. Alt text: "Robotic arm moving in a lab". No caption,
+> label or copy may present it as a Cybertronix product.
 
-> Build note: P8/P9 approved (D13).
+## P1.2 AI vision for your existing CCTV
+
+Your cameras already see everything. Cybertronix AI vision makes them useful in the moment: it checks
+the video and alerts your team when something needs attention. No new cameras needed.
+
+**CTA:** See how AI vision works → /ai-vision
+
+> Build note: this is our one ready-to-use product (D16). Give it the biggest section on the page.
+
+## P1.3 What we do
+
+| Card | Status label | Text | Link |
+|---|---|---|---|
+| AI vision | Available now | AI video analytics that works with your existing CCTV cameras. | /ai-vision |
+| Cleaning robot | In development | An autonomous cleaning robot we are building now. Pilot partners welcome. | /cleaning-robot |
+| Custom humanoid robots | Built to order | We design and build humanoid robots to your requirement. | /humanoid-robots |
+| Custom robotic arms | Built to order | We design and build robotic arms for your task. | /robotic-arm |
+
+> Build note: show the status label on every card. It is what keeps the page honest (D16).
+
+## P1.4 One in-house engineering team
+
+Every Cybertronix project is built by our own engineers in Hyderabad:
+
+- **AI engineering:** computer vision and the software that makes decisions.
+- **Mechatronics:** motors, sensors and control, working together.
+- **Mechanical:** frames, joints and grippers that hold up to daily use.
+- **Electronics:** boards, power and wiring.
+
+Because one team covers all four, the people who design your system are the people who build it.
+
+**CTA:** About our team → /about
+
+## P1.5 Who we work with
 
 - Factories and manufacturers → /industries/manufacturing
 - Hotels, malls and offices → /industries/hospitality
 
-## P1.8 Why a Hyderabad robotics team
-
-- **See it in person.** Book a demo at our Hyderabad lab. `TODO(founder)`: confirm visitors can come.
-- **Local support.** Setup and service from the same team that builds the robots. `TODO(founder)`: confirm.
-- **Honest specs.** Every product page lists real specifications. If we don't know yet, we say so.
-
-## P1.9 Questions people ask
+## P1.6 Questions people ask
 
 ### What does Cybertronix do?
-Cybertronix is a robotics company in Hyderabad. We build humanoid robots, an industrial robotic arm,
-a cleaning robot and AI vision software for surveillance and workplace safety.
+Cybertronix is a robotics engineering company in Hyderabad. We make AI vision software that works with
+existing CCTV cameras, and we design and build custom robots, including humanoid robots and robotic arms,
+to our clients' requirements. Our own cleaning robot is in development.
 
-### Where is Cybertronix located in Hyderabad?
-`TODO(founder)`: full address (see keywords.md B1). Our address, phone and map are on the
-[contact page](/contact).
+### Where is Cybertronix located?
+In Hyderabad, Telangana. Our address and phone number are on the [contact page](/contact).
 
-### Which robots does Cybertronix make?
-Four products: a [humanoid robot](/humanoid-robots), an [industrial robotic arm](/robotic-arm), a
-[cleaning robot](/cleaning-robot) and [AI vision](/ai-vision) for CCTV-based safety and surveillance.
+### Do you sell ready-made robots?
+Not today. Our ready product is [AI vision](/ai-vision). Humanoid robots and robotic arms are built to
+order for your requirement, and our [cleaning robot](/cleaning-robot) is in development.
 
-### Can I see a robot demo in Hyderabad?
-Yes. [Book a demo](/contact) and tell us which robot you want to see. `TODO(founder)`: at the lab, on
-site, or both?
+### Does your AI vision need new cameras?
+No. It works with your existing CCTV cameras.
 
-### Do you supply robots outside Hyderabad, across India?
-`TODO(founder)`: yes/no and which cities or states.
+### How much does a project cost?
+Every project is different, so we quote on request. Tell us your requirement and we'll come back with a
+quote.
 
-## P1.10 Book a demo
+## P1.7 Tell us your requirement
 
-Tell us what you want to automate. We'll show you a robot that fits, or tell you honestly if we don't
-have one.
+Tell us what you want to watch, automate or build. We'll tell you honestly what we can do.
 
-**CTA:** Book a demo → /contact
+**CTA:** Tell us your requirement → /contact

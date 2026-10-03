@@ -11,7 +11,9 @@ Owner: SEO Content · Updated 2026-10-03
 | Intent | **Nav** = looking for us · **Local** = wants a supplier nearby · **Com** = comparing / about to buy · **Info** = learning |
 | Rule | One keyword group per page (D8). The **bold** row is the page's primary keyword. |
 
-## ⚠ Brand findings (need the founder)
+## Brand findings
+
+> **Update (T9):** B1 is resolved. cybertronix.tech is ours and the new site launches on it (D15). Keep its URLs and host so its brand ranking carries over. P2/P3 are now capability pages and P4 is "in development" (D16). Keyword rows that only fit a finished product (price, specs, rent, "buy") are kept here for reference but are **not targeted** until a real product exists.
 | # | Finding | Why it matters |
 |---|---|---|
 | B1 | A live site **cybertronix.tech** already ranks for "Cybertronix Hyderabad robotics". It says: humanoid robots for industries and homes, Jubilee Hills (Rd No. 10C, Gayatri Hills) address, phone +91 90598 97807, email info@cybertronix.com. | If this is **our** site, the new site must live on that domain or 301-redirect it, or we throw away the only brand ranking we have. If it is **not** ours, we have a direct name clash in our own city. `TODO(founder)` |
@@ -33,7 +35,10 @@ Owner: SEO Content · Updated 2026-10-03
 | AI and robotics company Hyderabad | Com | est. L | E | XMachines uses this phrasing. |
 | robotics startup Hyderabad / T-Hub robotics | Info | est. L | M | Only if the founder is actually at T-Hub. `TODO(founder)` |
 
-## P2 · Humanoid robots `/humanoid-robots`
+## P2 · Humanoid robot development `/humanoid-robots`
+
+> T9 target group: **humanoid robot company Hyderabad · humanoid robot developer India · custom humanoid robot**. Price and rent rows below are not targeted (D16, D18). "How much does it cost to build a humanoid robot" is answered honestly with "we quote on request".
+
 | Keyword | Intent | Volume | Diff. | Notes |
 |---|---|---|---|---|
 | **humanoid robot India** | Com/Info | est. H | H | Wikipedia (Mitra, Vyommitra, Shalu), Analytics Insight lists, Muks Robotics, Milagrow. |
@@ -48,7 +53,10 @@ Owner: SEO Content · Updated 2026-10-03
 | AI humanoid robot | Info | est. M | H | Secondary, in body copy. |
 | humanoid robot ki price / robot kitne ka hai | Com | est. L | E | Hindi-English mix, appears in YouTube titles. FAQ wording only, not titles. |
 
-## P3 · Robotic arm `/robotic-arm`
+## P3 · Custom robotic arms `/robotic-arm`
+
+> T9 target group: **custom robotic arm manufacturer · robotic arm Hyderabad · robotic arm company India**. Spec and price rows below are not targeted (D16, D18).
+
 | Keyword | Intent | Volume | Diff. | Notes |
 |---|---|---|---|---|
 | **industrial robotic arm India** | Com | est. M | H | ABB, KUKA, FANUC, Universal Robots dealers + IndiaMART/TradeIndia. |
@@ -60,7 +68,10 @@ Owner: SEO Content · Updated 2026-10-03
 | factory automation Hyderabad / industrial automation company Hyderabad | Local | est. M | M | Geometrix, Robotspace, Eternal Robotics rank. Feeds P8. |
 | robotic welding / machine tending Hyderabad | Com | est. L | M | Only if the arm does these tasks. |
 
-## P4 · Cleaning robot `/cleaning-robot`
+## P4 · Cleaning robot (in development) `/cleaning-robot`
+
+> T9: in development, no clients (D16). Target **cleaning robot company India · cleaning robot Hyderabad** only. What it cleans is still to be confirmed with the founder. Commercial and price rows wait until it launches.
+
 | Keyword | Intent | Volume | Diff. | Notes |
 |---|---|---|---|---|
 | **commercial cleaning robot India** | Com | est. M | M | Rife (4-in-1), Autofina, PUDU dealers, Peppermint (Aubotz), Robowale. |
@@ -72,6 +83,9 @@ Owner: SEO Content · Updated 2026-10-03
 | cleaning robot for office / mall / hospital / warehouse | Com | est. L | M | Use-case H2s once we know the real environment. |
 
 ## P5 · AI vision / surveillance `/ai-vision`
+
+> T9: our one ready product, and it works with existing CCTV (D16). Lead keyword on Home after the brand. Add **AI CCTV for existing cameras** and **AI video analytics on existing CCTV** to this page's group.
+
 | Keyword | Intent | Volume | Diff. | Notes |
 |---|---|---|---|---|
 | **AI video analytics Hyderabad** | Local/Com | est. L | E | Tericsoft (GMR Cargo Hyderabad case), Intozi (plant in Hyderabad). |

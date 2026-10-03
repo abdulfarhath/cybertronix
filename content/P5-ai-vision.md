@@ -1,89 +1,88 @@
 ---
 id: P5
 url: /ai-vision
-title: "AI Video Analytics & PPE Detection, Hyderabad · Cybertronix"
-description: "Cybertronix AI vision turns CCTV into real-time alerts for PPE, intrusion and safety. Built in Hyderabad for Indian sites. Book a demo."
-h1: "AI vision and surveillance for safer sites"
-keyword: "AI video analytics Hyderabad · AI surveillance India · PPE detection"
+canonical: https://cybertronix.tech/ai-vision
+title: "AI Video Analytics for Your CCTV, Hyderabad · Cybertronix"
+description: "Cybertronix AI vision works with the CCTV cameras you already have. Real-time alerts for safety, such as PPE checks. Built in Hyderabad. Book a demo."
+h1: "AI vision for your existing CCTV cameras"
+keyword: "AI video analytics Hyderabad · AI CCTV India · PPE detection"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
 
-> Build note: meta mentions "CCTV" and "intrusion". Keep only if the founder confirms (hub Q6). Fallback
-> meta: "Cybertronix AI vision spots missing helmets and safety vests in camera video and alerts your
-> team in real time. Built in Hyderabad. Book a demo." (144 chars)
+> Build note (D16): this is our one ready product, and it works with existing CCTV. The detection list
+> below follows the canvas demo (helmet, vest). Rows marked TODO stay hidden until the founder confirms
+> them. No client names, numbers or prices (D18).
 
 ## P5.1 Hero
 
-# AI vision and surveillance for safer sites
+# AI vision for your existing CCTV cameras
 
-Cameras record. AI vision watches. It checks camera video for missing safety gear and sends an alert
-while there is still time to act.
+Cameras record. AI vision watches. It works with the CCTV cameras you already have, checks the video for
+safety problems and alerts your team while there is still time to act.
 
-**CTA:** Book an AI vision demo → /contact?product=ai-vision
+**CTA:** Book an AI vision demo → /contact?topic=ai-vision
 
-## P5.2 What our AI vision detects
+## P5.2 No new cameras needed
+
+Cybertronix AI vision connects to your existing CCTV, so you don't have to rip anything out or buy a new
+camera system to get started.
+
+`TODO(founder)`: anything needed on site (a small computer, a network connection)? Which camera types or
+recorders it connects to (IP cameras, NVR, RTSP)?
+
+## P5.3 What it detects
 
 | Detection | What it flags |
 |---|---|
-| Helmet (hard hat) | A person in a work zone without a helmet. |
-| Safety vest | A person without a high-visibility vest. |
+| Helmet (hard hat) | A person in a work zone without a helmet |
+| Safety vest | A person without a high-visibility vest |
 | Restricted area | A person entering a zone you mark as off-limits. `TODO(founder)` |
-| Other | `TODO(founder)`: fire/smoke, face recognition, vehicle number plates, people count? |
+| Custom | Something specific to your site. Our AI team can train the system for it. `TODO(founder)`: confirm |
 
-> Build note: hide rows marked TODO until confirmed.
+## P5.4 Live demo
 
-## P5.3 Live demo
-
-> Build note: the existing canvas PPE demo goes here. Labels around it must be real HTML text, not
-> burned into the image. Caption: "Demo: PPE detection on sample footage."
+> Build note: the existing canvas PPE demo goes here. Labels must be real HTML text. Caption:
+> "Demo on sample footage."
 
 See how the system marks each person and checks for a helmet and a vest.
 
-## P5.4 Works with your cameras
-
-`TODO(founder)`: does it run on existing CCTV / IP cameras? Which brands or protocols (RTSP, ONVIF)?
-Does it need new cameras or an extra box on site?
-
 ## P5.5 Where the video is processed
 
-`TODO(founder)`: on-site device, your server, or cloud? Where is footage stored and for how long?
-Who can see it?
+`TODO(founder)`: on site, on your server, or in the cloud? Where is footage stored and who can see it?
 
-> Build note: buyers ask this first. Keep this section even if the answer is short.
+> Build note: buyers ask this first. Keep the section even if the answer is short.
 
 ## P5.6 Who it's for
 
 - **Factories:** PPE checks on the shop floor. → [Factory automation](/industries/manufacturing)
-- **Construction sites:** helmets and vests at every gate.
-- **Warehouses:** safety around forklifts and loading bays.
+- **Construction sites:** helmets and vests at work zones.
+- **Warehouses:** safety around loading bays.
+- **Hotels, malls and offices:** restricted-area alerts. → [Hospitality](/industries/hospitality) `TODO(founder)`
 
-`TODO(founder)`: confirm which of these are real target buyers.
-
-## P5.7 Questions about AI surveillance
+## P5.7 Questions about AI video analytics
 
 ### What is AI video analytics?
-Software that watches camera video and recognises things in it, such as a person without a helmet, and
-then raises an alert. Your team gets told about the moments that matter instead of watching screens all
-day.
+Software that watches camera video and recognises things in it, such as a person without a helmet, then
+raises an alert. Your team hears about the moments that matter instead of watching screens all day.
 
-### Can it work with my existing CCTV cameras?
-`TODO(founder)`
+### Does it work with my existing CCTV cameras?
+Yes. Cybertronix AI vision works with existing CCTV, so you don't need new cameras to start.
+`TODO(founder)`: any camera requirements (resolution, IP cameras)?
 
 ### What does PPE detection check for?
-It checks whether each person in view is wearing the safety gear you require. Today that is a helmet and
-a high-visibility vest. `TODO(founder)`: add gloves, goggles, masks, shoes if supported.
-
-### Where is the video processed and stored?
-`TODO(founder)`
+Whether each person in view is wearing the safety gear you require, such as a helmet and a
+high-visibility vest.
 
 ### How are alerts sent?
-`TODO(founder)`: app, SMS, WhatsApp, email, a siren on site?
+`TODO(founder)`: app, SMS, WhatsApp, email, or an on-site alarm?
+
+### How much does it cost?
+It depends on the number of cameras and what you want detected. We quote on request.
 
 ## P5.8 Book an AI vision demo
 
-Send us a short clip from one of your cameras and we'll show you what the system finds in it.
-`TODO(founder)`: confirm you accept sample clips.
+Tell us about your cameras and what you want to watch for. We'll show you the system working.
 
-**CTA:** Book a demo → /contact?product=ai-vision
+**CTA:** Book a demo → /contact?topic=ai-vision
 
-Related: [Robotic arm](/robotic-arm) · [Factory automation in Hyderabad](/industries/manufacturing) · [All robots](/)
+Related: [Factory automation in Hyderabad](/industries/manufacturing) · [Custom robotic arms](/robotic-arm) · [About our team](/about)

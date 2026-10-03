@@ -1,20 +1,22 @@
-# Page plan (T2)
+# Page plan (T2, rewritten for T9)
 
-Owner: SEO Content · Updated 2026-10-03 · Keywords: `docs/seo/keywords.md`
+Owner: SEO Content · Updated 2026-10-03 · Keywords: `docs/seo/keywords.md` · Text: `content/`
+
+Generated from the front matter and headings in `content/`. If the two ever differ, `content/` wins.
 
 ## Rules for every page (Build)
 | Rule | Detail |
 |---|---|
-| Title | ≤ 60 chars, primary keyword first, brand last: `… · Cybertronix` |
-| Meta | ≤ 155 chars, one benefit + Hyderabad/India + a call to action |
-| H1 | One per page, real text, above the hero video |
-| FAQ | Visible on the page **and** `FAQPage` JSON-LD with the same words |
-| Schema on every page | `Organization` (site-wide, with `sameAs`), `BreadcrumbList` (not on home), `WebPage` |
-| Canonical | Absolute URL on the final domain. `TODO(founder)`: domain (see keywords.md B1) |
-| Alt text | Describe what is shown. Stock footage alt must not claim it is our robot. |
-| Unknown facts | Text stays `TODO(founder)` until real. Build hides a row/answer rather than ship a TODO live. |
-
-Lengths in brackets are character counts (checked by script).
+| Domain | **https://cybertronix.tech** (D15). Canonicals, sitemap, Organization `url` and `sameAs` all point there. Keep the host (www or not) the same as the live site today so existing rankings carry over. |
+| What's real (D16) | AI vision = **Available now** (works with existing CCTV). Cleaning robot = **In development** (pilot partners welcome). Humanoid robot and robotic arm = **Built to order**. Never imply a humanoid or arm exists, has shipped or has clients. |
+| Schema | P2/P3 use `Service`, never `Product`. P4 uses no `Product` (not on sale). No `foundingDate` anywhere (D19). |
+| Prices | None anywhere (D18). Use "we quote on request" wording. |
+| Year | Never show the founding year or company age (D19). |
+| Stock footage | Mood only (D20). Alt text describes the scene ("Robotic arm moving in a lab"). No caption or copy may present it as our product. |
+| Title / meta | Title ≤ 60 chars, meta ≤ 155. Counts in brackets are checked by script. |
+| H1 | One per page, real text, above the hero video. |
+| FAQ | Visible on the page **and** `FAQPage` JSON-LD with the same words. Hide any FAQ whose answer is still `TODO(founder)`. |
+| Unknown facts | `TODO(founder)` stays in `content/` and is never shipped live. Hide that row or sentence. |
 
 ---
 
@@ -23,147 +25,108 @@ Lengths in brackets are character counts (checked by script).
 |---|---|
 | Keyword | robotics company in Hyderabad · Cybertronix |
 | Title | Cybertronix · Robotics Company in Hyderabad, India [50] |
-| Meta | Cybertronix is a robotics company in Hyderabad building humanoid robots, a robotic arm, a cleaning robot and AI vision. Book a demo. [132] |
+| Meta | Cybertronix is a Hyderabad robotics engineering company. AI vision for your existing CCTV, and custom robots designed and built to order. [137] |
 | H1 | Cybertronix: robotics company in Hyderabad |
-| Schema | `Organization` + `LocalBusiness` (address from F1), `WebSite`, `FAQPage` |
+| Schema | `Organization`, `LocalBusiness`, `WebSite`, `FAQPage`, plus site-wide `Organization` |
 
-**H2 outline**
-1. Robots we build in Hyderabad (4 product cards → P2–P5)
-2. Humanoid robots
-3. Robotic arm for industry
-4. Cleaning robot
-5. AI vision and surveillance
-6. Who we work with (industries → P8, P9 if approved)
-7. Why a Hyderabad robotics team (local support, demos, visits) — only real claims
-8. Questions people ask
-9. Book a demo (CTA → P7)
+**H2 outline:** Hero · AI vision for your existing CCTV · What we do · One in-house engineering team · Who we work with · Questions people ask · Tell us your requirement
 
-**FAQ**
+**FAQ:**
 1. What does Cybertronix do?
-2. Where is Cybertronix located in Hyderabad?
-3. Which robots does Cybertronix make?
-4. Can I see a robot demo in Hyderabad?
-5. Do you supply robots outside Hyderabad, across India?
+2. Where is Cybertronix located?
+3. Do you sell ready-made robots?
+4. Does your AI vision need new cameras?
+5. How much does a project cost?
 
-**Internal links:** P2, P3, P4, P5 (cards), P6 (about), P7 (CTA, footer), P8/P9 (industries strip).
-
----
-
-## P2 · Humanoid robots `/humanoid-robots`
-| Field | Value |
-|---|---|
-| Keyword | humanoid robot India · humanoid robot Hyderabad |
-| Title | Humanoid Robot in Hyderabad, India · Cybertronix [48] |
-| Meta | Humanoid robots designed by Cybertronix in Hyderabad for reception, guidance and business use. See specs, uses and pricing, and book a demo. [140] |
-| H1 | Humanoid robots by Cybertronix, Hyderabad |
-| Schema | `Product` (name, image, description, brand; `offers` only with a real price), `FAQPage`, `BreadcrumbList` |
-
-**H2 outline**
-1. What our humanoid robot does
-2. Where it works (reception, events, showrooms, offices — only confirmed uses)
-3. Specifications (spec table, D8)
-4. Humanoid robot price in India (honest range or "on request" + what changes the price)
-5. Built in Hyderabad (only if true)
-6. Questions about humanoid robots
-7. Book a humanoid robot demo
-
-**FAQ**
-1. How much does a humanoid robot cost in India?
-2. What can the Cybertronix humanoid robot do?
-3. Can the humanoid robot speak English, Hindi and Telugu? `TODO(founder)`
-4. Can I rent a humanoid robot for an event in Hyderabad? `TODO(founder)`
-5. How long does delivery and setup take? `TODO(founder)`
-
-**Internal links:** P1, P9 (hospitality), P5 (vision inside the robot, if true), P7 (demo).
+**Internal links:** `/about` · `/ai-vision` · `/cleaning-robot` · `/contact` · `/industries/hospitality` · `/industries/manufacturing`
 
 ---
 
-## P3 · Robotic arm `/robotic-arm`
+## P2 · Humanoid robot development `/humanoid-robots`
 | Field | Value |
 |---|---|
-| Keyword | industrial robotic arm India · robotic arm Hyderabad |
-| Title | Industrial Robotic Arm in Hyderabad, India · Cybertronix [56] |
-| Meta | An industrial robotic arm from Cybertronix, Hyderabad, for pick and place and repeat factory tasks. Specs, price guide and a live demo. [135] |
-| H1 | Industrial robotic arm, made for Indian factories |
-| Schema | `Product`, `FAQPage`, `BreadcrumbList` |
+| Keyword | humanoid robot company Hyderabad · humanoid robot developer India · custom humanoid robot |
+| Title | Humanoid Robot Development in Hyderabad · Cybertronix [53] |
+| Meta | Cybertronix designs and builds custom humanoid robots in Hyderabad. In-house AI, mechatronics and electronics engineers. Tell us your requirement. [146] |
+| H1 | Humanoid robot development in Hyderabad |
+| Schema | `Service`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2 outline**
-1. What the robotic arm does
-2. Tasks it automates (pick and place, sorting, machine tending — only confirmed)
-3. Specifications (axes, payload, reach, repeatability, controller) — table
-4. Robotic arm price in India
-5. Installation and support in Hyderabad and across India
-6. Questions about our robotic arm
-7. See the arm working (CTA)
+**H2 outline:** Hero · What we build to order · The team behind it · How a custom humanoid project works · How we quote · Questions about humanoid robot development · Tell us your requirement
 
-**FAQ**
-1. What is the price of an industrial robotic arm in India?
-2. What payload and reach does the Cybertronix arm have? `TODO(founder)`
-3. Is it a cobot that can work next to people? `TODO(founder)`
-4. Can it be programmed without a robotics engineer?
-5. Do you install and service the arm in Hyderabad?
+**FAQ:**
+1. Can I buy a ready-made humanoid robot from Cybertronix?
+2. How much does it cost to build a custom humanoid robot in India?
+3. How long does it take to build a custom humanoid robot?
+4. Can the humanoid robot speak Hindi or Telugu?
+5. Where is the robot designed and built?
 
-**Internal links:** P1, P8 (manufacturing), P5 (vision for quality/safety), P7.
+**Internal links:** `/about` · `/ai-vision` · `/contact` · `/robotic-arm`
 
 ---
 
-## P4 · Cleaning robot `/cleaning-robot`
+## P3 · Custom robotic arms `/robotic-arm`
 | Field | Value |
 |---|---|
-| Keyword | commercial cleaning robot India · cleaning robot Hyderabad |
-| Title | Commercial Cleaning Robot in India · Cybertronix [48] |
-| Meta | Autonomous cleaning robot by Cybertronix, Hyderabad, for offices, malls and facilities in India. See how it works, specs and pricing. [133] |
-| H1 | Commercial cleaning robot by Cybertronix |
-| Schema | `Product`, `FAQPage`, `BreadcrumbList` |
+| Keyword | custom robotic arm manufacturer · robotic arm Hyderabad · robotic arm company India |
+| Title | Custom Robotic Arm Design & Build, Hyderabad · Cybertronix [58] |
+| Meta | Cybertronix designs and builds custom robotic arms in Hyderabad for your task. In-house mechatronics, mechanical and AI engineers. Quote on request. [148] |
+| H1 | Custom robotic arm design and build |
+| Schema | `Service`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2 outline**
-1. What the cleaning robot cleans (`TODO(founder)`: floors? solar panels? both?)
-2. Where it works (only confirmed spaces)
-3. How it works (mapping, schedule, docking — only real features)
-4. Specifications — table
-5. Cleaning robot price in India
-6. Questions about our cleaning robot
-7. Book a cleaning robot demo
+**H2 outline:** Hero · Tasks we can design for · Why a custom arm · The team behind it · How a custom arm project works · How we quote · Questions about custom robotic arms · Tell us your requirement
 
-**FAQ**
-1. How much does a commercial cleaning robot cost in India?
-2. What surfaces and spaces can it clean?
-3. Does it vacuum, mop or scrub? `TODO(founder)`
-4. How long does it run on one charge? `TODO(founder)`
-5. Does it need staff to operate it?
+**FAQ:**
+1. Do you sell a ready-made robotic arm?
+2. How much does a custom robotic arm cost in India?
+3. What information do you need to quote?
+4. Can you add a camera so the arm can see?
+5. How long does it take to build a custom robotic arm?
 
-**Internal links:** P1, P9 (hospitality), P8 (if for factories), P7.
-
-> If the founder confirms it is a **solar panel** cleaning robot, the keyword group switches to "solar panel cleaning robot India / Hyderabad" and title becomes `Solar Panel Cleaning Robot in India · Cybertronix` [49].
+**Internal links:** `/ai-vision` · `/contact` · `/humanoid-robots` · `/industries/manufacturing`
 
 ---
 
-## P5 · AI vision / surveillance `/ai-vision`
+## P4 · Cleaning robot (in development) `/cleaning-robot`
 | Field | Value |
 |---|---|
-| Keyword | AI video analytics Hyderabad · AI surveillance India · PPE detection |
-| Title | AI Video Analytics & PPE Detection, Hyderabad · Cybertronix [59] |
-| Meta | Cybertronix AI vision turns CCTV into real-time alerts for PPE, intrusion and safety. Built in Hyderabad for Indian sites. Book a demo. [135] |
-| H1 | AI vision and surveillance for safer sites |
-| Schema | `Service` (or `SoftwareApplication` if sold as software), `FAQPage`, `BreadcrumbList` |
+| Keyword | cleaning robot company India · cleaning robot Hyderabad |
+| Title | Cleaning Robot in Development, Hyderabad · Cybertronix [54] |
+| Meta | Cybertronix is building an autonomous cleaning robot in Hyderabad. It's in development and we're looking for pilot partners. Register your interest. [148] |
+| H1 | Our cleaning robot: in development |
+| Schema | `WebPage`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2 outline**
-1. What our AI vision detects (PPE: helmet, vest; intrusion; others only if real)
-2. Live demo (the existing canvas demo, real HTML labels around it)
-3. Works with your CCTV? (`TODO(founder)`)
-4. Where it runs: on-site or cloud, and your data (`TODO(founder)`)
-5. Industries: factories, construction, warehouses (→ P8)
-6. Questions about AI surveillance
-7. Book an AI vision demo
+**H2 outline:** Hero · What we're building · Why we're building it · Become a pilot partner · Questions about our cleaning robot · Stay in touch
 
-**FAQ**
+**FAQ:**
+1. Can I buy the Cybertronix cleaning robot now?
+2. What will it clean?
+3. When will it be available?
+4. What does a pilot partner do?
+5. How much will it cost?
+
+**Internal links:** `/ai-vision` · `/contact` · `/industries/hospitality`
+
+---
+
+## P5 · AI vision `/ai-vision`
+| Field | Value |
+|---|---|
+| Keyword | AI video analytics Hyderabad · AI CCTV India · PPE detection |
+| Title | AI Video Analytics for Your CCTV, Hyderabad · Cybertronix [57] |
+| Meta | Cybertronix AI vision works with the CCTV cameras you already have. Real-time alerts for safety, such as PPE checks. Built in Hyderabad. Book a demo. [149] |
+| H1 | AI vision for your existing CCTV cameras |
+| Schema | `Service`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
+
+**H2 outline:** Hero · No new cameras needed · What it detects · Live demo · Where the video is processed · Who it's for · Questions about AI video analytics · Book an AI vision demo
+
+**FAQ:**
 1. What is AI video analytics?
-2. Can it work with my existing CCTV cameras? `TODO(founder)`
+2. Does it work with my existing CCTV cameras?
 3. What does PPE detection check for?
-4. Where is the video processed and stored? `TODO(founder)`
-5. How are alerts sent (app, SMS, WhatsApp, email)? `TODO(founder)`
+4. How are alerts sent?
+5. How much does it cost?
 
-**Internal links:** P1, P8, P3 (vision + arm), P7.
+**Internal links:** `/about` · `/contact` · `/industries/hospitality` · `/industries/manufacturing` · `/robotic-arm`
 
 ---
 
@@ -171,28 +134,21 @@ Lengths in brackets are character counts (checked by script).
 | Field | Value |
 |---|---|
 | Keyword | about Cybertronix robotics |
-| Title | About Cybertronix · Robotics Team in Hyderabad [46] |
-| Meta | Meet Cybertronix, a Hyderabad robotics team building humanoid robots, a robotic arm, a cleaning robot and AI vision for India. [126] |
+| Title | About Cybertronix · Robotics Engineering, Hyderabad [51] |
+| Meta | Cybertronix is a Hyderabad robotics engineering company with in-house AI, mechatronics, mechanical and electronics engineers. Meet the team. [140] |
 | H1 | About Cybertronix |
-| Schema | `AboutPage`, `Organization` (founder, foundingDate, address — only real), `BreadcrumbList` |
+| Schema | `AboutPage`, `Organization`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2 outline**
-1. Our story (`TODO(founder)`: year, why we started)
-2. What we build
-3. The team (`TODO(founder)`: names/photos with permission)
-4. Our lab in Hyderabad
-5. How we work: honest specs, local support
-6. Careers (if hiring)
-7. Talk to us
+**H2 outline:** Hero · What we do · Our engineering team · How we work · Our base in Hyderabad · Careers · Questions about Cybertronix · Talk to us
 
-**FAQ**
-1. When was Cybertronix founded? `TODO(founder)`
-2. Who founded Cybertronix? `TODO(founder)`
-3. Are your robots designed in India?
-4. Is Cybertronix related to Cybertronix Technologies LLC in Dubai? (answer: `TODO(founder)` — likely "no")
+**FAQ:**
+1. Where is Cybertronix based?
+2. What kind of engineers work at Cybertronix?
+3. Is Cybertronix related to Cybertronix Technologies LLC in Dubai?
+4. Do you take on custom projects?
 5. Is Cybertronix hiring?
 
-**Internal links:** P1, P2–P5, P7.
+**Internal links:** `/ai-vision` · `/cleaning-robot` · `/contact` · `/humanoid-robots` · `/robotic-arm`
 
 ---
 
@@ -200,58 +156,71 @@ Lengths in brackets are character counts (checked by script).
 | Field | Value |
 |---|---|
 | Keyword | Cybertronix Hyderabad contact / address |
-| Title | Contact Cybertronix · Robot Demo in Hyderabad [45] |
-| Meta | Call, email or visit Cybertronix in Hyderabad. Book a demo of our humanoid robot, robotic arm, cleaning robot or AI vision. [123] |
+| Title | Contact Cybertronix · Robotics Company, Hyderabad [49] |
+| Meta | Contact Cybertronix in Hyderabad. Book an AI vision demo, ask about a custom robot or join our cleaning robot pilot. Quotes on request. [135] |
 | H1 | Contact Cybertronix in Hyderabad |
-| Schema | `ContactPage`, `LocalBusiness` (name, address, phone, geo, openingHours — all from F1), `BreadcrumbList` |
+| Schema | `ContactPage`, `LocalBusiness`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2 outline**
-1. Book a demo (form: name, company, phone, product, message)
-2. Visit us (address + Google Map embed, lazy-loaded)
-3. Call or email
-4. Opening hours (`TODO(founder)`)
-5. Questions before you visit
+**H2 outline:** Hero · Tell us your requirement · Visit us · Call or email · Opening hours · Questions before you get in touch
 
-**FAQ**
+**FAQ:**
 1. Where is your Hyderabad office?
-2. Can I visit the lab without an appointment?
-3. How fast do you reply to an enquiry?
-4. Do you give demos outside Hyderabad?
+2. Can I visit without an appointment?
+3. How fast do you reply?
+4. Do you work with clients outside Hyderabad?
 5. Can I get a quote by email?
 
-**Internal links:** P1, P2–P5 (product dropdown in form).
+**Internal links:** 
 
 ---
 
-## P8 · Manufacturing `/industries/manufacturing` (approved, D13)
+## P8 · Manufacturing `/industries/manufacturing`
 | Field | Value |
 |---|---|
 | Keyword | factory automation Hyderabad · industrial automation company Hyderabad |
 | Title | Factory Automation in Hyderabad · Cybertronix [45] |
-| Meta | Robots and AI vision for factories in Hyderabad and Telangana: a robotic arm for repeat tasks, PPE detection for safety. Book a site visit. [139] |
-| H1 | Factory automation for Hyderabad manufacturers |
-| Schema | `Service` (areaServed Hyderabad, Telangana, India), `FAQPage`, `BreadcrumbList` |
+| Meta | AI vision for your factory's existing CCTV, and custom robotic arms built for your task, from a Hyderabad robotics engineering team. Book a visit. [146] |
+| H1 | AI vision and custom robots for Hyderabad factories |
+| Schema | `Service`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2s:** Problems we solve on the shop floor · Robotic arm for repeat tasks (→P3) · AI vision for safety and quality (→P5) · How a project runs (visit, trial, install) · Questions · Book a site visit
-**FAQ:** Where do I start with automation in a small factory? · How long does a pilot take? · Do I need to change my line? · What does support look like after install? · Do you work outside Telangana?
+**H2 outline:** Hero · Problems we help with · AI vision on your existing CCTV: available now · Custom robotic arms: built to order · How we start · Questions
 
-## P9 · Hospitality `/industries/hospitality` (approved, D13)
+**FAQ:**
+1. Where should a factory start with automation?
+2. Do I need new cameras?
+3. Can you build a robot for one specific task?
+4. How much does it cost?
+5. Do you work outside Telangana?
+
+**Internal links:** `/ai-vision` · `/contact` · `/robotic-arm`
+
+---
+
+## P9 · Hospitality `/industries/hospitality`
 | Field | Value |
 |---|---|
-| Keyword | robots for hotels India · reception robot for hotel |
-| Title | Robots for Hotels & Hospitality in India · Cybertronix [54] |
-| Meta | Humanoid reception robots and cleaning robots for hotels, malls and offices in India, from Cybertronix, Hyderabad. See uses and book a demo. [140] |
-| H1 | Robots for hotels, malls and offices |
-| Schema | `Service`, `FAQPage`, `BreadcrumbList` |
+| Keyword | AI CCTV for hotels and malls · robots for hotels India |
+| Title | AI CCTV & Robots for Hotels, Malls, Offices · Cybertronix [57] |
+| Meta | AI vision for your existing CCTV, a cleaning robot in pilot, and custom humanoid robots built to order, for hotels, malls and offices. Hyderabad. [145] |
+| H1 | AI vision and robots for hotels, malls and offices |
+| Schema | `Service`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
 
-**H2s:** Greet guests with a humanoid robot (→P2) · Keep floors clean with a cleaning robot (→P4) · Guest safety with AI vision (→P5) · Getting started · Questions · Book a demo
-**FAQ:** What can a reception robot do in a hotel? · Do guests like talking to robots? (no invented stats) · Can it speak local languages? · How much floor can the cleaning robot cover? · Can we try it before buying?
+**H2 outline:** Hero · AI vision on your existing CCTV: available now · Cleaning robot: in development, pilot partners welcome · Custom humanoid robots: built to order · Questions
+
+**FAQ:**
+1. Do you have a reception robot I can buy now?
+2. Does AI vision need new cameras?
+3. Can my hotel or mall join the cleaning robot pilot?
+4. How much does it cost?
+5. Do you work outside Hyderabad?
+
+**Internal links:** `/ai-vision` · `/cleaning-robot` · `/contact` · `/humanoid-robots`
 
 ---
 
 ## Site-wide
 | Item | Plan |
 |---|---|
-| Nav | Humanoid · Robotic arm · Cleaning robot · AI vision · About · Contact (button: Book a demo) |
-| Footer | NAP (same as GBP), product links, industries, LinkedIn/YouTube/Instagram (`sameAs`) |
-| Blog | Later. Ideas with clear search demand: "humanoid robot price in India", "robotic arm price in India", "what is PPE detection". |
+| Nav | AI vision · Cleaning robot · Custom humanoids · Custom robotic arms · Industries · About · Contact (button: Tell us your requirement) |
+| Footer | NAP (same as Google Business Profile), page links, social links (`sameAs`) |
+| Blog | Later. Ideas with real demand that we can answer honestly: "what is AI video analytics", "PPE detection on existing CCTV", "how a custom robot is built". |

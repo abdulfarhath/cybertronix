@@ -1,100 +1,75 @@
 ---
 id: P4
 url: /cleaning-robot
-title: "Commercial Cleaning Robot in India · Cybertronix"
-description: "Autonomous cleaning robot by Cybertronix, Hyderabad, for offices, malls and facilities in India. See how it works, specs and pricing."
-h1: "Commercial cleaning robot by Cybertronix"
-keyword: "commercial cleaning robot India · cleaning robot Hyderabad"
-schema: [Product, FAQPage, BreadcrumbList]
+canonical: https://cybertronix.tech/cleaning-robot
+title: "Cleaning Robot in Development, Hyderabad · Cybertronix"
+description: "Cybertronix is building an autonomous cleaning robot in Hyderabad. It's in development and we're looking for pilot partners. Register your interest."
+h1: "Our cleaning robot: in development"
+keyword: "cleaning robot company India · cleaning robot Hyderabad"
+schema: [WebPage, FAQPage, BreadcrumbList]
 ---
 
-> Build note: this page assumes a **floor** cleaning robot for commercial spaces. If the founder says it
-> cleans **solar panels** (hub Q4), SEO Content rewrites the page; do not build past the hero until Q4
-> is answered.
+> Build note (D16): the robot is **in development, with no clients**. No specs, spec table, prices,
+> `Product` schema, "available" or "buy" wording. Use the existing drawing on the canvas, labelled
+> "Concept drawing". What it cleans is not confirmed yet (the hub has asked the founder whether it's
+> floors in offices and malls). When that's answered, SEO Content updates the title, P4.2 and the keywords.
 
 ## P4.1 Hero
 
-# Commercial cleaning robot by Cybertronix
+# Our cleaning robot: in development
 
-A cleaning robot that runs on its own, on a schedule you set, so large spaces stay clean between shifts.
+We're building an autonomous cleaning robot in Hyderabad, designed to clean large spaces on its own on a
+schedule. It isn't on sale yet. We're looking for pilot partners to test it with us.
 
-Product name: `TODO(founder)`
+**CTA:** Become a pilot partner → /contact?topic=cleaning-pilot
 
-**CTA:** Book a cleaning robot demo → /contact?product=cleaning-robot
+## P4.2 What we're building
 
-## P4.2 What it cleans
+An autonomous robot that cleans on a schedule, finds its way around people and obstacles, and needs very
+little staff time.
 
-`TODO(founder)`: floors (which surfaces: tiles, vinyl, concrete, carpet?) or solar panels.
+`TODO(founder)`: what it cleans (floors in offices and malls?), and which features are being built.
 
-## P4.3 Where it works
+> Build note: describe goals ("designed to", "we're building"), never finished features.
 
-`TODO(founder)`: confirm.
+## P4.3 Why we're building it
 
-- Office floors and corridors
-- Malls and showrooms
-- Hotel lobbies
-- Hospitals and clinics
-- Warehouses and factory aisles
+Large spaces need cleaning every day, and it's repetitive work. A robot can do the routine passes so
+staff can focus on the jobs that need a person.
 
-## P4.4 How it works
+## P4.4 Become a pilot partner
 
-1. **Map once.** `TODO(founder)`: how the robot learns the space.
-2. **Set a schedule.** `TODO(founder)`: app, screen or remote?
-3. **It cleans and avoids people and obstacles.** `TODO(founder)`: sensors.
-4. **It returns to charge.** `TODO(founder)`: auto-docking?
+We're looking for a small number of sites to test the robot with us before launch. A pilot partner:
 
-> Build note: hide any step the founder does not confirm.
+- Gives us a real space to test in
+- Tells us what works and what doesn't
+- Helps shape the final robot
 
-## P4.5 Specifications
+`TODO(founder)`: what pilot partners get (early access, pilot terms) and the kind of site you want.
 
-| Spec | Value |
-|---|---|
-| Cleaning modes | `TODO(founder)` (sweep, vacuum, mop, scrub) |
-| Coverage per hour | `TODO(founder)` m² |
-| Run time per charge | `TODO(founder)` |
-| Charging time | `TODO(founder)` |
-| Tank / dust bin size | `TODO(founder)` |
-| Navigation and sensors | `TODO(founder)` |
-| Size and weight | `TODO(founder)` |
-| Noise level | `TODO(founder)` dB |
-| Warranty | `TODO(founder)` |
+**CTA:** Register your interest → /contact?topic=cleaning-pilot
 
-## P4.6 Cleaning robot price in India
+## P4.5 Questions about our cleaning robot
 
-Commercial cleaning robot prices depend on:
+### Can I buy the Cybertronix cleaning robot now?
+Not yet. It's in development. [Register your interest](/contact?topic=cleaning-pilot) and we'll tell
+you when it's ready, or join as a pilot partner.
 
-- **Size of area** it covers in one run.
-- **Cleaning modes:** sweeping only, or sweeping plus mopping or scrubbing.
-- **Navigation:** how well it maps and avoids people.
-- **Service:** consumables, repairs and software updates.
-
-Price on request. Tell us how you'll use it and we'll send a quote.
-
-> Build note: interim wording per hub (D13) until the founder answers Q3.
-
-**CTA:** Ask for a quote → /contact?product=cleaning-robot
-
-## P4.7 Questions about our cleaning robot
-
-### How much does a commercial cleaning robot cost in India?
-It depends on the area it covers, its cleaning modes and the service plan. The Cybertronix price is on request: tell us how you'll use it and we'll send a quote.
-
-### What surfaces and spaces can it clean?
+### What will it clean?
 `TODO(founder)`
 
-### Does it vacuum, mop or scrub?
-`TODO(founder)`
+### When will it be available?
+`TODO(founder)`: a rough window, or "We'll share a date once pilots are done."
 
-### How long does it run on one charge?
-`TODO(founder)`
+### What does a pilot partner do?
+You give us a real site to test in and tell us honestly how the robot performs. `TODO(founder)`:
+confirm the terms.
 
-### Does it need staff to operate it?
-`TODO(founder)`: e.g. "Someone starts the schedule and empties the bin. The robot does the rest."
+### How much will it cost?
+We'll share pricing when it's ready. Quotes will be on request.
 
-## P4.8 Book a cleaning robot demo
+## P4.6 Stay in touch
 
-Tell us the space and floor type. We'll show you the robot cleaning it.
+**CTA:** Register your interest → /contact?topic=cleaning-pilot
 
-**CTA:** Book a demo → /contact?product=cleaning-robot
-
-Related: [Robots for hotels and offices](/industries/hospitality) · [All robots](/)
+Related: [AI vision for your CCTV](/ai-vision) · [Robots for hotels, malls and offices](/industries/hospitality)

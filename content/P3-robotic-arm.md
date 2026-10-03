@@ -1,104 +1,99 @@
 ---
 id: P3
 url: /robotic-arm
-title: "Industrial Robotic Arm in Hyderabad, India · Cybertronix"
-description: "An industrial robotic arm from Cybertronix, Hyderabad, for pick and place and repeat factory tasks. Specs, price guide and a live demo."
-h1: "Industrial robotic arm, made for Indian factories"
-keyword: "industrial robotic arm India · robotic arm Hyderabad"
-schema: [Product, FAQPage, BreadcrumbList]
+canonical: https://cybertronix.tech/robotic-arm
+title: "Custom Robotic Arm Design & Build, Hyderabad · Cybertronix"
+description: "Cybertronix designs and builds custom robotic arms in Hyderabad for your task. In-house mechatronics, mechanical and AI engineers. Quote on request."
+h1: "Custom robotic arm design and build"
+keyword: "custom robotic arm manufacturer · robotic arm Hyderabad · robotic arm company India"
+schema: [Service, FAQPage, BreadcrumbList]
 ---
 
-> Build note: "pick and place" in the meta and H2 is pending founder confirmation (hub Q5).
+> Build note (D16, D20): **capability** page. We have no robotic arm for sale. No specs, spec table,
+> "our arm", clients or `Product` schema. Schema is `Service` (`serviceType`: "Custom robotic arm design
+> and manufacture"). The lab-arm stock footage is mood only. Alt text: "Robotic arm moving in a lab".
+> No caption or copy may present it as our product.
 
 ## P3.1 Hero
 
-# Industrial robotic arm, made for Indian factories
+# Custom robotic arm design and build
 
-A robotic arm that does the same precise movement thousands of times a shift, without getting tired or
-losing accuracy.
+Have a task a standard arm can't handle, or one that doesn't need a big brand robot? We design and build
+a robotic arm for your task, in Hyderabad.
 
-Product name: `TODO(founder)`
+**CTA:** Tell us your requirement → /contact?topic=robotic-arm
 
-**CTA:** See the arm working → /contact?product=robotic-arm
+## P3.2 Tasks we can design for
 
-> Build note: the hero uses the existing lab-arm stock footage. Alt text: "Robotic arm moving parts in
-> a lab (stock footage)". Do not imply it is our arm until real footage replaces it (D9).
-
-## P3.2 What the robotic arm does
-
-The arm picks up, moves and places parts in exactly the same way every time. It is built for the
-repeat work that slows a line down: loading, unloading, sorting and moving parts between stations.
-
-`TODO(founder)`: confirm the tasks.
-
-## P3.3 Tasks it automates
-
-| Task | What it means on your floor |
+| Task | What the arm would do |
 |---|---|
-| Pick and place | Moves parts from a conveyor, tray or bin to the next station. |
-| Sorting | Separates parts by type, size or a pass/fail check. With [AI vision](/ai-vision) it can sort by what the camera sees. `TODO(founder)` |
-| Machine tending | Loads and unloads a CNC or press. `TODO(founder)` |
-| Packing | Puts finished parts into boxes or trays. `TODO(founder)` |
+| Pick and place | Move parts from a conveyor, tray or bin to the next station |
+| Sorting | Separate parts by type or size. Add [AI vision](/ai-vision) to sort by what a camera sees |
+| Machine loading | Load and unload a machine |
+| Packing | Put parts into boxes or trays |
+| Lab and test work | Repeat precise movements for testing or research |
 
-> Build note: hide any row the founder does not confirm.
+> Build note: these are tasks we can design for, not delivered projects. Keep "can design for".
 
-## P3.4 Specifications
+## P3.3 Why a custom arm
 
-| Spec | Value |
+- **Built for your part:** the reach, payload and gripper match the job.
+- **Fits your space:** designed around your line, table or machine.
+- **Vision built in:** our AI team can add a camera so the arm sees what it picks.
+- **Local engineers:** the team that designs it is in Hyderabad.
+
+## P3.4 The team behind it
+
+| Discipline | What it does in a robotic arm |
 |---|---|
-| Axes | `TODO(founder)` |
-| Payload | `TODO(founder)` kg |
-| Reach | `TODO(founder)` mm |
-| Repeatability | `TODO(founder)` ± mm |
-| Weight | `TODO(founder)` kg |
-| Mounting | `TODO(founder)` (floor / table / ceiling) |
-| Controller and programming | `TODO(founder)` (teach pendant, hand-guiding, software) |
-| Power | `TODO(founder)` |
-| Safe to work beside people (cobot) | `TODO(founder)` |
-| Warranty | `TODO(founder)` |
+| Mechanical | Links, joints, gripper and mounting |
+| Mechatronics | Motors, drives, sensors and motion control |
+| Electronics | Controller boards, power and safety circuits |
+| AI engineering | Vision and smart picking |
 
-## P3.5 Robotic arm price in India
+## P3.5 How a custom arm project works
 
-Robotic arm prices in India range from small desktop arms to large industrial cells. Your price depends
-on:
+1. **Requirement.** Your part, the task, cycle time and space.
+2. **Feasibility.** We tell you honestly if a custom arm makes sense.
+3. **Design.** Reach, payload and gripper, shared with you before the build.
+4. **Build and test.** In Hyderabad, on your sample parts.
+5. **Install.** We set it up and train your team.
 
-- **Payload and reach:** heavier parts and longer reach need a bigger arm.
-- **Gripper:** suction, two-finger or a custom tool for your part.
-- **Safety:** fencing and sensors, or a collaborative setup.
-- **Integration:** connecting to your conveyor, machines and PLC.
+`TODO(founder)`: confirm these steps.
 
-Price on request. Tell us how you'll use it and we'll send a quote.
+## P3.6 How we quote
 
-> Build note: interim wording per hub (D13) until the founder answers Q3.
+We quote on request. The biggest factors are:
 
-**CTA:** Ask for a quote → /contact?product=robotic-arm
+- Payload and reach
+- Gripper or tool
+- Speed and accuracy needed
+- Safety and connecting to your existing machines
 
-## P3.6 Installation and support in Hyderabad and across India
+**CTA:** Ask for a quote → /contact?topic=robotic-arm
 
-We visit your site, check the task, and set up the arm on your line. Your team gets trained to run it.
-`TODO(founder)`: confirm site visits, training, service response time, and areas served.
+## P3.7 Questions about custom robotic arms
 
-## P3.7 Questions about our robotic arm
+### Do you sell a ready-made robotic arm?
+No. We design and build robotic arms to your requirement.
 
-### What is the price of an industrial robotic arm in India?
-It depends on payload, reach, the gripper and how much integration your line needs. The Cybertronix price is on request: tell us how you'll use it and we'll send a quote.
+### How much does a custom robotic arm cost in India?
+It depends on payload, reach, the gripper and the accuracy you need. We quote on request.
 
-### What payload and reach does the Cybertronix arm have?
-`TODO(founder)`
+### What information do you need to quote?
+The part (size, weight, material), the task, how fast it must run and a photo or video of the space.
 
-### Is it a cobot that can work next to people?
-`TODO(founder)`
+### Can you add a camera so the arm can see?
+Yes. Our AI engineering team builds vision systems, so we can add a camera to the arm's design.
+`TODO(founder)`: confirm.
 
-### Can it be programmed without a robotics engineer?
-`TODO(founder)`: e.g. "Yes. Your operator can teach a new movement by ___."
+### How long does it take to build a custom robotic arm?
+`TODO(founder)`: a typical range, or "We'll give you a timeline with the quote."
 
-### Do you install and service the arm in Hyderabad?
-`TODO(founder)`
+## P3.8 Tell us your requirement
 
-## P3.8 See the arm working
+Send us a photo or video of the task. We'll tell you what it would take.
 
-Bring a sample part. We'll show you how the arm handles it.
+**CTA:** Tell us your requirement → /contact?topic=robotic-arm
 
-**CTA:** Book a demo → /contact?product=robotic-arm
-
-Related: [Factory automation in Hyderabad](/industries/manufacturing) · [AI vision for quality and safety](/ai-vision) · [All robots](/)
+Related: [Factory automation in Hyderabad](/industries/manufacturing) · [AI vision](/ai-vision) · [Custom humanoid robots](/humanoid-robots)
