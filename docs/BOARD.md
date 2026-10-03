@@ -2,7 +2,7 @@
 
 | ID | Task | Owner | Status |
 |---|---|---|---|
-| T1 | Keyword research → `docs/seo/keywords.md` | SEO Content | To do |
+| T1 | Keyword research → `docs/seo/keywords.md` | SEO Content | In progress |
 | T2 | Page plan, titles, H1s, meta → `docs/seo/page-plan.md` | SEO Content | To do (after T1) |
 | T3 | Page text for P1–P7 → `content/` | SEO Content | To do (after T2) |
 | T4 | Read the Midnight Lab canvas, write `docs/design.md` (tokens, type, grid, components) | Design | To do |
