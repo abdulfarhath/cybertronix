@@ -55,9 +55,8 @@ and are on the canvas style guide and page boards.
 | `--l-text-muted` | `#5A6475` | Labels (5.3:1 on `--l-bg`) |
 | `--l-accent` | `#2457C8` | Links, highlights (6.0:1) |
 | `--l-alert` | `#B9530F` | Warnings on light |
-| `--l-teal` | `#0E7C70` | OK states on light |
 
-Accents (blue, orange, teal) are for buttons, dots, boxes and short labels. **Never long body text.**
+Blue is for things you can act on; orange for alerts and TODO chips (D33). **Never long body text.**
 A page alternates at most dark → light → dark; the hero and footer are always dark.
 
 ## 2. Type *(canvas)*
