@@ -124,4 +124,13 @@ Same grade on all stock and future real footage, so they sit together:
 | Humanoid shown only as "future" | Founder confirmed humanoid robots as a product: add P2 `/humanoid-robots`, nav item, card. |
 | Nav links are anchors | Become page links: Humanoid robots, Robotic arm, Cleaning robot, AI vision, About, Contact. |
 | Vision/arm demos autoplay | Poster + play button (D10). |
-| Spec values `[__]`, statuses `[Status]`, email, socials, privacy line | Stay as visible placeholders = `TODO(founder)`. |
+| "Robotic arm, part by part": stock arm video with joint callouts, "Arm, front view" stills, spec table | Breaks D16/D20 (arm is not built; stock is mood only). Rework P3 as a capability page: "we design and build to your requirement", stock shown uncaptioned as mood, spec table = what a client specifies / what we can build to, not product specs. |
+| Hero chips "Live from the lab", "Unit 01 online" on stock footage | Remove (D20). Stock stays uncaptioned mood footage. |
+| Cleaning robot tag "In development", "Join the pilot" | Keep "In development" (D16). No pilot/client claims. |
+| Vision demo stock clip with boxes | Allowed as an illustrated demo, labelled "Illustration" (D16: vision is real, footage is not ours). |
+| Roadmap "Next · [year]" | No years (D19). |
+| Email `[.com or .tech]` | `cybertronix.tech` (D15); address `TODO(founder)` until confirmed. |
+| Prices | None anywhere; "Quote on request" (D18). |
+| Spec values `[__]`, statuses `[Status]`, socials, privacy line | Stay as visible placeholders = `TODO(founder)`. |
+
+Approval: Design does not self-approve in this phase (D14). The founder approves the full design via the hub (T10).
