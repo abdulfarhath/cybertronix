@@ -9,5 +9,7 @@
 | P5 | AI vision / surveillance | `/ai-vision` | AI surveillance / PPE detection Hyderabad | Demo exists on canvas | — |
 | P6 | About | `/about` | about Cybertronix robotics | — | — |
 | P7 | Contact | `/contact` | Cybertronix Hyderabad address / contact | — | — |
+| P8 | Manufacturing (proposed, needs founder OK) | `/industries/manufacturing` | factory automation Hyderabad, industrial automation company Hyderabad | — | — |
+| P9 | Hospitality (proposed, needs founder OK) | `/industries/hospitality` | robots for hotels India, reception robot for hotel | — | — |
 
 SEO Content may add industry pages (`/industries/...`) after keyword research. Add them here first.
