@@ -67,7 +67,9 @@ on:
 - **Safety:** fencing and sensors, or a collaborative setup.
 - **Integration:** connecting to your conveyor, machines and PLC.
 
-Our price: `TODO(founder)`: real price, range, or "price on request".
+Price on request. Tell us how you'll use it and we'll send a quote.
+
+> Build note: interim wording per hub (D13) until the founder answers Q3.
 
 **CTA:** Ask for a quote → /contact?product=robotic-arm
 
@@ -79,8 +81,7 @@ We visit your site, check the task, and set up the arm on your line. Your team g
 ## P3.7 Questions about our robotic arm
 
 ### What is the price of an industrial robotic arm in India?
-It depends on payload, reach, the gripper and how much integration your line needs. For the Cybertronix
-arm, `TODO(founder)`: price or range.
+It depends on payload, reach, the gripper and how much integration your line needs. The Cybertronix price is on request: tell us how you'll use it and we'll send a quote.
 
 ### What payload and reach does the Cybertronix arm have?
 `TODO(founder)`

@@ -72,7 +72,9 @@ business. The price depends on:
 - **Branding.** Your colours, logo and screen content.
 - **Support.** Setup, training and service after delivery.
 
-Our price: `TODO(founder)`: real price, range, or "price on request".
+Price on request. Tell us how you'll use it and we'll send a quote.
+
+> Build note: interim wording per hub (D13) until the founder answers Q3.
 
 **CTA:** Ask for a quote → /contact?product=humanoid
 
@@ -85,8 +87,7 @@ so setup, training and repairs come from the people who built it."
 
 ### How much does a humanoid robot cost in India?
 It depends on size, movement, languages and the software it runs. Small companion robots cost far less
-than full-size robots for business. For the Cybertronix humanoid robot, `TODO(founder)`: price or
-"tell us your use and we'll send a quote within ___ working days".
+than full-size robots for business. The Cybertronix price is on request: tell us how you'll use it and we'll send a quote.
 
 ### What can the Cybertronix humanoid robot do?
 It can greet visitors, answer common questions and guide people around your space. `TODO(founder)`:

@@ -68,15 +68,16 @@ Commercial cleaning robot prices depend on:
 - **Navigation:** how well it maps and avoids people.
 - **Service:** consumables, repairs and software updates.
 
-Our price: `TODO(founder)`: real price, range, or "price on request".
+Price on request. Tell us how you'll use it and we'll send a quote.
+
+> Build note: interim wording per hub (D13) until the founder answers Q3.
 
 **CTA:** Ask for a quote → /contact?product=cleaning-robot
 
 ## P4.7 Questions about our cleaning robot
 
 ### How much does a commercial cleaning robot cost in India?
-It depends on the area it covers, its cleaning modes and the service plan. For the Cybertronix cleaning
-robot, `TODO(founder)`: price or range.
+It depends on the area it covers, its cleaning modes and the service plan. The Cybertronix price is on request: tell us how you'll use it and we'll send a quote.
 
 ### What surfaces and spaces can it clean?
 `TODO(founder)`

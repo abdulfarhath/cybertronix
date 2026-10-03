@@ -1,7 +1,7 @@
 ---
 id: P8
 url: /industries/manufacturing
-status: "PROPOSED: build only after founder OK (hub Q9)"
+status: "APPROVED (D13). Keep claims general until real use cases come in."
 title: "Factory Automation in Hyderabad · Cybertronix"
 description: "Robots and AI vision for factories in Hyderabad and Telangana: a robotic arm for repeat tasks, PPE detection for safety. Book a site visit."
 h1: "Factory automation for Hyderabad manufacturers"

@@ -63,7 +63,7 @@ still time to act. `TODO(founder)`: other detections (intrusion, fire, face reco
 
 ## P1.7 Who we work with
 
-> Build note: show only once P8/P9 are approved. Until then hide this section.
+> Build note: P8/P9 approved (D13).
 
 - Factories and manufacturers → /industries/manufacturing
 - Hotels, malls and offices → /industries/hospitality

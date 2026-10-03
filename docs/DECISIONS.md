@@ -15,3 +15,4 @@
 | D10 | 2026-10-03 | Motion: hero head-turn only. Hero video muted loop with poster; no autoplay on phones. |
 | D11 | 2026-10-03 | Honesty: no fake clients, numbers, reviews, awards or specs. Unknown facts stay `TODO(founder)`. |
 | D12 | 2026-10-03 | Free SEO tools only for now: Keyword Surfer, Ubersuggest free tier, Google Keyword Planner, Trends, Search Console. |
+| D13 | 2026-10-03 | Hub decision: industry pages P8 `/industries/manufacturing` and P9 `/industries/hospitality` approved. Claims stay general and honest until real use cases come in. Prices read "price on request" until the founder answers. |

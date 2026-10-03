@@ -42,7 +42,7 @@ Owner: SEO Content · Updated 2026-10-03
 | humanoid robot company in India / humanoid robot manufacturers in India | Com | est. M | M | Muks Robotics calls itself "India's leading AI humanoid robotics company". |
 | made in India humanoid robot | Info | est. M | M | Only use if it really is designed/built here. `TODO(founder)` |
 | reception robot / receptionist robot India | Com | est. M | M | Hospitality use case. Rife, Milagrow rank. |
-| humanoid robot for business / for hotels / for hospitals | Com | est. L | M | Feeds P9 (proposed). |
+| humanoid robot for business / for hotels / for hospitals | Com | est. L | M | Feeds P9. |
 | humanoid robot for home India | Com | est. L | M | cybertronix.tech already says "industries and homes". Only if true now. |
 | humanoid robot on rent Hyderabad / robot for events Hyderabad | Local/Com | est. M | E | Real, busy niche: Hire4Event, Fog Technologies, EventsAdda (₹60k/3 h in Hyderabad), Robomiracle. **Only target if Cybertronix rents robots.** `TODO(founder)` |
 | AI humanoid robot | Info | est. M | H | Secondary, in body copy. |
@@ -57,7 +57,7 @@ Owner: SEO Content · Updated 2026-10-03
 | pick and place robot / pick and place robotic arm | Com | est. M | M | Use only if the arm does it. |
 | cobot India / collaborative robot price India | Com | est. M | M | Market quotes ₹10–15 L for 6-axis cobots. Only if our arm is collaborative. `TODO(founder)` |
 | 6 axis robotic arm India | Com | est. L | M | Needs the real axis count. `TODO(founder)` |
-| factory automation Hyderabad / industrial automation company Hyderabad | Local | est. M | M | Geometrix, Robotspace, Eternal Robotics rank. Feeds P8 (proposed). |
+| factory automation Hyderabad / industrial automation company Hyderabad | Local | est. M | M | Geometrix, Robotspace, Eternal Robotics rank. Feeds P8. |
 | robotic welding / machine tending Hyderabad | Com | est. L | M | Only if the arm does these tasks. |
 
 ## P4 · Cleaning robot `/cleaning-robot`
@@ -99,7 +99,7 @@ Owner: SEO Content · Updated 2026-10-03
 | robotics company near me (Hyderabad) | Local | est. M | M | Won by Google Business Profile (F5), not the page. |
 | robot demo Hyderabad / book robot demo | Com | est. L | E | CTA wording. |
 
-## Proposed industry pages (only if the founder confirms the use)
+## Industry pages (approved by hub, D13)
 | ID | Page | Keyword group | Why |
 |---|---|---|---|
 | P8 | `/industries/manufacturing` | factory automation Hyderabad · industrial automation company Hyderabad · robots for manufacturing India | Real Local/Com searches with a beatable SERP (IndiaMART, Geometrix, Robotspace). Bundles arm + PPE detection + humanoid for one buyer. |

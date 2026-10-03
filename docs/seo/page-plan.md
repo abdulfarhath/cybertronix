@@ -223,7 +223,7 @@ Lengths in brackets are character counts (checked by script).
 
 ---
 
-## P8 · Manufacturing `/industries/manufacturing` (proposed)
+## P8 · Manufacturing `/industries/manufacturing` (approved, D13)
 | Field | Value |
 |---|---|
 | Keyword | factory automation Hyderabad · industrial automation company Hyderabad |
@@ -235,7 +235,7 @@ Lengths in brackets are character counts (checked by script).
 **H2s:** Problems we solve on the shop floor · Robotic arm for repeat tasks (→P3) · AI vision for safety and quality (→P5) · How a project runs (visit, trial, install) · Questions · Book a site visit
 **FAQ:** Where do I start with automation in a small factory? · How long does a pilot take? · Do I need to change my line? · What does support look like after install? · Do you work outside Telangana?
 
-## P9 · Hospitality `/industries/hospitality` (proposed)
+## P9 · Hospitality `/industries/hospitality` (approved, D13)
 | Field | Value |
 |---|---|
 | Keyword | robots for hotels India · reception robot for hotel |

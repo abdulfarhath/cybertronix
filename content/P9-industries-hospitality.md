@@ -1,7 +1,7 @@
 ---
 id: P9
 url: /industries/hospitality
-status: "PROPOSED: build only after founder OK (hub Q9)"
+status: "APPROVED (D13). Keep claims general until real use cases come in."
 title: "Robots for Hotels & Hospitality in India · Cybertronix"
 description: "Humanoid reception robots and cleaning robots for hotels, malls and offices in India, from Cybertronix, Hyderabad. See uses and book a demo."
 h1: "Robots for hotels, malls and offices"
