@@ -26,7 +26,7 @@ PAGES.append(dict(id="P1", name="Home", file="Main", eyebrow="Robotics engineeri
             ("What does Cybertronix do?", "Cybertronix is a robotics engineering company in Hyderabad. We're building our own products, an AI vision system for gowning and PPE compliance and an autonomous floor-cleaning robot, and we take on custom projects, including humanoid robots and robotic arms built to your requirement."),
             ("Where is Cybertronix located?", "Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad. Phone +91 90598 97807. See the {contact page|/contact}."),
             ("Can I buy a Cybertronix product today?", "Not yet. Our AI vision is a prototype and our cleaning robot is in development. Both are open to pilot partners. Humanoid robots and robotic arms are built to order."),
-            ("Does your AI vision need new cameras?", "No. It's designed to work with your existing CCTV and run on-site."),
+            ("Does your AI vision need new cameras?", "Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those and run on-site."),
             ("How much does a project cost?", "Every project is different, so we quote on request.")]),
         dict(type="cta", sid="P1.7", h2=REQ, intro="Tell us what you want to check, clean or build. We'll tell you honestly what we can do.", ctas=[(REQ, "/contact")]),
     ]))
@@ -99,11 +99,11 @@ PAGES.append(dict(id="P4", name="Cleaning robot", file="P4-Cleaning", eyebrow="O
         dict(type="text", sid="P4.3", h2="Why offices and malls", paras=["Offices and malls have large floors that need cleaning every day, often while people are around. It's repetitive work, which makes it a good job for a robot."]),
         dict(type="tiles", sid="P4.4", h2="Become a pilot partner", light=True, intro="We're looking for a small number of offices and malls to test the robot with us before launch.", items=[
             ("A real floor", "Gives us a real floor to test on."), ("Honest feedback", "Tells us what works and what doesn't."), ("Shape the robot", "Helps shape the final robot.")],
-             after=f"Pilot terms: agreed per site, so talk to us (D29).", ctas=[("Register your interest", "/contact?topic=cleaning-pilot")]),
+             after="Pilot terms are agreed per site, so talk to us.", ctas=[("Register your interest", "/contact?topic=cleaning-pilot")]),
         dict(type="faq", sid="P4.5", h2="Questions about our cleaning robot", light=True, items=[
             ("Can I buy the Cybertronix cleaning robot now?", "Not yet. It's in development. {Register your interest|/contact?topic=cleaning-pilot} or join as a pilot partner."),
             ("What will it clean?", "Floors in offices and malls."),
-            ("What does a pilot partner do?", "You give us a real floor to test on and tell us honestly how the robot performs."),
+            ("What does a pilot partner do?", "You give us a real floor to test on and tell us honestly how the robot performs. Pilot terms are agreed per site, so talk to us."),
             ("Who is building it?", "Our in-house team of mechatronics, mechanical, electronics and AI engineers in Hyderabad. {Meet the team|/team}."),
             ("How much will it cost?", "We'll share pricing when it's ready. Quotes will be on request.")]),
         dict(type="cta", sid="P4.6", h2="Stay in touch", intro="Register your interest and we'll tell you when pilots start.", ctas=[("Register your interest", "/contact?topic=cleaning-pilot"), ("Retail and malls", "/industries/retail")]),
@@ -122,7 +122,7 @@ PAGES.append(dict(id="P5", name="AI vision", file="P5-Vision", eyebrow="Our prod
             ("Hospitals", "Surgical teams' PPE before entering the operating theatre."),
             ("Other sites, as custom projects", "Supermarkets and retail ({Retail and malls|/industries/retail}) and factories ({Manufacturing|/industries/manufacturing}).")]),
         dict(type="tiles", sid="P5.4", h2="How it's designed to work", numbered=True, items=[
-            ("Uses your existing CCTV", "Standard IP CCTV cameras (RTSP). No new cameras needed."), ("Runs on-site", "A small edge computer sits next to your CCTV system, so video stays on your premises."),
+            ("Uses your existing CCTV", "Designed to work with standard IP CCTV cameras (RTSP), so you don't need new cameras if you have those."), ("Runs on-site", "A small edge computer sits next to your CCTV system, so video stays on your premises."),
             ("Alerts your team", "On a dashboard on screen and by email. WhatsApp alerts are planned."), ("Optional cloud dashboard", "Alerts and compliance summaries, not raw video.")]),
         dict(type="text", sid="P5.5", h2="Your video stays on your premises", light=True, paras=["The system is designed so video is processed on-site, on the edge computer, and not sent to the cloud. The cloud dashboard is optional and shows alerts and compliance summaries, not raw video."]),
         dict(type="split", sid="P5.6", h2="See the prototype", media="vision", paras=["An illustration of how the system marks each person and checks their gowning.", "Labels are real text around the video, never burned into it."]),
@@ -130,8 +130,8 @@ PAGES.append(dict(id="P5", name="AI vision", file="P5-Vision", eyebrow="Our prod
              ctas=[("Become a pilot partner", "/contact?topic=ai-vision")]),
         dict(type="faq", sid="P5.8", h2="Questions about AI gowning and PPE compliance", light=True, items=[
             ("Is Cybertronix AI vision available to buy?", "Not yet. It's a working prototype, and we're looking for pilot partners to test it in real gowning areas."),
-            ("Does it work with my existing CCTV cameras?", "Yes. It's designed to work with standard IP CCTV cameras (RTSP)."),
-            ("Where is the video processed?", "On your site. It's designed to run on a small edge computer next to your CCTV, so video stays on your premises. A cloud dashboard is optional."),
+            ("Does it work with my existing CCTV cameras?", "Yes, if they are standard IP CCTV cameras (RTSP). The system is designed to work with those."),
+            ("Where is the video processed?", "On your site. It's designed to run on a small edge computer next to your CCTV, so video stays on your premises. An optional cloud dashboard shows alerts and compliance summaries, not raw video."),
             ("How are alerts sent?", "On an on-screen dashboard and by email. WhatsApp alerts are planned."),
             ("Can it check other things besides gowning and PPE?", "Yes, as a custom project, for example in supermarkets, retail and factories. {Tell us your requirement|/contact?topic=ai-vision}.")]),
         dict(type="cta", sid="P5.9", h2="Talk to us", intro="Pharma site, lab or hospital? Help us test the prototype.", ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), ("Pharma and healthcare", "/industries/pharma-healthcare")]),
@@ -168,9 +168,9 @@ PAGES.append(dict(id="P7", name="Contact", file="P7-Contact", eyebrow="Jubilee H
     sections=[
         dict(type="contact", sid="P7.2", h2=REQ, intro="The topic is pre-selected from the page you came from."),
         dict(type="split", sid="P7.3–P7.5", h2="Visit, call or email", media="map", paras=[
-            "Cybertronix, Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad, Telangana 500033. Please book a visit before you come.",
+            "Cybertronix, Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad, Telangana. Please book a visit before you come.",
             "Phone: {+91 90598 97807|tel:+919059897807}", "Email: {info@cybertronix.com|mailto:info@cybertronix.com}",
-            f"WhatsApp: {F}", f"Opening hours: {F} (hidden until confirmed)"]),
+            f"WhatsApp: {F}", f"PIN and plot number: {F} (hidden, D29)", f"Opening hours: {F} (hidden until confirmed)"]),
         dict(type="faq", sid="P7.6", h2="Questions before you get in touch", light=True, items=[
             ("Where is your Hyderabad office?", "Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad."),
             ("Can I visit without an appointment?", "Please call or email first so the right engineer is free to meet you."),
@@ -193,7 +193,7 @@ PAGES.append(dict(id="P8", name="Manufacturing", file="P8-Manufacturing", eyebro
         dict(type="faq", sid="P8.6", h2="Questions", light=True, items=[
             ("Where should a factory start with automation?", "With one task you can measure every shift. We'll help you pick it on a site visit."),
             ("Can you build a robot for one specific task?", "Yes. We design and build custom robotic arms to your requirement."),
-            ("Do I need new cameras for vision checks?", "No. Our vision system is designed to use your existing CCTV."),
+            ("Do I need new cameras for vision checks?", "Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those."),
             ("How much does it cost?", "It depends on the task. We quote on request."), ("Do you work outside Telangana?", F)]),
         dict(type="cta", sid="P8.7", h2=REQ, intro="Tell us about one task on your floor.", ctas=[(REQ, "/contact"), ("Custom robotic arms", "/robotic-arm")]),
     ]))
@@ -208,12 +208,12 @@ PAGES.append(dict(id="P9", name="Pharma & healthcare", file="P9-Pharma", eyebrow
             "Gloves, mask, shoe covers and gown or coverall", "Your own dress-code rules, such as hair covers or goggles", "And to alert the supervisor when something is missing"],
              after="It is designed to support your gowning checks and records, not to replace your quality team."),
         dict(type="text", sid="P9.4", h2="Hospitals and operating theatres", paras=["Before a surgical team enters the theatre, the system is designed to check masks, gloves, gowns and shoe covers, and to flag a miss on the dashboard."]),
-        dict(type="text", sid="P9.5", h2="Video stays on your premises", light=True, paras=["The system is designed to run on a small edge computer next to your CCTV, so video is processed on-site. Alerts appear on a dashboard and by email. A cloud dashboard is optional."]),
+        dict(type="text", sid="P9.5", h2="Video stays on your premises", light=True, paras=["The system is designed to run on a small edge computer next to your CCTV, so video is processed on-site. Alerts appear on a dashboard and by email. The optional cloud dashboard shows alerts and compliance summaries, not raw video."]),
         dict(type="faq", sid="P9.6", h2="Questions", light=True, items=[
             ("Is this system in use at pharma sites today?", "Not yet. It's a prototype. We're looking for pilot partners to test it in real gowning areas."),
             ("Does it make my site GMP-compliant?", "No system can do that on its own. It's designed to support your gowning checks by flagging misses as they happen. Your quality processes stay in charge."),
-            ("Does it need new cameras?", "No. It's designed to use your existing CCTV."),
-            ("Does video leave our site?", "It's designed so video is processed on-site. A cloud dashboard is optional."),
+            ("Does it need new cameras?", "Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those."),
+            ("Does video leave our site?", "It's designed so video is processed on-site. The optional cloud dashboard shows alerts and compliance summaries, not raw video."),
             ("How do we join the pilot?", "{Register your interest|/contact?topic=ai-vision} and tell us about your site. Pilot terms are agreed per site.")]),
         dict(type="cta", sid="P9.7", h2="Become a pilot partner", intro="A real gowning area and honest feedback help shape the product.", ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), ("How AI vision works", "/ai-vision")]),
     ]))
@@ -250,8 +250,48 @@ PAGES.append(dict(id="P11", name="Retail & malls", file="P11-Retail", eyebrow="I
              ctas=[("Become a pilot partner", "/contact?topic=cleaning-pilot")]),
         dict(type="faq", sid="P11.4", h2="Questions", light=True, items=[
             ("Do you have a ready-made retail analytics product?", "No. For retail we build custom computer vision to your requirement."),
-            ("Does it need new cameras?", "No. It's designed to use your existing CCTV."),
+            ("Does it need new cameras?", "Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those."),
             ("Can our mall test the cleaning robot?", "Yes, you can register as a pilot partner. It's in development and not on sale yet."),
             ("How much does it cost?", "We quote on request."), ("Where are you based?", "In Jubilee Hills, Hyderabad. See the {contact page|/contact}.")]),
         dict(type="cta", sid="P11.5", h2=REQ, intro="Tell us the question you'd like your cameras to answer.", ctas=[(REQ, "/contact"), ("AI vision", "/ai-vision")]),
+    ]))
+
+PAGES.append(dict(id="P12", name="Software & projects", file="P12-Software", eyebrow="Software · built by our engineers",
+    h1="Software and projects",
+    lead="Alongside our robots and AI vision, our engineers build software tools. Some start as tools we need ourselves. Here's what we're working on.",
+    ctas=[(REQ, "/contact")], media=None,
+    sections=[
+        dict(type="tiles", sid="P12.2", h2="Tools", items=[
+            ("Raqib · Early build", "A terminal app, with a local web view, that watches AI workloads on your machine: RAM, CPU, VRAM, temperatures and the processes using them. {About Raqib|/software/raqib}"),
+            ("Details coming soon", "A tool the founder will share later. Hidden until real."),
+            ("Details coming soon", "A tool the founder will share later. Hidden until real.")]),
+        dict(type="text", sid="P12.3", h2="Built by the same team", light=True, paras=["The engineers who build our AI vision system write these tools. We share them when they're useful beyond our own lab. {Meet the team|/team}."]),
+        dict(type="faq", sid="P12.4", h2="Questions", light=True, items=[
+            ("What software does Cybertronix make?", "Our first shared tool is {Raqib|/software/raqib}, a terminal app that monitors AI workloads on a machine. It's an early build. More tools will be listed here as they're ready."),
+            ("Are these tools free?", F + " Hidden until answered."),
+            ("Can Cybertronix build custom software for my team?", "Yes, as a custom project, when it fits our AI and engineering work. {Tell us your requirement|/contact}.")]),
+        dict(type="cta", sid="P12.5", h2=REQ, intro="Need a tool built around your AI work?", ctas=[(REQ, "/contact"), ("Raqib", "/software/raqib")]),
+    ]))
+
+PAGES.append(dict(id="P13", name="Raqib", file="P13-Raqib", eyebrow="Software · terminal app", status="Early build",
+    h1="Raqib: a terminal monitor for AI workloads",
+    lead="Running AI models on your own machine? Raqib shows, in one terminal screen, how much RAM, CPU and VRAM they're using, how hot the machine is running, and which processes are using the most. A local web view shows it in your browser too.",
+    ctas=[("Ask about Raqib", "/contact")], media="raqib",
+    sections=[
+        dict(type="table", sid="P13.2", h2="What Raqib shows", light=True, cols=("Panel", "What you see"), rows=[
+            ("Vitals", "RAM in use, CPU load (three load averages) and CPU count, VRAM in use and number of GPU devices, total processes, and temperatures from the machine's thermal sensors"),
+            ("AI workloads", "The AI workloads Raqib detects on the machine, with a count at the top of the screen, including how many are degraded"),
+            ("Top processes by RAM", "The five processes using the most memory"), ("Top processes by VRAM", "The five processes using the most GPU memory"),
+            ("Top processes by CPU", "The five busiest processes, by CPU % per core"), ("Activity", "Recent events")]),
+        dict(type="table", sid="P13.3", h2="Keyboard first", cols=("Key", "Action"), intro="Raqib runs in the terminal and is driven from the keyboard.", rows=[
+            ("j / k", "Select a row"), ("k", "Kill a process, with a confirmation step"), ("h", "History"), ("?", "Help"), ("q", "Quit")]),
+        dict(type="text", sid="P13.4", h2="Local web view", paras=["While Raqib runs, it also serves a web view on your own machine at http://localhost:7070, so you can keep an eye on it in a browser tab."]),
+        dict(type="text", sid="P13.5–P13.6", h2="Status and availability", light=True, paras=["Raqib is an early build.", f"Why we built it, systems, install, licence and where to get it: {F} (hidden until answered)."]),
+        dict(type="faq", sid="P13.7", h2="Questions about Raqib", light=True, items=[
+            ("What is Raqib?", "A terminal app by Cybertronix that monitors AI workloads on a machine: RAM, CPU load, VRAM, temperatures, AI processes and the top processes by memory, GPU memory and CPU."),
+            ("Can Raqib show VRAM usage for local LLMs?", f"It shows VRAM in use across the machine's GPU devices and lists the top processes by VRAM, so you can see what a model is using. {F}"),
+            ("Does Raqib have a web dashboard?", "Yes. While it runs, it serves a local web view at http://localhost:7070."),
+            ("Can I stop a process from Raqib?", "Yes. Select it and press k. Raqib asks you to confirm before it kills the process."),
+            ("Is Raqib free, and which systems does it run on?", F + " Hidden until answered.")]),
+        dict(type="cta", sid="P13.8", h2="Follow Raqib", intro=f"Download, GitHub or \"Get notified\": {F}. Until then, ask us about it.", ctas=[("Ask about Raqib", "/contact"), ("All software", "/software")]),
     ]))

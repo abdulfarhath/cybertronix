@@ -80,7 +80,7 @@ def rich(s, light=False):
 
 LOGO = '<svg width="{s}" height="{s}" viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2 L32 10 L32 26 L18 34 L4 26 L4 10 Z" fill="#141A22" stroke="#3D7BFF" stroke-width="2"/><path d="M23 13 C21 11 14 11 13 18 C14 25 21 25 23 23" fill="none" stroke="#E8ECF2" stroke-width="2.5" stroke-linecap="round"/></svg>'
 NAV = [("AI vision", "/ai-vision", ("P5",)), ("Cleaning robot", "/cleaning-robot", ("P4",)), ("Custom robots ▾", "/humanoid-robots", ("P2", "P3")),
-       ("Industries ▾", "/industries/pharma-healthcare", ("P8", "P9", "P11")), ("About", "/about", ("P6",)), ("Team", "/team", ("P10",)), ("Contact", "/contact", ("P7",))]
+       ("Industries ▾", "/industries/pharma-healthcare", ("P8", "P9", "P11")), ("Software", "/software", ("P12", "P13")), ("About", "/about", ("P6",)), ("Team", "/team", ("P10",)), ("Contact", "/contact", ("P7",))]
 PRODUCTS = [("AI vision", "/ai-vision"), ("Cleaning robot", "/cleaning-robot"), ("Custom humanoid robots", "/humanoid-robots"), ("Custom robotic arms", "/robotic-arm")]
 INDUSTRIES = [("Pharma and healthcare", "/industries/pharma-healthcare"), ("Retail and malls", "/industries/retail"), ("Manufacturing", "/industries/manufacturing")]
 
@@ -107,7 +107,7 @@ def nav(active, m):
         on = active in pids
         style = "background: #232B36; color: #E8ECF2" if on else "color: #B7C0CD"
         cur = ' aria-current="page"' if on else ""
-        links += f'<a href="{h}"{cur} style="padding: 12px 13px; border-radius: 999px; {style}; text-decoration: none; font-size: 14px; white-space: nowrap">{t}</a>\n'
+        links += f'<a href="{h}"{cur} style="padding: 12px 11px; border-radius: 999px; {style}; text-decoration: none; font-size: 14px; white-space: nowrap">{t}</a>\n'
     return f"""<nav aria-label="Main" style="height: 104px; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; background: #0A0C10">
 <a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=36)}<span class="disp" style="font-size: 18px; font-weight: 500; letter-spacing: 0.02em">Cybertronix</span></a>
 <div style="display: flex; gap: 2px; padding: 6px; background: #141A22; border: 1px solid #232B36; border-radius: 999px">
@@ -145,6 +145,18 @@ def media(kind, m, h):
         return f'<div class="ph" style="height: {h}px; border-radius: {r}">[Photo of the Hyderabad lab]<br>TODO(founder) (F8)</div>'
     if kind == "map":
         return f'<div class="ph" style="height: {h}px; border-radius: {r}; flex-direction: column; gap: 10px">[Google Map, lazy-loaded after click]<span>Rd No. 10C, Gayatri Hills, Jubilee Hills · Get directions</span></div>'
+    if kind == "raqib":
+        rows = "".join(f'<div style="display: flex; justify-content: space-between"><span>{n}</span><span style="color: #B7C0CD">{v}</span></div>' for n, v in [("Isolated Web Co", "1.2 GB"), ("firefox", "904 MB"), ("brave", "700 MB")])
+        b = lambda p, c: f'<div style="flex: 1; height: 8px; background: #1A212B; border-radius: 2px; overflow: hidden"><div style="width: {p}%; height: 100%; background: {c}"></div></div>'
+        return f'''<figure class="mono" style="margin: 0; height: {h}px; box-sizing: border-box; background: #0D1016; border: 1px solid #232B36; border-radius: {r}; padding: {16 if m else 24}px; display: flex; flex-direction: column; gap: 14px; font-size: {11 if m else 13}px; color: #E8ECF2; overflow: hidden">
+<div style="color: #8A94A4"><b style="color: #E8ECF2">raqib</b> · 0 workloads · web <span style="color: #8FB2FF">localhost:7070</span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">RAM</span>{b(69, "#3D7BFF")}<span>69%</span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">VRAM</span>{b(18, "#3D7BFF")}<span>18%</span></div>
+<div style="color: #8A94A4">CPU load 1.09 1.46 1.48 · cpus 12</div>
+<div style="border: 1px solid #2E3846; border-radius: 6px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px"><span style="color: #8A94A4">Top by RAM</span>{rows}</div>
+<div style="margin-top: auto; color: #B7C0CD"><span style="color: #8FB2FF">q</span> quit · <span style="color: #8FB2FF">j/k</span> select · <span style="color: #8FB2FF">k</span> kill (confirm) · <span style="color: #8FB2FF">?</span> help</div>
+<figcaption style="color: #8A94A4">Raqib terminal app · sample data</figcaption>
+</figure>'''
     raise KeyError(kind)
 
 
@@ -331,10 +343,10 @@ def contact_block(m):
 def footer(m):
     prod = "".join(f'<li><a href="{h}" style="color: #B7C0CD; text-decoration: none">{t}</a></li>' for t, h in PRODUCTS)
     ind = "".join(f'<li><a href="{h}" style="color: #B7C0CD; text-decoration: none">{t}</a></li>' for t, h in INDUSTRIES)
-    co = '<li><a href="/about" style="color: #B7C0CD; text-decoration: none">About</a></li><li><a href="/team" style="color: #B7C0CD; text-decoration: none">Team</a></li><li><a href="/contact" style="color: #B7C0CD; text-decoration: none">Contact</a></li>'
+    co = '<li><a href="/about" style="color: #B7C0CD; text-decoration: none">About</a></li><li><a href="/team" style="color: #B7C0CD; text-decoration: none">Team</a></li><li><a href="/software" style="color: #B7C0CD; text-decoration: none">Software</a></li><li><a href="/contact" style="color: #B7C0CD; text-decoration: none">Contact</a></li>'
     ul = 'style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px"'
     colh = 'class="mono" style="font-size: 12px; color: #8A94A4; margin-bottom: 14px"'
-    nap = f'<address style="font-style: normal; font-size: 14px; line-height: 1.7; color: #B7C0CD">Cybertronix<br>Rd No. 10C, Gayatri Hills, Jubilee Hills<br>Hyderabad, Telangana 500033<br><a href="tel:+919059897807">+91 90598 97807</a> · <a href="mailto:info@cybertronix.com">info@cybertronix.com</a></address>'
+    nap = f'<address style="font-style: normal; font-size: 14px; line-height: 1.7; color: #B7C0CD">Cybertronix<br>Rd No. 10C, Gayatri Hills, Jubilee Hills<br>Hyderabad, Telangana<br><a href="tel:+919059897807">+91 90598 97807</a> · <a href="mailto:info@cybertronix.com">info@cybertronix.com</a></address>'
     social = '<div class="mono" style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; color: #8A94A4"><span>[LinkedIn]</span><span>[YouTube]</span><span>[Instagram]</span><span class="todo" style="color: #FF8A3D">TODO(founder) URLs</span></div>'
     cols = "1fr" if m else "4fr 2fr 2fr 2fr"
     pad = "40px 20px" if m else "72px 80px 40px"
@@ -440,6 +452,13 @@ def main():
             boards[fn] = {"x": bx, "y": y, "w": w, "h": h, "title": f'[{p["id"]}] {p["name"]}, {"phone 390" if m else "desktop 1440"}', "page": "site"}
             order.append(fn)
         x += 1440 + 80 + 390 + 240
+    import raqib
+    rx = 0
+    for f, (w, h, title) in raqib.write_all().items():
+        boards[f] = {"x": rx, "y": 0, "w": w, "h": h, "title": title, "page": "raqib"}
+        order.append(f)
+        rx += w + 80
+    pages.insert(1, {"id": "raqib", "name": "Raqib R1–R3"})
     boards["Original-Home-desktop.dc.html"] = {"x": 0, "y": 0, "w": 1440, "h": 6700, "title": "Original: Home, desktop 1440 (founder canvas, archived)", "page": "original"}
     boards["Original-Home-phone.dc.html"] = {"x": 1520, "y": 0, "w": 390, "h": 2380, "title": "Original: Home, phone 390 (archived)", "page": "original"}
     order = ["Original-Home-desktop.dc.html", "Original-Home-phone.dc.html"] + order
@@ -451,6 +470,8 @@ def main():
     W = x
     canvas["notes"] = {
         "t1": {"kind": "title1", "maxW": W, "text": "Cybertronix website · Midnight Lab · one board per page (docs/PAGES.md)", "x": 0, "y": 1780, "page": "site"},
+        "t2": {"kind": "title1", "maxW": rx, "text": "Raqib · logo, terminal app and local web view (D32)", "x": 0, "y": -300, "page": "raqib"},
+        "n7": {"x": 0, "y": 1300, "w": 520, "fill": "orange", "page": "raqib", "text": "Panels, keys and labels match the current Raqib screenshot (docs/reference/raqib-tui-current.png) only. Numbers and process names are sample data. Founder approves with the site (T10)."},
         "t0": {"kind": "title1", "maxW": 2960, "text": "Original founder canvas, archived (do not build from this)", "x": 0, "y": -300, "page": "original"},
         "n1": {"x": 1520, "y": 0, "w": 420, "fill": "blue", "page": "site", "text": "Footage grade: brightness -10, contrast +18, saturation 55%, blue lift. All stock is mood only (D20): uncaptioned as product, alt text says stock. Full spec: docs/design.md."},
         "n2": {"x": 1520, "y": 340, "w": 420, "fill": "blue", "page": "site", "text": "Hero head-turn (P1 only, the only motion): 90–120 WebP frames 1280×1400, down → sideways → up, scrubbed by scroll. Poster under 768px and with prefers-reduced-motion. Until frames exist the hero shows the muted stock loop with a pause button."},

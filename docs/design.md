@@ -122,7 +122,7 @@ The original home boards are kept on the canvas page "Original canvas" for refer
 |---|---|
 | "Working with teams at" strip of logo placeholders | Remove. No logos until real, permitted ones exist (D11). |
 | Hero stats `[00]` pilot sites / robots / cameras | Remove unless founder supplies real numbers → `TODO(founder)`. |
-| Raqib (developer tool) card + section | Not in D4 product list. Left off the boards; asked hub. |
+| Raqib (developer tool) card + section | Raqib stays (D30): P12 `/software`, P13 `/software/raqib`, plus R1–R3 boards. Status "Early build". |
 | Humanoid shown only as "future" | P2 `/humanoid-robots` board, "Built to order" (D16). |
 | Nav links are anchors | Page links per page plan: AI vision · Cleaning robot · Custom robots ▾ · Industries ▾ · About · Team · Contact; button "Tell us your requirement". |
 | Vision/arm demos autoplay | Poster + play button (D10). |
@@ -140,14 +140,15 @@ Approval: Design does not self-approve in this phase (D14). The founder approves
 ## 9. Canvas map
 | Canvas page | Boards |
 |---|---|
-| Site P1–P11 | Style guide; `[P1]`…`[P11]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
-| Original canvas | Founder's original home boards, archived. Not for building. |
+| Site P1–P13 | Style guide; `[P1]`…`[P13]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
+| Raqib R1–R3 | `[R1]` logo (mark = an eye drawn as a gauge; mono wordmark `raqib_`), `[R2]` terminal app dark + light, `[R3]` web view dark + light. Only panels and keys from `docs/reference/raqib-tui-current.png`; numbers are sample data. |
+| Original canvas | Founder's original home boards, archived. Not for building. They still show the old PIN; ignore it (D29). |
 
 All words on the boards come from `content/` (SEO Content). Design does not write copy.
 New components on the boards: status pill (hero + section), people card ("Photo coming soon", D27),
 2-column info table (dark or light), numbered step tiles, link tiles for industries.
 
 **Regenerating the boards:** `design/boards/gen.py` builds every page board from one component set
-(`pages.py` = page data from `content/`). Run `python3 gen.py` in a folder holding the canvas's
-`project/` files, then `node measure.cjs` to fit frame heights, and publish to the canvas.
+(`pages.py` = page data from `content/`, `raqib.py` = R1–R3). Run `python3 gen.py` in a folder holding the canvas's
+`project/` files, then `node measure.cjs > m.json && python3 fit.py` to fit frame heights, and publish to the canvas.
 P4 has no spec table yet (D8 vs D29: cleaning modes hidden until the founder answers).
