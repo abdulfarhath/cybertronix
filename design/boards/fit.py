@@ -8,10 +8,10 @@ for f,(h,w) in m.items():
     s=re.sub(r'min-height: \d+px; background: #0A0C10; display: flex',f'min-height: {H}px; background: #0A0C10; display: flex',s,1)
     s=re.sub(r'"\$preview":\{"width":(\d+),"height":\d+\}',lambda mm:f'"$preview":{{"width":{mm.group(1)},"height":{H}}}',s)
     open('canvas/project/'+f,'w').write(s)
-c['boards']['StyleGuide.dc.html']['h']=1900
+c['boards']['StyleGuide.dc.html']['h']=2080
 for k,b in c['boards'].items():
-    if b.get('page')=='site' and k!='StyleGuide.dc.html': b['y']=2400
-c['notes']['t1']['y']=2100
+    if b.get('page')=='site' and k!='StyleGuide.dc.html': b['y']=2600
+c['notes']['t1']['y']=2300
 n=c['notes']
 n['n3']['text']="Orange dashed chips = TODO(founder). Build hides any row, sentence or FAQ still marked TODO. No real numbers, clients, logos or faces are invented on these boards."
 n['n4']['text']="Words on every board come from content/ (SEO Content, T9/T9b/T9c, D21–D31). Status labels: AI vision = Prototype · pilot partners welcome; Cleaning robot = In development; Humanoid + Arm = Built to order; Raqib = Early build."

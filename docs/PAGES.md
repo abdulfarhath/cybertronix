@@ -19,8 +19,8 @@
 ## Product design boards (not site pages)
 | ID | Board | Design |
 |---|---|---|
-| R1 | Raqib logo | In progress: 2–3 options per D33 (canvas page "Raqib R1–R3") |
-| R2 | Raqib terminal app redesign | Dark + light boards, labelled "Proposed" (D34) |
+| R1 | Raqib logo | Options A, B, C on canvas page "Raqib R1–R3"; founder picks |
+| R2 | Raqib terminal app redesign | 1:1 replica (reference) + proposed dark and light (D34) |
 | R3 | Raqib web dashboard (localhost:7070) | Dark + light boards, labelled "Proposed" (D34) |
 
 SEO Content may add industry pages (`/industries/...`) after keyword research. Add them here first.

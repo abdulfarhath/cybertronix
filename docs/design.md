@@ -15,7 +15,7 @@ Rule of thumb: **dark cinematic hero, then calm technical sections with faint bl
 | Square, 2 px | Radius 0 on every container, button and input. Rules and borders 2 px. Round shapes only for status dots and the play button. |
 | Light + dark, 360 px | Every page board has desktop 1440 and phone 390; layouts stack down to 360. |
 | One-page brand guide | Canvas board `[B1] Brand guide and tokens`: logo, colours, type, shape, tone, do/don't. |
-| Logo options | Raqib: 3 options on `[R1]`, each drawn from Raqib's own screen (Meter, Panel, Gauge). Founder picks one. |
+| Logo options | Raqib: 3 options on `[R1]` (A Panel + pulse, B Brackets + dot, C Grid R + gauge). Cybertronix: current hex C stays; 2 refresh options on `[B1]` (X Detection C, Y Hex corners). Founder picks. |
 Values marked *(canvas)* are copied from the canvas. Values marked *(new)* are defined here by Design
 and are on the canvas style guide and page boards.
 
@@ -137,6 +137,7 @@ The original home boards are kept on the canvas page "Original canvas" for refer
 | Vision/arm demos autoplay | Poster + play button (D10). |
 | "Robotic arm, part by part": stock arm video with joint callouts, "Arm, front view" stills, spec table | Breaks D16/D20 (arm is not built; stock is mood only). Rework P3 as a capability page: "we design and build to your requirement", stock shown uncaptioned as mood, spec table = what a client specifies / what we can build to, not product specs. |
 | Hero chips "Live from the lab", "Unit 01 online" on stock footage | Remove (D20). Stock stays uncaptioned mood footage. |
+| Cleaning robot wording | "In development · pilot partners welcome" is allowed: an invitation, not a claim. Never an existing pilot, client, deployment, number or spec (hub ruling). |
 | Product status labels | D21: AI vision = "Prototype · pilot partners welcome", Cleaning robot = "In development", Humanoid + Arm = "Built to order". Shown as a mono pill under the hero eyebrow and on cards. |
 | Vision demo stock clip with boxes | Kept as an illustration of the gowning check (gloves / mask / shoe covers), captioned "Illustration on stock footage". Real gowning-room footage `TODO(founder)`. |
 | Roadmap "Next · [year]" | No years (D19). |
@@ -150,7 +151,7 @@ Approval: Design does not self-approve in this phase (D14). The founder approves
 | Canvas page | Boards |
 |---|---|
 | Site P1–P13 | Style guide; `[P1]`…`[P13]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
-| Raqib R1–R3 | `[R1]` 3 logo options (Meter, Panel, Gauge; mono wordmark `raqib_`), `[R2]` terminal app dark + light, `[R3]` web view dark + light, all labelled "Proposed design (D34)" (one proposal so far: an alert line at 90% on the RAM bar). Base panels and keys from `docs/reference/raqib-tui-current.png`; numbers are sample data. |
+| Raqib R1–R3 | `[R1]` 3 logo options drawn from Raqib's own screen: A Panel + pulse, B Brackets + dot, C Grid R + gauge. Each has a full mark, a simple mark (≤ 64 px), mono, app icon and "raqib by Cybertronix" lock-ups on light and dark. `[R2]` current app 1:1 replica (reference, title bar removed for privacy) + proposed terminal app dark/light. `[R3]` proposed web view dark/light with the same panels. Proposed ideas: status header ok/degraded/critical, threshold bars with numbers, workload rows (process, PID, VRAM, RAM, CPU, uptime, trend), sparklines, thermal colour, empty-state hint, kill always behind confirm. 16-colour ANSI safe. Sample data only. |
 | Original canvas | Founder's original home boards, archived. Not for building. They still show the old PIN; ignore it (D29). |
 
 All words on the boards come from `content/` (SEO Content). Design does not write copy.
