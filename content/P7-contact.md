@@ -12,13 +12,13 @@ schema: [ContactPage, LocalBusiness, BreadcrumbList]
 > Build note (D25): contact facts are confirmed. Use them **exactly** here, in the footer, in
 > `LocalBusiness` schema and on the Google Business Profile (F5, F6).
 > - Name: Cybertronix
-> - Address: Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad, Telangana 500033, India
+> - Address: Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad, Telangana, India
 >   (`streetAddress`: "Rd No. 10C, Gayatri Hills, Jubilee Hills", `addressLocality`: "Hyderabad",
->   `addressRegion`: "Telangana", `postalCode`: "500033", `addressCountry`: "IN")
+>   `addressRegion`: "Telangana", `addressCountry`: "IN"). **No `postalCode` yet.**
 > - Phone: +91 90598 97807 (`telephone`: "+919059897807")
 > - Email: info@cybertronix.com
-> PIN 500033 is from the live cybertronix.tech listing. The plot number shown there
-> (8-2-293/82/B/102) is not in D25. `TODO(founder)`: confirm the PIN and whether to show the plot number.
+> D29: the PIN (500033 on the old site) and the plot number stay **hidden** until the founder confirms them.
+> `TODO(founder)`: PIN and plot number.
 > No `foundingDate` (D19). Opening hours stay hidden until `TODO(founder)`.
 
 ## P7.1 Hero
@@ -51,7 +51,7 @@ if you want to promise one.
 
 **Cybertronix**
 Rd No. 10C, Gayatri Hills, Jubilee Hills
-Hyderabad, Telangana 500033
+Hyderabad, Telangana
 
 Map: Google Maps embed, lazy-loaded, with a "Get directions" link.
 Please book a visit before you come.

@@ -56,7 +56,7 @@ With one task you can measure every shift. We'll help you pick it on a site visi
 Yes. We design and build custom robotic arms to your requirement.
 
 ### Do I need new cameras for vision checks?
-No. Our vision system is designed to use your existing CCTV.
+Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those.
 
 ### How much does it cost?
 It depends on the task. We quote on request.

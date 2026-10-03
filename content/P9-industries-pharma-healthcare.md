@@ -45,8 +45,6 @@ It is designed to support your gowning checks and records, not to replace your q
 Before a surgical team enters the theatre, the system is designed to check masks, gloves, gowns and
 shoe covers, and to flag a miss on the dashboard.
 
-`TODO(founder)`: confirm theatre entry is a target use (D22 says surgeons).
-
 ## P9.5 Video stays on your premises
 
 The system is designed to run on a small edge computer next to your CCTV, so video is processed on-site.
@@ -62,13 +60,14 @@ No system can do that on its own. It's designed to support your gowning checks b
 they happen. Your quality processes stay in charge.
 
 ### Does it need new cameras?
-No. It's designed to use your existing CCTV.
+Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those.
 
 ### Does video leave our site?
-It's designed so video is processed on-site. A cloud dashboard is optional.
+It's designed so video is processed on-site. The optional cloud dashboard shows alerts and compliance
+summaries, not raw video.
 
 ### How do we join the pilot?
-[Register your interest](/contact?topic=ai-vision) and tell us about your site. `TODO(founder)`: pilot terms.
+[Register your interest](/contact?topic=ai-vision) and tell us about your site. Pilot terms are agreed per site, so talk to us.
 
 **CTA:** Become a pilot partner → /contact?topic=ai-vision
 

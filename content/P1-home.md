@@ -84,7 +84,7 @@ Not yet. Our AI vision is a prototype and our cleaning robot is in development. 
 partners. Humanoid robots and robotic arms are built to order.
 
 ### Does your AI vision need new cameras?
-No. It's designed to work with your existing CCTV and run on-site.
+Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those and run on-site.
 
 ### How much does a project cost?
 Every project is different, so we quote on request.

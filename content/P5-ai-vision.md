@@ -47,17 +47,15 @@ to alert your team before someone walks into a critical zone.
 
 ## P5.4 How it's designed to work
 
-1. **Uses your existing CCTV.** No new cameras needed.
+1. **Uses your existing CCTV.** Designed to work with standard IP CCTV cameras (RTSP), so you don't need new cameras if you have those.
 2. **Runs on-site.** A small edge computer sits next to your CCTV system, so video stays on your premises.
 3. **Alerts your team.** On a dashboard on screen and by email. WhatsApp alerts are planned.
-4. **Optional cloud dashboard** if you want to see reports from anywhere.
+4. **Optional cloud dashboard** showing alerts and compliance summaries, not raw video.
 
 ## P5.5 Your video stays on your premises
 
 The system is designed so video is processed on-site, on the edge computer, and not sent to the cloud.
-The cloud dashboard is optional.
-
-`TODO(founder)`: what, if anything, goes to the cloud dashboard (alerts only, or snapshots)?
+The cloud dashboard is optional, and it shows alerts and compliance summaries, not raw video.
 
 ## P5.6 See the prototype
 
@@ -71,7 +69,7 @@ An illustration of how the system marks each person and checks their gowning.
 We're looking for a small number of pharma sites, labs and hospitals to test the prototype with us. A
 pilot partner gives us a real gowning area to test in and honest feedback, and helps shape the product.
 
-`TODO(founder)`: pilot terms (cost, length, what the partner gets).
+Pilot terms are agreed per site, so talk to us.
 
 **CTA:** Become a pilot partner → /contact?topic=ai-vision
 
@@ -81,12 +79,11 @@ pilot partner gives us a real gowning area to test in and honest feedback, and h
 Not yet. It's a working prototype, and we're looking for pilot partners to test it in real gowning areas.
 
 ### Does it work with my existing CCTV cameras?
-Yes. It's designed to use the CCTV cameras you already have. `TODO(founder)`: any camera requirements
-(resolution, IP cameras)?
+Yes, if they are standard IP CCTV cameras (RTSP). The system is designed to work with those.
 
 ### Where is the video processed?
 On your site. It's designed to run on a small edge computer next to your CCTV, so video stays on your
-premises. A cloud dashboard is optional.
+premises. An optional cloud dashboard shows alerts and compliance summaries, not raw video.
 
 ### How are alerts sent?
 On an on-screen dashboard and by email. WhatsApp alerts are planned.

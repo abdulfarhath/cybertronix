@@ -32,7 +32,7 @@ An autonomous floor-cleaning robot designed to:
 - Find its way around people and obstacles
 - Need very little staff time
 
-`TODO(founder)`: cleaning modes being built (sweep, vacuum, mop, scrub?).
+`TODO(founder)`: cleaning modes being built (sweep, vacuum, mop, scrub?). Hidden until answered (D29).
 
 > Build note: describe goals ("designed to", "we're building"), never finished features.
 
@@ -50,7 +50,7 @@ partner:
 - Tells us what works and what doesn't
 - Helps shape the final robot
 
-`TODO(founder)`: what pilot partners get (pilot terms).
+Pilot terms are agreed per site, so talk to us.
 
 **CTA:** Register your interest → /contact?topic=cleaning-pilot
 
@@ -64,8 +64,7 @@ partner.
 Floors in offices and malls.
 
 ### What does a pilot partner do?
-You give us a real floor to test on and tell us honestly how the robot performs. `TODO(founder)`: pilot
-terms.
+You give us a real floor to test on and tell us honestly how the robot performs. Pilot terms are agreed per site, so talk to us.
 
 ### Who is building it?
 Our in-house team of mechatronics, mechanical, electronics and AI engineers in Hyderabad.

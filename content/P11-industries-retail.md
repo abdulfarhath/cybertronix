@@ -52,7 +52,7 @@ mall, you can help test it as a pilot partner.
 No. For retail we build custom computer vision to your requirement.
 
 ### Does it need new cameras?
-No. It's designed to use your existing CCTV.
+Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those.
 
 ### Can our mall test the cleaning robot?
 Yes, you can register as a pilot partner. It's in development and not on sale yet.
