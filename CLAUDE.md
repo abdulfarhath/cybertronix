@@ -1,7 +1,8 @@
 # Cybertronix website: rules for every Claude working on this repo
 
-Cybertronix is a Hyderabad robotics company: humanoid robots, a robotic arm, a cleaning robot and
-AI vision / surveillance. This repo holds its website and the team's shared memory.
+Cybertronix is a Hyderabad robotics engineering company. Real today: AI vision on existing CCTV, and a
+cleaning robot in development. Humanoids and robotic arms are custom-build capabilities, not products
+yet (D16). Never show the founding year (D19). This repo holds its website and the team's shared memory.
 
 **New here? Read `docs/START-HERE.md` first.**
 
@@ -24,8 +25,9 @@ milestones. Session IDs are in `docs/HUB.md`.
 No Media and no Marketing chats (founder decision). We use the footage we already have.
 
 ## Standing approval
-- Never wait for the founder's approval. Design marks its own work approved. Build merges its own
-  PR to `main` once the build passes and the checks in `docs/START-HERE.md` are green.
+- **Design phase (D14): the founder approves the complete design before any site code is merged.**
+  Design does not self-approve. Build stays paused until the hub says the design is approved.
+- After design approval: Build merges its own PR to `main` once the checks in `docs/START-HERE.md` pass.
 - **Only the founder** does physical steps: domain, hosting account, Google Search Console, Google
   Business Profile, photos, payments. Put those in `docs/FOUNDER-TODO.md`.
 

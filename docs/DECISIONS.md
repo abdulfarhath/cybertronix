@@ -11,8 +11,15 @@
 | D6 | 2026-10-03 | Hosting: a free static host (Cloudflare Pages or Vercel). Founder picks and creates the account. |
 | D7 | 2026-10-03 | SEO targets, in order: brand name → "robotics company in Hyderabad" → product + Hyderabad/India → broad terms later. |
 | D8 | 2026-10-03 | One keyword group per page. Every product page has a spec table and an FAQ block. |
-| D9 | 2026-10-03 | Use the existing graded stock footage. Real product photos replace it when the founder has them. |
+| D9 | 2026-10-03 | (see D20) Use the existing graded stock footage. Real product photos replace it when the founder has them. |
 | D10 | 2026-10-03 | Motion: hero head-turn only. Hero video muted loop with poster; no autoplay on phones. |
 | D11 | 2026-10-03 | Honesty: no fake clients, numbers, reviews, awards or specs. Unknown facts stay `TODO(founder)`. |
 | D12 | 2026-10-03 | Free SEO tools only for now: Keyword Surfer, Ubersuggest free tier, Google Keyword Planner, Trends, Search Console. |
 | D13 | 2026-10-03 | Hub decision: industry pages P8 `/industries/manufacturing` and P9 `/industries/hospitality` approved. Claims stay general and honest until real use cases come in. Prices read "price on request" until the founder answers. |
+| D14 | 2026-10-03 | **Founder: design first, build later.** No site code is merged until the founder approves the complete design. Design does NOT self-approve; the founder approves through the hub. Overrides the standing approval in CLAUDE.md for this phase. |
+| D15 | 2026-10-03 | Domain: **cybertronix.tech** (founder's existing site). The new site launches on it. |
+| D16 | 2026-10-03 | **What is real today:** AI vision works with existing CCTV. Cleaning robot is **in development, no clients yet**. Humanoid and robotic arm are **not built**: they are custom-build capabilities ("we design and build to your requirement"). The site must never say or imply that a humanoid or arm exists, has shipped, or has clients. |
+| D17 | 2026-10-03 | Positioning: Cybertronix is a **Hyderabad robotics engineering company** with an in-house team in AI engineering, mechatronics, mechanics and electronics, which builds custom robots and AI vision systems to order. |
+| D18 | 2026-10-03 | No prices anywhere. Product pages say "Quote on request". |
+| D19 | 2026-10-03 | **Never show the founding year** or company age anywhere on the site, in schema (no foundingDate) or in copy. |
+| D20 | 2026-10-03 | Stock footage of robot arms is mood/illustration only. It is never captioned or framed as a Cybertronix product. |

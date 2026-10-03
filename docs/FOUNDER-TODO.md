@@ -3,7 +3,7 @@
 | # | Step | Why | Status |
 |---|---|---|---|
 | F1 | Send the Hyderabad office address and phone | Contact page, schema, Google Business | Waiting |
-| F2 | Buy or confirm the domain (e.g. cybertronix.in) | The site needs a home | Waiting |
+| F2 | Domain: cybertronix.tech (confirmed D15) | The site needs a home | Done |
 | F3 | Create a free Cloudflare Pages or Vercel account and connect this repo | Hosting | Later (Build will say when) |
 | F4 | Google Search Console: add the domain, submit the sitemap | Google finds the site | At launch |
 | F5 | Google Business Profile: category "Robotics company", address, photos, website link | #1 for "robotics in Hyderabad" | At launch |
