@@ -2,24 +2,30 @@
 id: P7
 url: /contact
 canonical: https://cybertronix.tech/contact
-title: "Contact Cybertronix · Robotics Company, Hyderabad"
-description: "Contact Cybertronix in Hyderabad. Book an AI vision demo, ask about a custom robot or join our cleaning robot pilot. Quotes on request."
+title: "Contact Cybertronix · Jubilee Hills, Hyderabad"
+description: "Contact Cybertronix in Jubilee Hills, Hyderabad: +91 90598 97807, info@cybertronix.com. Join a pilot or tell us your requirement."
 h1: "Contact Cybertronix in Hyderabad"
-keyword: "Cybertronix Hyderabad contact / address"
+keyword: "Cybertronix Hyderabad contact / address · Cybertronix Jubilee Hills"
 schema: [ContactPage, LocalBusiness, BreadcrumbList]
 ---
 
-> Build note: name, address and phone (NAP) must match the Google Business Profile exactly (F5, F6).
-> cybertronix.tech is ours (D15). It currently shows: Plot No. 8-2-293/82/B/102, Rd No. 10C, Gayatri
-> Hills, Jubilee Hills, Hyderabad, Telangana 500033 · +91 90598 97807 · info@cybertronix.com.
-> `TODO(founder)`: confirm these are still current (F1). Note the email domain is .com, not .tech.
-> No `foundingDate` (D19).
+> Build note (D25): contact facts are confirmed. Use them **exactly** here, in the footer, in
+> `LocalBusiness` schema and on the Google Business Profile (F5, F6).
+> - Name: Cybertronix
+> - Address: Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad, Telangana 500033, India
+>   (`streetAddress`: "Rd No. 10C, Gayatri Hills, Jubilee Hills", `addressLocality`: "Hyderabad",
+>   `addressRegion`: "Telangana", `postalCode`: "500033", `addressCountry`: "IN")
+> - Phone: +91 90598 97807 (`telephone`: "+919059897807")
+> - Email: info@cybertronix.com
+> PIN 500033 is from the live cybertronix.tech listing. The plot number shown there
+> (8-2-293/82/B/102) is not in D25. `TODO(founder)`: confirm the PIN and whether to show the plot number.
+> No `foundingDate` (D19). Opening hours stay hidden until `TODO(founder)`.
 
 ## P7.1 Hero
 
 # Contact Cybertronix in Hyderabad
 
-Book a demo, ask about a custom build or join our pilot. An engineer on our team will reply.
+Join a pilot, ask about a custom build or just ask a question. An engineer on our team will reply.
 
 ## P7.2 Tell us your requirement
 
@@ -31,40 +37,45 @@ Form fields:
 | Company | text | no |
 | Phone | tel | yes |
 | Email | email | no |
-| What's it about? | select: AI vision demo · Custom humanoid robot · Custom robotic arm · Cleaning robot pilot · Something else | yes |
+| What's it about? | select: AI vision pilot · Cleaning robot pilot · Custom humanoid robot · Custom robotic arm · Custom computer vision · Something else | yes |
 | City | text | no |
 | Your requirement | textarea | no |
 
 Button: **Send**
-After sending: "Thanks. We've got your message and will reply within `TODO(founder)` working days."
+After sending: "Thanks. We've got your message and will reply soon." `TODO(founder)`: a real reply time,
+if you want to promise one.
 
-> Build note: pre-select the topic from `?topic=` (ai-vision, humanoid, robotic-arm, cleaning-pilot).
+> Build note: pre-select the topic from `?topic=` (ai-vision, cleaning-pilot, humanoid, robotic-arm).
 
 ## P7.3 Visit us
 
-`TODO(founder)`: confirm the address (see the Build note above).
+**Cybertronix**
+Rd No. 10C, Gayatri Hills, Jubilee Hills
+Hyderabad, Telangana 500033
+
 Map: Google Maps embed, lazy-loaded, with a "Get directions" link.
+Please book a visit before you come.
 
 ## P7.4 Call or email
 
-- Phone: `TODO(founder)`: confirm +91 90598 97807
-- WhatsApp: `TODO(founder)`
-- Email: `TODO(founder)`: confirm info@cybertronix.com
+- Phone: [+91 90598 97807](tel:+919059897807)
+- Email: [info@cybertronix.com](mailto:info@cybertronix.com)
+- WhatsApp: `TODO(founder)` (same number?)
 
 ## P7.5 Opening hours
 
-`TODO(founder)`
+`TODO(founder)`. Hidden until confirmed.
 
 ## P7.6 Questions before you get in touch
 
 ### Where is your Hyderabad office?
-`TODO(founder)`: address and one landmark.
+Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad.
 
 ### Can I visit without an appointment?
-`TODO(founder)`: e.g. "Please book first so the right engineer is free to meet you."
+Please call or email first so the right engineer is free to meet you.
 
-### How fast do you reply?
-`TODO(founder)`
+### How do I join a pilot?
+Choose "AI vision pilot" or "Cleaning robot pilot" in the form and tell us about your site.
 
 ### Do you work with clients outside Hyderabad?
 `TODO(founder)`

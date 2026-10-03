@@ -2,87 +2,101 @@
 id: P5
 url: /ai-vision
 canonical: https://cybertronix.tech/ai-vision
-title: "AI Video Analytics for Your CCTV, Hyderabad · Cybertronix"
-description: "Cybertronix AI vision works with the CCTV cameras you already have. Real-time alerts for safety, such as PPE checks. Built in Hyderabad. Book a demo."
-h1: "AI vision for your existing CCTV cameras"
-keyword: "AI video analytics Hyderabad · AI CCTV India · PPE detection"
+title: "AI Gowning & PPE Compliance for Cleanrooms · Cybertronix"
+description: "Our AI vision prototype checks gowning and PPE (gloves, masks, shoe covers, gowns) on your existing CCTV, for pharma cleanrooms and surgery. Pilots open."
+h1: "AI vision for gowning and PPE compliance"
+keyword: "cleanroom gowning compliance AI · surgical PPE detection · GMP video analytics India · AI CCTV for existing cameras Hyderabad"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
 
-> Build note (D16): this is our one ready product, and it works with existing CCTV. The detection list
-> below follows the canvas demo (helmet, vest). Rows marked TODO stay hidden until the founder confirms
-> them. No client names, numbers or prices (D18).
+> Build note (D21–D23): AI vision is a **prototype**: not deployed, no clients. Status label everywhere:
+> "Prototype · pilot partners welcome". Describe features as "designed to", never "deployed", "used by" or
+> "trusted by". No client names, numbers, accuracy figures or prices (D18). `Service` schema only.
 
 ## P5.1 Hero
 
-# AI vision for your existing CCTV cameras
+# AI vision for gowning and PPE compliance
 
-Cameras record. AI vision watches. It works with the CCTV cameras you already have, checks the video for
-safety problems and alerts your team while there is still time to act.
+**Prototype · pilot partners welcome**
 
-**CTA:** Book an AI vision demo → /contact?topic=ai-vision
+A wrong glove, a missing mask or an uncovered shoe can compromise a cleanroom or an operating theatre.
+Our AI vision prototype is designed to check gowning and PPE on the CCTV cameras you already have, and
+to alert your team before someone walks into a critical zone.
 
-## P5.2 No new cameras needed
+**CTA:** Become a pilot partner → /contact?topic=ai-vision
 
-Cybertronix AI vision connects to your existing CCTV, so you don't have to rip anything out or buy a new
-camera system to get started.
+## P5.2 What it's designed to check
 
-`TODO(founder)`: anything needed on site (a small computer, a network connection)? Which camera types or
-recorders it connects to (IP cameras, NVR, RTSP)?
-
-## P5.3 What it detects
-
-| Detection | What it flags |
+| Item | What it looks for |
 |---|---|
-| Helmet (hard hat) | A person in a work zone without a helmet |
-| Safety vest | A person without a high-visibility vest |
-| Restricted area | A person entering a zone you mark as off-limits. `TODO(founder)` |
-| Custom | Something specific to your site. Our AI team can train the system for it. `TODO(founder)`: confirm |
+| Gloves | Gloves on both hands |
+| Mask | Mask worn over nose and mouth |
+| Shoe covers | Shoe covers on both feet |
+| Gown or coverall | The right gown is worn |
+| Dress code | Your site's rules, such as hair covers or goggles |
 
-## P5.4 Live demo
+> Build note: these are design goals of the prototype, not tested results. Keep the heading "designed to check".
 
-> Build note: the existing canvas PPE demo goes here. Labels must be real HTML text. Label it
-> "Illustration" (matches docs/design.md §8: the clip is stock, not our footage).
+## P5.3 Where it fits
 
-See how the system marks each person and checks for a helmet and a vest.
+- **Pharma and drug-research cleanrooms:** gowning rooms and airlocks before entry to a clean zone.
+  → [Pharma and healthcare](/industries/pharma-healthcare)
+- **Hospitals:** surgical teams' PPE before entering the operating theatre.
+- **Other sites, as custom projects:** supermarkets and retail (→ [Retail and malls](/industries/retail)),
+  and factories (→ [Manufacturing](/industries/manufacturing)).
 
-## P5.5 Where the video is processed
+## P5.4 How it's designed to work
 
-`TODO(founder)`: on site, on your server, or in the cloud? Where is footage stored and who can see it?
+1. **Uses your existing CCTV.** No new cameras needed.
+2. **Runs on-site.** A small edge computer sits next to your CCTV system, so video stays on your premises.
+3. **Alerts your team.** On a dashboard on screen and by email. WhatsApp alerts are planned.
+4. **Optional cloud dashboard** if you want to see reports from anywhere.
 
-> Build note: buyers ask this first. Keep the section even if the answer is short.
+## P5.5 Your video stays on your premises
 
-## P5.6 Who it's for
+The system is designed so video is processed on-site, on the edge computer, and not sent to the cloud.
+The cloud dashboard is optional.
 
-- **Factories:** PPE checks on the shop floor. → [Factory automation](/industries/manufacturing)
-- **Construction sites:** helmets and vests at work zones.
-- **Warehouses:** safety around loading bays.
-- **Hotels, malls and offices:** restricted-area alerts. → [Hospitality](/industries/hospitality) `TODO(founder)`
+`TODO(founder)`: what, if anything, goes to the cloud dashboard (alerts only, or snapshots)?
 
-## P5.7 Questions about AI video analytics
+## P5.6 See the prototype
 
-### What is AI video analytics?
-Software that watches camera video and recognises things in it, such as a person without a helmet, then
-raises an alert. Your team hears about the moments that matter instead of watching screens all day.
+> Build note: the canvas vision demo goes here, labelled "Illustration" (design.md §8). Labels must be
+> real HTML text.
+
+An illustration of how the system marks each person and checks their gowning.
+
+## P5.7 Become a pilot partner
+
+We're looking for a small number of pharma sites, labs and hospitals to test the prototype with us. A
+pilot partner gives us a real gowning area to test in and honest feedback, and helps shape the product.
+
+`TODO(founder)`: pilot terms (cost, length, what the partner gets).
+
+**CTA:** Become a pilot partner → /contact?topic=ai-vision
+
+## P5.8 Questions about AI gowning and PPE compliance
+
+### Is Cybertronix AI vision available to buy?
+Not yet. It's a working prototype, and we're looking for pilot partners to test it in real gowning areas.
 
 ### Does it work with my existing CCTV cameras?
-Yes. Cybertronix AI vision works with existing CCTV, so you don't need new cameras to start.
-`TODO(founder)`: any camera requirements (resolution, IP cameras)?
+Yes. It's designed to use the CCTV cameras you already have. `TODO(founder)`: any camera requirements
+(resolution, IP cameras)?
 
-### What does PPE detection check for?
-Whether each person in view is wearing the safety gear you require, such as a helmet and a
-high-visibility vest.
+### Where is the video processed?
+On your site. It's designed to run on a small edge computer next to your CCTV, so video stays on your
+premises. A cloud dashboard is optional.
 
 ### How are alerts sent?
-`TODO(founder)`: app, SMS, WhatsApp, email, or an on-site alarm?
+On an on-screen dashboard and by email. WhatsApp alerts are planned.
 
-### How much does it cost?
-It depends on the number of cameras and what you want detected. We quote on request.
+### Can it check other things besides gowning and PPE?
+Yes, as a custom project. Our AI team can build computer vision for other uses, for example in
+supermarkets, retail and factories. [Tell us your requirement](/contact?topic=ai-vision).
 
-## P5.8 Book an AI vision demo
+## P5.9 Talk to us
 
-Tell us about your cameras and what you want to watch for. We'll show you the system working.
+**CTA:** Become a pilot partner → /contact?topic=ai-vision
 
-**CTA:** Book a demo → /contact?topic=ai-vision
-
-Related: [Factory automation in Hyderabad](/industries/manufacturing) · [Custom robotic arms](/robotic-arm) · [About our team](/about)
+Related: [Pharma and healthcare](/industries/pharma-healthcare) · [Retail and malls](/industries/retail) · [Our team](/team)

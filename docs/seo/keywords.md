@@ -33,7 +33,7 @@ Owner: SEO Content · Updated 2026-10-03
 | robot manufacturers in Hyderabad | Local/Com | est. L | M | IndiaMART "Robot Machine in Hyderabad" ranks. |
 | robotics company in India | Com | est. M | H | Phase 2 (D7: broad terms later). |
 | AI and robotics company Hyderabad | Com | est. L | E | XMachines uses this phrasing. |
-| robotics startup Hyderabad / T-Hub robotics | Info | est. L | M | Only if the founder is actually at T-Hub. `TODO(founder)` |
+| robotics startup Hyderabad | Info | est. L | M | Never mention T-Hub or any incubator (D26). |
 
 ## P2 · Humanoid robot development `/humanoid-robots`
 
@@ -70,7 +70,7 @@ Owner: SEO Content · Updated 2026-10-03
 
 ## P4 · Cleaning robot (in development) `/cleaning-robot`
 
-> T9: in development, no clients (D16). Target **cleaning robot company India · cleaning robot Hyderabad** only. What it cleans is still to be confirmed with the founder. Commercial and price rows wait until it launches.
+> T9: in development, no clients (D16). T9b (D24): it's a **floor** cleaning robot for offices and malls. Target **floor cleaning robot for offices and malls · commercial cleaning robot India · cleaning robot Hyderabad**. Solar and home-vacuum rows don't apply. Price rows wait until launch.
 
 | Keyword | Intent | Volume | Diff. | Notes |
 |---|---|---|---|---|
@@ -82,9 +82,21 @@ Owner: SEO Content · Updated 2026-10-03
 | solar panel cleaning robot India / Hyderabad | Com | est. M | M | Big separate niche (Solabot, Taypro, Indibots in Hyderabad). **Only if our cleaning robot is for solar panels.** `TODO(founder)`: what does it clean? |
 | cleaning robot for office / mall / hospital / warehouse | Com | est. L | M | Use-case H2s once we know the real environment. |
 
-## P5 · AI vision / surveillance `/ai-vision`
+## P5 · AI vision (prototype) `/ai-vision`
 
-> T9: our one ready product, and it works with existing CCTV (D16). Lead keyword on Home after the brand. Add **AI CCTV for existing cameras** and **AI video analytics on existing CCTV** to this page's group.
+> **T9b (D21–D23): re-targeted.** AI vision is a **prototype** for gowning and PPE compliance in pharma cleanrooms and surgery, running on-site on existing CCTV. New primary group below. The construction-style PPE rows (helmet, vest, intrusion) further down are **no longer targeted**.
+
+| Keyword | Intent | Volume | Diff. | Notes |
+|---|---|---|---|---|
+| **cleanroom gowning compliance AI / AI gowning monitoring** | Com | est. L | M | SERP: iFactory (gowning-room pages), Mikshi by Mantra (Indian, pharma solution page), Tentosoft "Pharma GMP video analytics", The Disrupt Labs guides, Roboflow, TSI. Small, specialist SERP. A focused page can rank. |
+| GMP video analytics / AI CCTV GMP compliance pharma | Com | est. L | M | Mikshi blog ranks. Never claim the system makes a site "GMP-compliant". Say it "supports gowning checks". |
+| gowning room verification / airlock gowning check | Com | est. L | E | iFactory has a dedicated page. Use as an H2 phrase. |
+| surgical PPE detection / PPE compliance operating theatre | Info/Com | est. L | E | SERP is mostly research papers (PMC, arXiv) and Intenseye. Thin commercial competition. |
+| PPE detection for hospitals / mask and glove detection camera | Com | est. L | M | |
+| pharma automation Hyderabad / AI for pharma companies Hyderabad | Local/Com | est. L | E | Hyderabad is a major pharma and life-sciences hub, a real local angle. No numbers. |
+| AI CCTV for existing cameras / AI video analytics on existing CCTV | Com | est. L | M | Every competitor leads with this. We say it too (D22). |
+| on-premise video analytics / edge AI CCTV | Com | est. L | M | Matches D23 ("designed to run on-site"). A privacy selling point for pharma and hospitals. |
+
 
 | Keyword | Intent | Volume | Diff. | Notes |
 |---|---|---|---|---|
@@ -113,13 +125,15 @@ Owner: SEO Content · Updated 2026-10-03
 | robotics company near me (Hyderabad) | Local | est. M | M | Won by Google Business Profile (F5), not the page. |
 | robot demo Hyderabad / book robot demo | Com | est. L | E | CTA wording. |
 
-## Industry pages (approved by hub, D13)
+## Industry and extra pages (D13, D27, D28)
 | ID | Page | Keyword group | Why |
 |---|---|---|---|
-| P8 | `/industries/manufacturing` | factory automation Hyderabad · industrial automation company Hyderabad · robots for manufacturing India | Real Local/Com searches with a beatable SERP (IndiaMART, Geometrix, Robotspace). Bundles arm + PPE detection + humanoid for one buyer. |
-| P9 | `/industries/hospitality` | robots for hotels India · restaurant robot India · reception robot for hotel | Rife runs whole collections on this. Bundles humanoid reception + cleaning robot. |
+| P8 | `/industries/manufacturing` | factory automation Hyderabad · industrial automation company Hyderabad · custom automation Telangana | Real local searches with a beatable SERP (IndiaMART, Geometrix, Robotspace). Offers: custom arm (built to order) and factory vision (custom project). |
+| P9 | `/industries/pharma-healthcare` | cleanroom gowning compliance AI · pharma GMP AI India · surgeon PPE detection · pharma automation Hyderabad | D28: the strongest real AI vision use. Specialist SERP (iFactory, Mikshi, Tentosoft). Hyderabad pharma hub = local angle. |
+| P10 | `/team` | Cybertronix team · robotics engineers Hyderabad | Brand and trust (E-E-A-T). Helps separate us from the Dubai LLC in brand results. |
+| P11 | `/industries/retail` | AI vision for supermarkets · retail video analytics India · floor cleaning robot for malls | SERP: Agrex.ai (many India retail analytics guides), Katomaran, Milesight, videoanalytics.in. Hard for "retail video analytics". We target the custom/supermarket and mall-cleaning angles. |
 
-Not proposed now: solar cleaning (only if B-question answered yes), events/rental (only if offered), healthcare, education.
+Dropped: `/industries/hospitality` (D28).
 
 ## Competitors ranking today
 ### "robotics company in Hyderabad"
@@ -152,4 +166,4 @@ Not proposed now: solar cleaning (only if B-question answered yes), events/renta
 ## Next
 - Fill the Volume column from Google Keyword Planner (free, needs a Google Ads login) or Ubersuggest free tier (D12). Needs someone who can log in.
 
-Sources (searched 2026-10-03): builtin.com, clutch.co, tracxn.com, techbehemoths.com, xmachines.ai, robotspace.in, eternalrobotics.com, cybertronix.tech, cybertronixllc.com, muksrobotics.com, milagrowhumantech.com, analyticsindiamag.com, indiamart.com, tradeindia.com, rifeindia.com, solabot.in, taypro.in, viact.ai, intozi.io, tericsoft.com, cocompanion.ai, hire4event.com, eventsadda.com, yourstory.com (Perceptyne), roboshy.com (cobot prices).
+Sources (searched 2026-10-03; T9b added ifactoryapp.com, mikshi.mantratec.com, tentosoft.com, thedisruptlabs.com, roboflow.com, intenseye.com, agrexai.com, katomaran.com): builtin.com, clutch.co, tracxn.com, techbehemoths.com, xmachines.ai, robotspace.in, eternalrobotics.com, cybertronix.tech, cybertronixllc.com, muksrobotics.com, milagrowhumantech.com, analyticsindiamag.com, indiamart.com, tradeindia.com, rifeindia.com, solabot.in, taypro.in, viact.ai, intozi.io, tericsoft.com, cocompanion.ai, hire4event.com, eventsadda.com, yourstory.com (Perceptyne), roboshy.com (cobot prices).
