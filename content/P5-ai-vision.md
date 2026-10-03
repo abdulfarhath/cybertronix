@@ -41,8 +41,8 @@ recorders it connects to (IP cameras, NVR, RTSP)?
 
 ## P5.4 Live demo
 
-> Build note: the existing canvas PPE demo goes here. Labels must be real HTML text. Caption:
-> "Demo on sample footage."
+> Build note: the existing canvas PPE demo goes here. Labels must be real HTML text. Label it
+> "Illustration" (matches docs/design.md §8: the clip is stock, not our footage).
 
 See how the system marks each person and checks for a helmet and a vest.
 
