@@ -37,7 +37,7 @@ Form fields:
 | Company | text | no |
 | Phone | tel | yes |
 | Email | email | no |
-| What's it about? | select: AI vision pilot · Cleaning robot pilot · Custom humanoid robot · Custom robotic arm · Custom computer vision · Something else | yes |
+| What's it about? | select: AI vision pilot · Cleaning robot pilot · Custom humanoid robot · Custom robotic arm · Custom computer vision · Software / Raqib · Something else | yes |
 | City | text | no |
 | Your requirement | textarea | no |
 

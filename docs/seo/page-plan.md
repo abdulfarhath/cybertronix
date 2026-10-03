@@ -1,4 +1,4 @@
-# Page plan (T2 → T9 → T9b)
+# Page plan (T2 → T9 → T9b → P12/P13)
 
 Owner: SEO Content · Updated 2026-10-03 · Keywords: `docs/seo/keywords.md` · Text: `content/`
 
@@ -8,14 +8,15 @@ Generated from the front matter and headings in `content/`. If the two ever diff
 | Rule | Detail |
 |---|---|
 | Domain | **https://cybertronix.tech** (D15). Canonicals, sitemap, Organization `url` and `sameAs` all point there. Keep the host (www or not) the same as the live site today. |
-| Status labels (D21) | AI vision = **Prototype · pilot partners welcome** · Cleaning robot = **In development** (pilot partners welcome) · Humanoid + arm = **Built to order** · Retail/factory vision = **Custom project**. Nothing is "available now". |
-| Wording (D23) | AI vision features are always "designed to", never "deployed", "used by" or "trusted by". |
+| Status labels (D21, D30) | AI vision = **Prototype · pilot partners welcome** · Cleaning robot = **In development** (pilot partners welcome) · Humanoid + arm = **Built to order** · Retail/factory vision = **Custom project** · Raqib = **Early build**. Nothing is "available now". |
+| Wording (D23) | AI vision features are always "designed to", never "deployed", "used by" or "trusted by". Cameras: "standard IP CCTV cameras (RTSP)" (D29). |
 | Clients (D26) | None anywhere. No logos, case studies or "used by". Never mention T-Hub or any incubator. |
-| Schema | P2/P3/P5/P8/P9/P11 use `Service`, never `Product`. P4 has no `Product` (not on sale). No `foundingDate` anywhere (D19). `LocalBusiness` NAP exactly as P7 (D25). |
+| Schema | P2/P3/P5/P8/P9/P11 use `Service`, never `Product`. P4 has no `Product`. P13 uses `SoftwareApplication` with no `offers`, `operatingSystem` or ratings until confirmed. No `foundingDate` anywhere (D19). `LocalBusiness` NAP exactly as P7 (D25, no PIN yet, D29). |
 | Prices | None anywhere (D18). Use "we quote on request". |
 | Year | Never show the founding year or company age (D19). |
-| Stock footage | Mood only (D20). Alt text describes the scene. No caption or copy may present it as our product. The vision demo is labelled "Illustration". |
-| Team (D27) | Grey "Photo coming soon" cards. Hide any card with no real name. Never use fake names or faces. |
+| Stock footage | Mood only (D20). Alt text describes the scene. The vision demo is labelled "Illustration". |
+| Team (D27) | Grey "Photo coming soon" cards. Hide any card with no real name. |
+| Software (D31) | Placeholder cards say only "Details coming soon". Raqib copy describes only the reference screenshot. Don't publish the raw screenshot (it shows a username and hostname). |
 | Title / meta | Title ≤ 60 chars, meta ≤ 155. Counts in brackets are checked by script. |
 | FAQ | Visible on the page **and** in `FAQPage` JSON-LD with the same words. Hide any FAQ whose answer is still `TODO(founder)`. |
 | Unknown facts | `TODO(founder)` stays in `content/` and is never shipped live. |
@@ -262,9 +263,51 @@ Generated from the front matter and headings in `content/`. If the two ever diff
 
 ---
 
+## P12 · Software & projects `/software`
+| Field | Value |
+|---|---|
+| Keyword | Cybertronix software · AI software Hyderabad · AI developer tools India |
+| Title | Software & Projects · AI Tools from Hyderabad · Cybertronix [59] |
+| Meta | Software built by the Cybertronix engineering team in Hyderabad, including Raqib, a terminal monitor for AI workloads. Early builds and projects. [145] |
+| H1 | Software and projects |
+| Schema | `CollectionPage`, `BreadcrumbList`, plus site-wide `Organization` |
+
+**H2 outline:** Hero · Tools · Built by the same team · Questions
+
+**FAQ:**
+1. What software does Cybertronix make?
+2. Are these tools free?
+3. Can Cybertronix build custom software for my team?
+
+**Internal links:** `/ai-vision` · `/contact` · `/software/raqib` · `/team`
+
+---
+
+## P13 · Raqib (early build) `/software/raqib`
+| Field | Value |
+|---|---|
+| Keyword | AI workload monitor · VRAM monitor for local LLMs · terminal system monitor for AI · Raqib |
+| Title | Raqib: Terminal Monitor for AI Workloads · Cybertronix [54] |
+| Meta | Raqib is a terminal app with a local web view that watches AI workloads: RAM, CPU load, VRAM, temperatures and top processes. Early build by Cybertronix. [153] |
+| H1 | Raqib: a terminal monitor for AI workloads |
+| Schema | `SoftwareApplication`, `FAQPage`, `BreadcrumbList`, plus site-wide `Organization` |
+
+**H2 outline:** Hero · What Raqib shows · Keyboard first · Local web view · Why we built it · Status and availability · Questions about Raqib · Follow Raqib
+
+**FAQ:**
+1. What is Raqib?
+2. Can Raqib show VRAM usage for local LLMs?
+3. Does Raqib have a web dashboard?
+4. Can I stop a process from Raqib?
+5. Is Raqib free, and which systems does it run on?
+
+**Internal links:** `/ai-vision` · `/contact` · `/software` · `/team`
+
+---
+
 ## Site-wide
 | Item | Plan |
 |---|---|
-| Nav | AI vision · Cleaning robot · Custom robots (humanoid, arm) · Industries (Pharma & healthcare, Retail & malls, Manufacturing) · About · Team · Contact (button: Tell us your requirement) |
+| Nav | AI vision · Cleaning robot · Custom robots (humanoid, arm) · Industries (Pharma & healthcare, Retail & malls, Manufacturing) · Software · About · Team · Contact (button: Tell us your requirement) |
 | Footer | NAP exactly as P7 (D25), page links, social links (`sameAs`, `TODO(founder)`) |
-| Blog | Later. Honest topics with real demand: "cleanroom gowning steps and common mistakes", "what is AI video analytics", "why process CCTV video on-site". |
+| Blog | Later. Honest topics with real demand: "cleanroom gowning steps and common mistakes", "why process CCTV video on-site", "how to check VRAM usage when running local LLMs". |

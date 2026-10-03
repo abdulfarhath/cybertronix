@@ -125,6 +125,23 @@ Owner: SEO Content · Updated 2026-10-03
 | robotics company near me (Hyderabad) | Local | est. M | M | Won by Google Business Profile (F5), not the page. |
 | robot demo Hyderabad / book robot demo | Com | est. L | E | CTA wording. |
 
+## P12 · Software & projects `/software` and P13 · Raqib `/software/raqib` (D30, D31)
+
+> Developer searches. Raqib is an **early build**: describe only what the reference screenshot shows. No
+> platform, price or download keywords until the founder confirms them.
+
+| Keyword | Intent | Volume | Diff. | Target | Notes |
+|---|---|---|---|---|---|
+| **AI workload monitor** | Com/Info | est. L | M | P13 | SERP: Netdata "best GPU monitoring tools for AI workloads", OpenLIT, GitHub repos (pl247/ai-monitor, spark-dashboard). No clear owner. |
+| VRAM monitor for local LLMs / monitor VRAM usage local LLM | Info/Com | est. L | E | P13 | SERP: GitHub vram-monitor, a VS Code "GPU & VRAM Monitor (Local LLM)" extension, how-to guides. Thin, so a clear page can rank. |
+| terminal system monitor for AI / htop for AI | Com | est. L | M | P13 | SERP: nvtop, btop, nvitop, ollama-top ("htop & nvtop for Ollama"). Compare honestly; never claim "better than". |
+| GPU monitor terminal / nvtop alternative | Com | est. M | H | P13 | nvtop and nvitop dominate. Secondary only. |
+| check VRAM usage Linux | Info | est. M | H | blog later | How-to intent (nvidia-smi). A possible blog post. |
+| ollama VRAM usage / ollama monitor | Info | est. M | M | P13 FAQ | **Only after the founder confirms Raqib detects Ollama.** |
+| local LLM resource monitor / LLM host monitor | Com | est. L | E | P13 | GitHub llm-host-monitor (Windows). |
+| Raqib / Raqib monitor | Nav | est. L | H | P13 | ⚠ Name clash: raqib.ai, withraqib.com (security scanner), github pgun879-alt/raqib (website monitor), a Google Play price app. Always use "Raqib by Cybertronix" / "Raqib AI workload monitor". |
+| AI software company Hyderabad / AI developer tools India | Com | est. L | M | P12 | Supports the brand. P12 is a hub page, not a ranking target. |
+
 ## Industry and extra pages (D13, D27, D28)
 | ID | Page | Keyword group | Why |
 |---|---|---|---|
@@ -166,4 +183,4 @@ Dropped: `/industries/hospitality` (D28).
 ## Next
 - Fill the Volume column from Google Keyword Planner (free, needs a Google Ads login) or Ubersuggest free tier (D12). Needs someone who can log in.
 
-Sources (searched 2026-10-03; T9b added ifactoryapp.com, mikshi.mantratec.com, tentosoft.com, thedisruptlabs.com, roboflow.com, intenseye.com, agrexai.com, katomaran.com): builtin.com, clutch.co, tracxn.com, techbehemoths.com, xmachines.ai, robotspace.in, eternalrobotics.com, cybertronix.tech, cybertronixllc.com, muksrobotics.com, milagrowhumantech.com, analyticsindiamag.com, indiamart.com, tradeindia.com, rifeindia.com, solabot.in, taypro.in, viact.ai, intozi.io, tericsoft.com, cocompanion.ai, hire4event.com, eventsadda.com, yourstory.com (Perceptyne), roboshy.com (cobot prices).
+Sources (searched 2026-10-03; P12/P13 added github.com (vram-monitor, ollama-top, ai-monitor, spark-dashboard, llm-host-monitor), netdata.cloud, openlit.io, terminaltrove.com, raqib.ai, withraqib.com; T9b added ifactoryapp.com, mikshi.mantratec.com, tentosoft.com, thedisruptlabs.com, roboflow.com, intenseye.com, agrexai.com, katomaran.com): builtin.com, clutch.co, tracxn.com, techbehemoths.com, xmachines.ai, robotspace.in, eternalrobotics.com, cybertronix.tech, cybertronixllc.com, muksrobotics.com, milagrowhumantech.com, analyticsindiamag.com, indiamart.com, tradeindia.com, rifeindia.com, solabot.in, taypro.in, viact.ai, intozi.io, tericsoft.com, cocompanion.ai, hire4event.com, eventsadda.com, yourstory.com (Perceptyne), roboshy.com (cobot prices).
