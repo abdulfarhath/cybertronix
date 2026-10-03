@@ -32,7 +32,7 @@ and are on the canvas style guide and page boards.
 | `--link` | `#8FB2FF` | Links; hover `#C4D6FF`; focus ring |
 | `--alert` | `#FF8A3D` | Warnings, "restricted" boxes; text on it `#0A0C10` |
 | `--alert-soft` | `#FFC49E` | Text inside alert panels |
-| `--teal` *(new)* | `#2BB5A6` | "OK / clear / online" states only |
+| `--teal` *(new)* | `#2BB5A6` | "OK / clear" detection states only (not product status) |
 
 ### Light sections (spec tables, FAQ, About, long reading) *(new)*
 | Token | Hex | Use |
@@ -123,15 +123,15 @@ The original home boards are kept on the canvas page "Original canvas" for refer
 | "Working with teams at" strip of logo placeholders | Remove. No logos until real, permitted ones exist (D11). |
 | Hero stats `[00]` pilot sites / robots / cameras | Remove unless founder supplies real numbers → `TODO(founder)`. |
 | Raqib (developer tool) card + section | Not in D4 product list. Left off the boards; asked hub. |
-| Humanoid shown only as "future" | Founder confirmed humanoid robots as a product: add P2 `/humanoid-robots`, nav item, card. |
-| Nav links are anchors | Become page links: Humanoid robots, Robotic arm, Cleaning robot, AI vision, About, Contact. |
+| Humanoid shown only as "future" | P2 `/humanoid-robots` board, "Built to order" (D16). |
+| Nav links are anchors | Page links per page plan: AI vision · Cleaning robot · Custom robots ▾ · Industries ▾ · About · Team · Contact; button "Tell us your requirement". |
 | Vision/arm demos autoplay | Poster + play button (D10). |
 | "Robotic arm, part by part": stock arm video with joint callouts, "Arm, front view" stills, spec table | Breaks D16/D20 (arm is not built; stock is mood only). Rework P3 as a capability page: "we design and build to your requirement", stock shown uncaptioned as mood, spec table = what a client specifies / what we can build to, not product specs. |
 | Hero chips "Live from the lab", "Unit 01 online" on stock footage | Remove (D20). Stock stays uncaptioned mood footage. |
-| Cleaning robot tag "In development", "Join the pilot" | Keep "In development" (D16). No pilot/client claims. |
-| Vision demo stock clip with boxes | Allowed as an illustrated demo, labelled "Illustration" (D16: vision is real, footage is not ours). |
+| Product status labels | D21: AI vision = "Prototype · pilot partners welcome", Cleaning robot = "In development", Humanoid + Arm = "Built to order". Shown as a mono pill under the hero eyebrow and on cards. |
+| Vision demo stock clip with boxes | Kept as an illustration of the gowning check (gloves / mask / shoe covers), captioned "Illustration on stock footage". Real gowning-room footage `TODO(founder)`. |
 | Roadmap "Next · [year]" | No years (D19). |
-| Email `[.com or .tech]` | `cybertronix.tech` (D15); address `TODO(founder)` until confirmed. |
+| Email and address | Confirmed (D25): Rd No. 10C, Gayatri Hills, Jubilee Hills · +91 90598 97807 · info@cybertronix.com. In the footer on every board. |
 | Prices | None anywhere; "Quote on request" (D18). |
 | Spec values `[__]`, statuses `[Status]`, socials, privacy line | Stay as visible placeholders = `TODO(founder)`. |
 
@@ -140,8 +140,14 @@ Approval: Design does not self-approve in this phase (D14). The founder approves
 ## 9. Canvas map
 | Canvas page | Boards |
 |---|---|
-| Site P1–P9 | Style guide; `[P1]`…`[P9]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
+| Site P1–P11 | Style guide; `[P1]`…`[P11]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
 | Original canvas | Founder's original home boards, archived. Not for building. |
 
-Board status labels: Humanoid and Robotic arm = "Built to order", Cleaning robot = "In development",
-AI vision = "Works today" (D16). P2/P3 board copy follows D16 until SEO Content's T9 rewrite lands.
+All words on the boards come from `content/` (SEO Content). Design does not write copy.
+New components on the boards: status pill (hero + section), people card ("Photo coming soon", D27),
+2-column info table (dark or light), numbered step tiles, link tiles for industries.
+
+**Regenerating the boards:** `design/boards/gen.py` builds every page board from one component set
+(`pages.py` = page data from `content/`). Run `python3 gen.py` in a folder holding the canvas's
+`project/` files, then `node measure.cjs` to fit frame heights, and publish to the canvas.
+P4 has no spec table yet (D8 vs D29: cleaning modes hidden until the founder answers).

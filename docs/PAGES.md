@@ -11,10 +11,10 @@
 | P7 | Contact | `/contact` | Cybertronix Hyderabad address / contact | Boards `[P7]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
 | P8 | Manufacturing (approved, D13) | `/industries/manufacturing` | factory automation Hyderabad, industrial automation company Hyderabad | Boards `[P8]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
 | P9 | Pharma & healthcare (D28) | `/industries/pharma-healthcare` | cleanroom gowning compliance AI, surgeon PPE detection, pharma GMP AI India | Boards `[P9]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
-| P10 | Team (D27) | `/team` | Cybertronix team, robotics engineers Hyderabad | — | — |
-| P11 | Retail & malls (D28) | `/industries/retail` | AI vision for supermarkets, floor cleaning robot for malls | — | — |
-| P12 | Software & projects (D31) | `/software` | AI software Hyderabad, Cybertronix tools | — | — |
-| P13 | Raqib (D30) | `/software/raqib` | AI workload monitor, GPU VRAM monitor for local LLMs, Raqib | — | — |
+| P10 | Team (D27) | `/team` | Cybertronix team, robotics engineers Hyderabad | Boards `[P10]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
+| P11 | Retail & malls (D28) | `/industries/retail` | AI vision for supermarkets, floor cleaning robot for malls | Boards `[P11]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
+| P12 | Software & projects (D31) | `/software` | AI software Hyderabad, Cybertronix tools | Boards `[P12]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
+| P13 | Raqib (D30) | `/software/raqib` | AI workload monitor, GPU VRAM monitor for local LLMs, Raqib | Boards `[P13]` desktop 1440 + phone 390 (T5, awaiting founder approval T10) | — |
 
 ## Product design boards (not site pages)
 | ID | Board | Design |
