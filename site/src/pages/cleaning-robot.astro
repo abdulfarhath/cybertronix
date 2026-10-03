@@ -1,0 +1,21 @@
+---
+// P4 Cleaning robot. Stub until SEO Content (content/P4) and Design (canvas board P4) land.
+import InnerPage from '../layouts/InnerPage.astro';
+import { product } from '../lib/schema';
+
+const path = '/cleaning-robot';
+const title = 'Cleaning Robot Company in India | Cybertronix';
+const description = 'The Cybertronix cleaning robot, built by a robotics company in Hyderabad, India.';
+---
+<InnerPage
+  title={title}
+  description={description}
+  path={path}
+  h1="Cleaning robot from India"
+  crumb="Cleaning robot"
+  type="product"
+  schema={[product({ name: 'Cleaning robot by Cybertronix', description, path, category: 'Cleaning robot' })]}
+>
+  <p class="muted">{description}</p>
+  <p class="todo">TODO(SEO Content): page text (content/P4). TODO(founder): real specs for the spec table. TODO(SEO Content): FAQ block.</p>
+</InnerPage>

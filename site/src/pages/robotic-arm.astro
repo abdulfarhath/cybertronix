@@ -1,0 +1,21 @@
+---
+// P3 Robotic arm. Stub until SEO Content (content/P3) and Design (canvas board P3) land.
+import InnerPage from '../layouts/InnerPage.astro';
+import { product } from '../lib/schema';
+
+const path = '/robotic-arm';
+const title = 'Industrial Robotic Arm in Hyderabad, India | Cybertronix';
+const description = 'The Cybertronix robotic arm for industry, from a robotics company in Hyderabad, India.';
+---
+<InnerPage
+  title={title}
+  description={description}
+  path={path}
+  h1="Industrial robotic arm in Hyderabad"
+  crumb="Robotic arm"
+  type="product"
+  schema={[product({ name: 'Robotic arm by Cybertronix', description, path, category: 'Industrial robot arm' })]}
+>
+  <p class="muted">{description}</p>
+  <p class="todo">TODO(SEO Content): page text (content/P3). TODO(founder): real specs for the spec table. TODO(SEO Content): FAQ block.</p>
+</InnerPage>

@@ -1,0 +1,21 @@
+---
+// P2 Humanoid robots. Stub until SEO Content (content/P2) and Design (canvas board P2) land.
+import InnerPage from '../layouts/InnerPage.astro';
+import { product } from '../lib/schema';
+
+const path = '/humanoid-robots';
+const title = 'Humanoid Robots in Hyderabad, India | Cybertronix';
+const description = 'Humanoid robots from Cybertronix, a robotics company in Hyderabad, India.';
+---
+<InnerPage
+  title={title}
+  description={description}
+  path={path}
+  h1="Humanoid robots in Hyderabad"
+  crumb="Humanoid robots"
+  type="product"
+  schema={[product({ name: 'Humanoid robots by Cybertronix', description, path, category: 'Humanoid robot' })]}
+>
+  <p class="muted">{description}</p>
+  <p class="todo">TODO(SEO Content): page text (content/P2). TODO(founder): real specs for the spec table. TODO(SEO Content): FAQ block.</p>
+</InnerPage>

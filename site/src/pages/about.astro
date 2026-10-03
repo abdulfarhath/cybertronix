@@ -1,0 +1,13 @@
+---
+// P6 About. Stub until SEO Content (content/P6) and Design (canvas board P6) land.
+import InnerPage from '../layouts/InnerPage.astro';
+import { webPage } from '../lib/schema';
+
+const path = '/about';
+const title = 'About Cybertronix | Robotics Company in Hyderabad';
+const description = 'About Cybertronix, a robotics company in Hyderabad, India, building humanoid robots, a robotic arm, a cleaning robot and AI vision.';
+---
+<InnerPage title={title} description={description} path={path} h1="About Cybertronix" crumb="About" schema={[webPage(title, path)]}>
+  <p class="muted">{description}</p>
+  <p class="todo">TODO(SEO Content): about text (content/P6). TODO(founder): team, founding year, story; only real facts.</p>
+</InnerPage>

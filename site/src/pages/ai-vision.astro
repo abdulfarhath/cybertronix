@@ -1,0 +1,21 @@
+---
+// P5 AI vision. Stub until SEO Content (content/P5) and Design (canvas board P5) land.
+import InnerPage from '../layouts/InnerPage.astro';
+import { product } from '../lib/schema';
+
+const path = '/ai-vision';
+const title = 'AI Surveillance and PPE Detection in Hyderabad | Cybertronix';
+const description = 'AI vision and surveillance from Cybertronix in Hyderabad, including PPE detection for sites and factories.';
+---
+<InnerPage
+  title={title}
+  description={description}
+  path={path}
+  h1="AI vision and surveillance in Hyderabad"
+  crumb="AI vision"
+  type="product"
+  schema={[product({ name: 'AI vision and surveillance by Cybertronix', description, path, category: 'AI video surveillance' })]}
+>
+  <p class="muted">{description}</p>
+  <p class="todo">TODO(SEO Content): page text (content/P5). TODO(founder): real specs for the spec table. TODO(SEO Content): FAQ block.</p>
+</InnerPage>

@@ -1,0 +1,32 @@
+---
+/**
+ * Image pipeline: AVIF + WebP with fallback, width/height always set (no layout shift),
+ * lazy-loaded by default. Pass `priority` for the one above-the-fold image (LCP).
+ */
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  src: ImageMetadata;
+  /** Required. Describe the image; use "" only for pure decoration. */
+  alt: string;
+  widths?: number[];
+  sizes?: string;
+  priority?: boolean;
+  class?: string;
+}
+
+const { src, alt, widths = [480, 768, 1080, 1600], sizes = '100vw', priority = false, class: className } = Astro.props;
+const usable = widths.filter((w) => w <= src.width);
+---
+<Picture
+  src={src}
+  alt={alt}
+  formats={['avif', 'webp']}
+  widths={usable.length ? usable : [src.width]}
+  sizes={sizes}
+  loading={priority ? 'eager' : 'lazy'}
+  decoding={priority ? 'sync' : 'async'}
+  fetchpriority={priority ? 'high' : 'auto'}
+  class={className}
+/>

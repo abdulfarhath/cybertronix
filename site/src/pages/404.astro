@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { webPage } from '../lib/schema';
+
+const title = 'Page not found | Cybertronix';
+---
+<BaseLayout title={title} description="This page does not exist. Go back to the Cybertronix home page." path="/404" noindex schema={[webPage(title, '/404')]}>
+  <section class="section blueprint">
+    <div class="container">
+      <h1>Page not found</h1>
+      <p class="muted">The page you asked for does not exist or has moved.</p>
+      <a class="btn" href="/">Go to the home page</a>
+    </div>
+  </section>
+</BaseLayout>

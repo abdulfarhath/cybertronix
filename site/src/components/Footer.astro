@@ -1,0 +1,31 @@
+---
+import { PAGES, SITE } from '../config/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container cols">
+    <div>
+      <p class="name">{SITE.name}</p>
+      <p class="muted">Robotics company in {SITE.city}, India.</p>
+      {SITE.streetAddress
+        ? <p class="muted">{SITE.streetAddress}, {SITE.city} {SITE.postalCode}</p>
+        : <p class="todo">TODO(founder): office address and phone (FOUNDER-TODO F1)</p>}
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        {PAGES.map((p) => <li><a href={p.href}>{p.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+  <div class="container"><p class="muted small">© {year} {SITE.name}</p></div>
+</footer>
+
+<style>
+  .site-footer { border-top: 1px solid var(--color-border); padding-block: var(--space-12) var(--space-6); margin-top: var(--space-16); }
+  .cols { display: grid; gap: var(--space-8); grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+  .name { font-weight: 700; }
+  ul { list-style: none; margin: 0; padding: 0; columns: 2; }
+  li a { display: inline-block; padding-block: var(--space-2); color: var(--color-text-muted); text-decoration: none; }
+  li a:hover { color: var(--color-text); }
+  .small { font-size: var(--text-sm); }
+</style>

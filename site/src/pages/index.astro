@@ -1,0 +1,42 @@
+---
+// P1 Home. Stub until SEO Content (content/P1) and Design (canvas board P1) land.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import { PAGES } from '../config/site';
+import { localBusiness, webPage } from '../lib/schema';
+import poster from '../assets/hero-poster-placeholder.jpg';
+
+const title = 'Cybertronix | Robotics Company in Hyderabad';
+const description =
+  'Cybertronix is a robotics company in Hyderabad, India: humanoid robots, a robotic arm, a cleaning robot and AI vision for surveillance.';
+---
+<BaseLayout title={title} description={description} path="/" schema={[localBusiness(), webPage(title, '/')]}>
+  <section class="hero">
+    <div class="container hero-text">
+      <h1>Robotics company in Hyderabad</h1>
+      <p class="lead muted">Humanoid robots, a robotic arm, a cleaning robot and AI vision, built by Cybertronix.</p>
+      <a class="btn" href="/contact">Contact us</a>
+    </div>
+    <HeroVideo poster={poster} posterAlt="" />
+  </section>
+
+  <section class="section blueprint">
+    <div class="container">
+      <h2>Products</h2>
+      <ul class="cards">
+        {PAGES.slice(1, 5).map((p) => (
+          <li><a href={p.href}>{p.label}</a></li>
+        ))}
+      </ul>
+      <p class="todo">TODO(SEO Content): home page copy (content/P1). TODO(Design): sections from canvas board P1.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-text { padding-block: var(--space-12) var(--space-8); }
+  .lead { font-size: var(--text-lg); max-width: 40rem; }
+  .cards { display: grid; gap: var(--space-4); grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); list-style: none; padding: 0; margin: 0 0 var(--space-8); }
+  .cards a { display: block; padding: var(--space-6); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); text-decoration: none; font-weight: 600; }
+  .cards a:hover { border-color: var(--color-teal); color: var(--color-text); }
+</style>

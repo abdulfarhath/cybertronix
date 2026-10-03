@@ -1,0 +1,44 @@
+---
+import { SITE } from '../config/site';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Path for the canonical URL, e.g. "/robotic-arm". Defaults to the current path. */
+  path?: string;
+  /** Absolute or root-relative image for social cards. */
+  image?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article' | 'product';
+}
+
+const { title, description, path, image, noindex = false, type = 'website' } = Astro.props;
+
+// Clean canonical: no .html, no /index, no trailing slash (except root).
+const rawPath = path ?? Astro.url.pathname;
+const cleanPath = rawPath.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/(.)\/$/, '$1') || '/';
+const canonical = new URL(cleanPath, SITE.url).toString();
+const ogImage = image ? new URL(image, SITE.url).toString() : undefined;
+---
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex" />}
+<meta name="theme-color" content="#0a0e16" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:locale" content={SITE.locale} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+{ogImage && <meta property="og:image" content={ogImage} />}
+
+<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{ogImage && <meta name="twitter:image" content={ogImage} />}

@@ -1,0 +1,83 @@
+---
+/**
+ * Hero video (DECISIONS D10): muted loop, poster image first, preload="none".
+ * Never autoplays under 768px or with prefers-reduced-motion: those visitors only see the poster.
+ * The poster is a real <picture> (AVIF/WebP) so it is the LCP element; the video fades in over it once playing.
+ * Put the H1 in real HTML text above or beside this component, never inside the video.
+ */
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Img from './Img.astro';
+
+interface Props {
+  poster: ImageMetadata;
+  posterAlt: string;
+  /** Compressed MP4 (H.264) in /public, e.g. "/video/hero.mp4". Optional until footage lands. */
+  mp4?: string;
+  /** Optional WebM (VP9/AV1), listed first. */
+  webm?: string;
+}
+
+const { poster, posterAlt, mp4, webm } = Astro.props;
+const posterAttr = await getImage({ src: poster, format: 'webp', width: Math.min(1600, poster.width) });
+---
+<div class="hero-media" data-hero-video>
+  <Img src={poster} alt={posterAlt} priority sizes="100vw" class="hero-poster" />
+  {(mp4 || webm) && (
+    <video
+      class="hero-video"
+      muted
+      loop
+      playsinline
+      preload="none"
+      disablepictureinpicture
+      poster={posterAttr.src}
+      width={poster.width}
+      height={poster.height}
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      {webm && <source data-src={webm} type="video/webm" />}
+      {mp4 && <source data-src={mp4} type="video/mp4" />}
+    </video>
+  )}
+</div>
+
+<script>
+  const desktop = window.matchMedia('(min-width: 768px)');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  for (const wrap of document.querySelectorAll<HTMLElement>('[data-hero-video]')) {
+    const video = wrap.querySelector('video');
+    if (!video) continue;
+
+    const start = () => {
+      if (!desktop.matches || reduced.matches || video.dataset.loaded) return;
+      video.dataset.loaded = '1';
+      for (const s of video.querySelectorAll('source')) {
+        if (s.dataset.src) s.src = s.dataset.src;
+      }
+      video.load();
+      video.addEventListener('playing', () => wrap.classList.add('is-playing'), { once: true });
+      video.play().catch(() => {});
+    };
+
+    // Wait until the page has loaded so the video never competes with LCP.
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start, { once: true });
+
+    reduced.addEventListener('change', () => {
+      if (reduced.matches) { video.pause(); wrap.classList.remove('is-playing'); }
+    });
+  }
+</script>
+
+<style>
+  .hero-media { position: relative; overflow: hidden; aspect-ratio: 16 / 9; background: var(--color-surface); }
+  .hero-media :global(.hero-poster),
+  .hero-media :global(.hero-poster img),
+  .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero-video { opacity: 0; transition: opacity 0.6s ease; }
+  .hero-media.is-playing .hero-video { opacity: 1; }
+  @media (max-width: 767.98px) { .hero-video { display: none; } }
+</style>

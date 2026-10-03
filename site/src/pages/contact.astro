@@ -1,0 +1,24 @@
+---
+// P7 Contact. Stub until SEO Content (content/P7), Design (canvas board P7) and founder address (F1) land.
+import InnerPage from '../layouts/InnerPage.astro';
+import { localBusiness, webPage } from '../lib/schema';
+import { SITE } from '../config/site';
+
+const path = '/contact';
+const title = 'Contact Cybertronix | Robotics in Hyderabad';
+const description = 'Contact Cybertronix, a robotics company in Hyderabad, India, about humanoid robots, robotic arms, cleaning robots and AI vision.';
+---
+<InnerPage title={title} description={description} path={path} h1="Contact Cybertronix" crumb="Contact" schema={[localBusiness(), webPage(title, path)]}>
+  <p class="muted">{description}</p>
+  <address>
+    {SITE.name}<br />
+    {SITE.streetAddress ? <>{SITE.streetAddress}<br /></> : null}
+    {SITE.city}, {SITE.region}, India
+  </address>
+  {!SITE.streetAddress && <p class="todo">TODO(founder): office address, phone and email (FOUNDER-TODO F1).</p>}
+  <p class="todo">TODO(Build): enquiry form once hosting is chosen (F3).</p>
+</InnerPage>
+
+<style>
+  address { font-style: normal; margin-bottom: var(--space-6); }
+</style>

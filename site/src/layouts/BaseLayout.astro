@@ -1,0 +1,37 @@
+---
+import '../styles/global.css';
+import SeoHead from '../components/SeoHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { organization } from '../lib/schema';
+
+interface Props {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+  noindex?: boolean;
+  type?: 'website' | 'article' | 'product';
+  /** Page-specific JSON-LD objects. Organization is added on every page. */
+  schema?: Record<string, unknown>[];
+}
+
+const { schema = [], ...seo } = Astro.props;
+const jsonLd = [organization(), ...schema];
+---
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <SeoHead {...seo} />
+    {jsonLd.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
