@@ -6,6 +6,16 @@ Carried over 1:1 on 2026-10-03 from the founder's original
 Footage and stills were re-uploaded to the new canvas; Build can pull them from its assets.
 
 Rule of thumb: **dark cinematic hero, then calm technical sections with faint blueprint grid lines.**
+
+**D33 (Hostelzy-inspired) applies to everything below:**
+| Rule | How it shows up |
+|---|---|
+| One token file | `design/tokens.json` is the only source for colours, type and shape. Build reads it. Boards are generated from the same values. |
+| One accent, one meaning | **Blue = you can act** (buttons, links, focus, the selected item). Orange is not an accent: alerts and `TODO(founder)` chips only. Teal is retired. Status labels are neutral text. |
+| Square, 2 px | Radius 0 on every container, button and input. Rules and borders 2 px. Round shapes only for status dots and the play button. |
+| Light + dark, 360 px | Every page board has desktop 1440 and phone 390; layouts stack down to 360. |
+| One-page brand guide | Canvas board `[B1] Brand guide and tokens`: logo, colours, type, shape, tone, do/don't. |
+| Logo options | Raqib: 3 options on `[R1]`, each drawn from Raqib's own screen (Meter, Panel, Gauge). Founder picks one. |
 Values marked *(canvas)* are copied from the canvas. Values marked *(new)* are defined here by Design
 and are on the canvas style guide and page boards.
 
@@ -27,12 +37,12 @@ and are on the canvas style guide and page boards.
 | `--text` | `#E8ECF2` | Headings, body |
 | `--text-2` | `#B7C0CD` | Paragraphs, lead |
 | `--text-muted` | `#8A94A4` | Labels, captions (6.4:1 on bg) |
-| `--accent` | `#3D7BFF` | Highlights, dots, detection boxes, progress |
+| `--accent` | `#3D7BFF` | **Only** things you can act on: links, focus, selected item (D33) |
 | `--button` | `#2F66E0` | Primary button fill (white text) |
 | `--link` | `#8FB2FF` | Links; hover `#C4D6FF`; focus ring |
 | `--alert` | `#FF8A3D` | Warnings, "restricted" boxes; text on it `#0A0C10` |
 | `--alert-soft` | `#FFC49E` | Text inside alert panels |
-| `--teal` *(new)* | `#2BB5A6` | "OK / clear" detection states only (not product status) |
+
 
 ### Light sections (spec tables, FAQ, About, long reading) *(new)*
 | Token | Hex | Use |
@@ -77,7 +87,7 @@ One H1 per page, always real text, never inside video or images.
 ## 4. Layout and spacing *(canvas)*
 - 8px base. Container max 1280, 12 columns, 20px gap. Gutter 80 desktop, 20 phone.
 - Section padding: 120 top desktop, 56 phone.
-- Radius: buttons/tags 999, cards 20, panels 24, hero video 28, inputs 10, small tiles 14.
+- Radius: **0 everywhere** (D33). Borders and rules 2 px.
 - Breakpoints: 390, 768, 1024, 1280, 1440.
 - Touch targets ≥ 44px. Focus: 2px outline `--link`, offset 2px.
 
@@ -89,7 +99,7 @@ One H1 per page, always real text, never inside video or images.
 | **Product card** | `--surface`, 1px `--border`, radius 20. Media 300 tall on top, then 24 padding: mono status tag, H3, one-line body, text link. 4-up desktop, horizontal list (88px thumb) on phone. |
 | **Spec table** | Two columns: label (`--text-muted`) left, value (mono) right, 18px row padding, 1px `--border` rows. Unknown values stay as `[__ unit]` placeholders = `TODO(founder)`. On light sections use `--l-*`. Real `<table>` with `<th scope="row">`. |
 | **Callout parts** | On product video: accent dot 10px + label chip (`--surface`, 1px `--border-strong`, radius 10). |
-| **Detection box** | 2px border, radius 4, mono label tab on top-left (fill = border colour, text `#0A0C10`). Blue = normal, orange = alert, teal = clear. |
+| **Detection box** | 2px border, square, mono label tab on top-left (fill = border colour, text `#0A0C10`). Neutral `#E8ECF2` = normal, orange = alert. |
 | **FAQ** *(new)* | Light section. H2, then `<details>`/`<summary>` list: 1px `--l-border` between items, summary Geist 500 17, plus/minus icon right, answer `--l-text-2` 15/23, max 720 wide. No animation beyond native open. FAQPage schema. |
 | **CTA band** | Dark. H2 + one line + primary/secondary buttons, or the contact grid (details list left, form card right, radius 24). |
 | **Form** | Labels above inputs, input 48 tall, `--bg` fill, 1px `--border-strong`, radius 10. Submit 52 tall, full pill. |
@@ -141,7 +151,7 @@ Approval: Design does not self-approve in this phase (D14). The founder approves
 | Canvas page | Boards |
 |---|---|
 | Site P1–P13 | Style guide; `[P1]`…`[P13]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
-| Raqib R1–R3 | `[R1]` logo (mark = an eye drawn as a gauge; mono wordmark `raqib_`), `[R2]` terminal app dark + light, `[R3]` web view dark + light. Only panels and keys from `docs/reference/raqib-tui-current.png`; numbers are sample data. |
+| Raqib R1–R3 | `[R1]` 3 logo options (Meter, Panel, Gauge; mono wordmark `raqib_`), `[R2]` terminal app dark + light, `[R3]` web view dark + light, all labelled "Proposed design (D34)" (one proposal so far: an alert line at 90% on the RAM bar). Base panels and keys from `docs/reference/raqib-tui-current.png`; numbers are sample data. |
 | Original canvas | Founder's original home boards, archived. Not for building. They still show the old PIN; ignore it (D29). |
 
 All words on the boards come from `content/` (SEO Content). Design does not write copy.

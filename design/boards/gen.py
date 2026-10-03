@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generate Cybertronix page boards (desktop 1440 + phone 390) from one component set."""
-import json, os, html
+import json, os, html, re
 
 ROOT = os.path.dirname(os.path.abspath(__file__)) + "/canvas/project"
 B = {  # uploaded assets on the new canvas
@@ -30,7 +30,15 @@ details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-
 </helmet>"""
 
 
+def square(src):
+    src = re.sub(r"border-radius: (?!50%)[^;\"]+", "border-radius: 0", src)
+    src = re.sub(r"\b1px (solid|dashed)", r"2px \1", src)
+    src = src.replace("border:1px dashed", "border:2px dashed").replace("border-radius:6px", "border-radius:0")
+    return src
+
+
 def doc(title, w, h, body):
+    body = square(body)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -150,8 +158,8 @@ def media(kind, m, h):
         b = lambda p, c: f'<div style="flex: 1; height: 8px; background: #1A212B; border-radius: 2px; overflow: hidden"><div style="width: {p}%; height: 100%; background: {c}"></div></div>'
         return f'''<figure class="mono" style="margin: 0; height: {h}px; box-sizing: border-box; background: #0D1016; border: 1px solid #232B36; border-radius: {r}; padding: {16 if m else 24}px; display: flex; flex-direction: column; gap: 14px; font-size: {11 if m else 13}px; color: #E8ECF2; overflow: hidden">
 <div style="color: #8A94A4"><b style="color: #E8ECF2">raqib</b> · 0 workloads · web <span style="color: #8FB2FF">localhost:7070</span></div>
-<div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">RAM</span>{b(69, "#3D7BFF")}<span>69%</span></div>
-<div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">VRAM</span>{b(18, "#3D7BFF")}<span>18%</span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">RAM</span>{b(69, "#B7C0CD")}<span>69%</span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">VRAM</span>{b(18, "#B7C0CD")}<span>18%</span></div>
 <div style="color: #8A94A4">CPU load 1.09 1.46 1.48 · cpus 12</div>
 <div style="border: 1px solid #2E3846; border-radius: 6px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px"><span style="color: #8A94A4">Top by RAM</span>{rows}</div>
 <div style="margin-top: auto; color: #B7C0CD"><span style="color: #8FB2FF">q</span> quit · <span style="color: #8FB2FF">j/k</span> select · <span style="color: #8FB2FF">k</span> kill (confirm) · <span style="color: #8FB2FF">?</span> help</div>
@@ -162,10 +170,10 @@ def media(kind, m, h):
 
 def vision_demo(m, h):
     vh = 200 if m else h - 190
-    boxes = "" if m else """<div style="position: absolute; left: 8%; top: 28%; width: 32%; height: 58%; border: 2px solid #3D7BFF; border-radius: 4px"><span class="mono" style="position: absolute; top: -26px; left: -2px; padding: 3px 8px; background: #3D7BFF; color: #0A0C10; font-size: 12px; white-space: nowrap">Gowning area (example)</span></div>
+    boxes = "" if m else """<div style="position: absolute; left: 8%; top: 28%; width: 32%; height: 58%; border: 2px solid #E8ECF2; border-radius: 4px"><span class="mono" style="position: absolute; top: -26px; left: -2px; padding: 3px 8px; background: #E8ECF2; color: #0A0C10; font-size: 12px; white-space: nowrap">Gowning area (example)</span></div>
 <div style="position: absolute; left: 58%; top: 22%; width: 20%; height: 64%; border: 2px solid #FF8A3D; border-radius: 4px"><span class="mono" style="position: absolute; top: -26px; left: -2px; padding: 3px 8px; background: #FF8A3D; color: #0A0C10; font-size: 12px; white-space: nowrap">Clean-zone door</span></div>"""
     if m:
-        boxes = '<div style="position: absolute; left: 30px; top: 50px; width: 140px; height: 110px; border: 2px solid #3D7BFF; border-radius: 4px"></div>'
+        boxes = '<div style="position: absolute; left: 30px; top: 50px; width: 140px; height: 110px; border: 2px solid #E8ECF2; border-radius: 4px"></div>'
     return f"""<figure style="margin: 0; background: #141A22; border: 1px solid #232B36; border-radius: {16 if m else 24}px; overflow: hidden">
 <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid #232B36"><div class="mono" style="font-size: 13px">CAM-04 · illustration</div><div class="mono" style="font-size: 12px; color: #8A94A4">Detection replay</div></div>
 <div style="position: relative; height: {vh}px">
@@ -174,8 +182,8 @@ def vision_demo(m, h):
 <button type="button" aria-label="Play demo" style="position: absolute; left: 16px; bottom: 16px; width: 44px; height: 44px; border-radius: 50%; border: none; background: #2F66E0; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="14" height="16" viewBox="0 0 14 16" aria-hidden="true"><path d="M1 1 L13 8 L1 15 Z" fill="#FFFFFF"/></svg></button>
 </div>
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #232B36">
-<div style="padding: 14px 18px; border-right: 1px solid #232B36"><div style="font-size: 12px; color: #8A94A4">Gloves</div><div class="mono" style="font-size: 14px; margin-top: 4px; color: #2BB5A6">on</div></div>
-<div style="padding: 14px 18px; border-right: 1px solid #232B36"><div style="font-size: 12px; color: #8A94A4">Mask</div><div class="mono" style="font-size: 14px; margin-top: 4px; color: #2BB5A6">on</div></div>
+<div style="padding: 14px 18px; border-right: 1px solid #232B36"><div style="font-size: 12px; color: #8A94A4">Gloves</div><div class="mono" style="font-size: 14px; margin-top: 4px; color: #E8ECF2">on</div></div>
+<div style="padding: 14px 18px; border-right: 1px solid #232B36"><div style="font-size: 12px; color: #8A94A4">Mask</div><div class="mono" style="font-size: 14px; margin-top: 4px; color: #E8ECF2">on</div></div>
 <div style="padding: 14px 18px"><div style="font-size: 12px; color: #8A94A4">Shoe covers</div><div class="mono" style="font-size: 14px; margin-top: 4px; color: #FF8A3D">missing</div></div>
 </div>
 <figcaption style="padding: 12px 18px; border-top: 1px solid #232B36; font-size: 13px; color: #8A94A4">Illustration on stock footage: how the prototype is designed to mark each person and check gowning. Real gowning-room footage: <span class="todo" style="color: #FF8A3D">TODO(founder)</span></figcaption>
@@ -185,7 +193,7 @@ def vision_demo(m, h):
 # ---------- sections ----------
 
 def hero(p, m):
-    eyebrow = f'<div class="mono" style="display: flex; align-items: center; gap: 10px; font-size: {12 if m else 13}px; color: #8A94A4"><span style="width: 8px; height: 8px; border-radius: 50%; background: {p.get("dot", "#3D7BFF")}"></span>{e(p["eyebrow"])}</div>'
+    eyebrow = f'<div class="mono" style="display: flex; align-items: center; gap: 10px; font-size: {12 if m else 13}px; color: #8A94A4"><span style="width: 8px; height: 8px; border-radius: 50%; background: {"#8A94A4"}"></span>{e(p["eyebrow"])}</div>'
     if p.get("status"):
         eyebrow += f'<div><span class="mono" style="display: inline-block; padding: 8px 14px; border: 1px solid #2E3846; border-radius: 999px; font-size: 12px; color: #E8ECF2; background: #141A22">{e(p["status"])}</span></div>'
     h1 = f'<h1 class="disp" style="margin: 0; font-size: {34 if m else (60 if p["id"] == "P1" else 52)}px; line-height: 1.1; font-weight: 500; letter-spacing: -0.01em">{e(p["h1"])}</h1>'
@@ -233,7 +241,7 @@ def head(sec, m, light):
 
 def bullets(items, m, light):
     c = "#0F141B" if light else "#E8ECF2"
-    dot = "#2457C8" if light else "#3D7BFF"
+    dot = "#5A6475" if light else "#8A94A4"
     lis = "".join(f'<li style="display: flex; gap: 12px; align-items: baseline; padding: 14px 0; border-top: 1px solid {"#D8DEE7" if light else "#232B36"}"><span aria-hidden="true" style="flex-shrink: 0; width: 8px; height: 8px; border-radius: 2px; background: {dot}; transform: translateY(-2px)"></span><span>{rich(i, light)}</span></li>' for i in items)
     cols = "1fr" if m else "repeat(2, minmax(0, 1fr))"
     return f'<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: {cols}; column-gap: 40px; font-size: {15 if m else 16}px; line-height: 1.55; color: {c}">{lis}</ul>'
@@ -244,7 +252,7 @@ def tiles(items, m, light, numbered=False):
     surf = "#FFFFFF" if light else "#141A22"
     bd = "#D8DEE7" if light else "#232B36"
     c2 = "#3A4453" if light else "#B7C0CD"
-    acc = "#2457C8" if light else "#3D7BFF"
+    acc = "#5A6475" if light else "#8A94A4"
     n = len(items)
     cols = 1 if m else (4 if n == 4 else 3 if n in (3, 6) else 2)
     out = ""
@@ -282,10 +290,10 @@ def faq(items, m, light=True):
 
 def product_cards(m):
     cards = [
-        ("AI vision", "Prototype · pilot partners welcome", "#3D7BFF", "Gowning and PPE checks on your existing CCTV, for pharma cleanrooms and surgery.", "/ai-vision", "Explore AI vision", "factory"),
-        ("Cleaning robot", "In development", "#3D7BFF", "An autonomous floor-cleaning robot for offices and malls.", "/cleaning-robot", "Explore the cleaning robot", "cleaning"),
-        ("Custom humanoid robots", "Built to order", "#8A94A4", "We design and build humanoid robots to your requirement.", "/humanoid-robots", "Humanoid robot development", "humanoid"),
-        ("Custom robotic arms", "Built to order", "#8A94A4", "We design and build robotic arms for your task.", "/robotic-arm", "Custom robotic arms", "arm_still"),
+        ("AI vision", "Prototype · pilot partners welcome", "#B7C0CD", "Gowning and PPE checks on your existing CCTV, for pharma cleanrooms and surgery.", "/ai-vision", "Explore AI vision", "factory"),
+        ("Cleaning robot", "In development", "#B7C0CD", "An autonomous floor-cleaning robot for offices and malls.", "/cleaning-robot", "Explore the cleaning robot", "cleaning"),
+        ("Custom humanoid robots", "Built to order", "#B7C0CD", "We design and build humanoid robots to your requirement.", "/humanoid-robots", "Humanoid robot development", "humanoid"),
+        ("Custom robotic arms", "Built to order", "#B7C0CD", "We design and build robotic arms for your task.", "/robotic-arm", "Custom robotic arms", "arm_still"),
     ]
     out = ""
     for t, st, sc, txt, h, link, img in cards:
@@ -439,7 +447,7 @@ def main():
     boards, order = {}, []
     pages = [{"id": "site", "name": "Site P1–P9"}, {"id": "original", "name": "Original canvas"}]
     # style guide on row 0
-    boards["StyleGuide.dc.html"] = {"x": 0, "y": 0, "w": 1440, "h": 1700, "title": "Style guide and tokens", "page": "site"}
+    boards["StyleGuide.dc.html"] = {"x": 0, "y": 0, "w": 1440, "h": 1700, "title": "[B1] Brand guide and tokens", "page": "site"}
     order.append("StyleGuide.dc.html")
     x, y = 0, 2100
     for p in PAGES:

@@ -8,7 +8,7 @@ for f,(h,w) in m.items():
     s=re.sub(r'min-height: \d+px; background: #0A0C10; display: flex',f'min-height: {H}px; background: #0A0C10; display: flex',s,1)
     s=re.sub(r'"\$preview":\{"width":(\d+),"height":\d+\}',lambda mm:f'"$preview":{{"width":{mm.group(1)},"height":{H}}}',s)
     open('canvas/project/'+f,'w').write(s)
-c['boards']['StyleGuide.dc.html']['h']=1880
+c['boards']['StyleGuide.dc.html']['h']=1900
 for k,b in c['boards'].items():
     if b.get('page')=='site' and k!='StyleGuide.dc.html': b['y']=2400
 c['notes']['t1']['y']=2100
