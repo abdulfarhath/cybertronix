@@ -7,7 +7,7 @@ Footage and stills were re-uploaded to the new canvas; Build can pull them from 
 
 Rule of thumb: **dark cinematic hero, then calm technical sections with faint blueprint grid lines.**
 Values marked *(canvas)* are copied from the canvas. Values marked *(new)* are defined here by Design
-and will appear on the canvas with the T5 page boards.
+and are on the canvas style guide and page boards.
 
 ---
 
@@ -115,12 +115,14 @@ Same grade on all stock and future real footage, so they sit together:
 - Product and demo videos: poster until the user presses play.
 - Everything else: still. Hover = colour/border change only, 150ms. No parallax, no fade-ins on scroll.
 
-## 8. Carry-over gaps to fix in T5 (canvas ≠ rules yet)
+## 8. Carry-over gaps (all fixed on the T5 boards, 2026-10-03)
+The original home boards are kept on the canvas page "Original canvas" for reference only. Build from the "Site P1–P9" page.
+
 | Item on the old canvas | Fix |
 |---|---|
 | "Working with teams at" strip of logo placeholders | Remove. No logos until real, permitted ones exist (D11). |
 | Hero stats `[00]` pilot sites / robots / cameras | Remove unless founder supplies real numbers → `TODO(founder)`. |
-| Raqib (developer tool) card + section | Not in D4 product list. Asked hub; parked until answered. |
+| Raqib (developer tool) card + section | Not in D4 product list. Left off the boards; asked hub. |
 | Humanoid shown only as "future" | Founder confirmed humanoid robots as a product: add P2 `/humanoid-robots`, nav item, card. |
 | Nav links are anchors | Become page links: Humanoid robots, Robotic arm, Cleaning robot, AI vision, About, Contact. |
 | Vision/arm demos autoplay | Poster + play button (D10). |
@@ -134,3 +136,12 @@ Same grade on all stock and future real footage, so they sit together:
 | Spec values `[__]`, statuses `[Status]`, socials, privacy line | Stay as visible placeholders = `TODO(founder)`. |
 
 Approval: Design does not self-approve in this phase (D14). The founder approves the full design via the hub (T10).
+
+## 9. Canvas map
+| Canvas page | Boards |
+|---|---|
+| Site P1–P9 | Style guide; `[P1]`…`[P9]` each desktop 1440 + phone 390. Section IDs (`P2.4`…) shown as mono labels, matching `content/`. |
+| Original canvas | Founder's original home boards, archived. Not for building. |
+
+Board status labels: Humanoid and Robotic arm = "Built to order", Cleaning robot = "In development",
+AI vision = "Works today" (D16). P2/P3 board copy follows D16 until SEO Content's T9 rewrite lands.
