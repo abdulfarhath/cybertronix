@@ -20,6 +20,7 @@ robotic arm / AI vision searches in Hyderabad and India, then turn visitors into
   edited by Design. Carried over 1:1 from the founder's original
   (https://claude.ai/artifact/VEDcNs3Rp61FzB9hmtfSf7, other account, read-only). It has desktop, phone
   and style guide, with graded stock footage (3 Pexels lab-arm clips, 1 Unsplash factory photo).
+- **Logo canvas:** https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj ("Cybertronix · Logo", D35): L0 comparison + L1–L10 versions of mark X. Founder picks one.
 - Design tokens, type, components, footage grade and motion rules: `docs/design.md`.
 - Repo created; no site code yet. See `docs/BOARD.md`.
 

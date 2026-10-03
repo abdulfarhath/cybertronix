@@ -23,4 +23,20 @@
 | R2 | Raqib terminal app redesign | 1:1 replica (reference) + proposed dark and light (D34) |
 | R3 | Raqib web dashboard (localhost:7070) | Dark + light boards, labelled "Proposed" (D34) |
 
+
+## Logo boards (D35, canvas "Cybertronix · Logo" https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj)
+| ID | Board | Design |
+|---|---|---|
+| L0 | Comparison of all versions + do/don't | Done, awaiting founder pick |
+| L1 | X refined | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L2 | C-head | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L3 | Visor | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L4 | Head-turn | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L5 | Lens eye | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L6 | Sensor mast | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L7 | Pixel 8×8 | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L8 | Detection lock | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L9 | Blueprint (wildcard) | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L10 | Hex helm (wildcard) | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+
 SEO Content may add industry pages (`/industries/...`) after keyword research. Add them here first.

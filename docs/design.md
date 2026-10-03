@@ -15,6 +15,7 @@ Rule of thumb: **dark cinematic hero, then calm technical sections with faint bl
 | Square, 2 px | Radius 0 on every container, button and input. Rules and borders 2 px. Round shapes only for status dots and the play button. |
 | Light + dark, 360 px | Every page board has desktop 1440 and phone 390; layouts stack down to 360. |
 | One-page brand guide | Canvas board `[B1] Brand guide and tokens`: logo, colours, type, shape, tone, do/don't. |
+| Logo canvas (D35) | https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj: L1–L10 versions of mark X, story "a machine that sees", only the seeing eye is blue. Generator: `design/boards/logo.py`. |
 | Logo options | Raqib: 3 options on `[R1]` (A Panel + pulse, B Brackets + dot, C Grid R + gauge). Cybertronix: current hex C stays; 2 refresh options on `[B1]` (X Detection C, Y Hex corners). Founder picks. |
 Values marked *(canvas)* are copied from the canvas. Values marked *(new)* are defined here by Design
 and are on the canvas style guide and page boards.
