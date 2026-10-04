@@ -10,18 +10,18 @@ PAGES = []
 PAGES.append(dict(id="P1", name="Home", file="Main", eyebrow="Robotics & AI engineering · Hyderabad, India",
     h1="We build the robots the world needs next.",
     lead="Cybertronix is a robotics and AI engineering team in Hyderabad. We're building AI vision that keeps cleanrooms safe, an autonomous floor-cleaning robot, and custom robots made to your requirement.",
-    ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), (REQ, "/contact")], media="home",
+    ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), (REQ, "/contact")], media="home", hero="cinematic",
     sections=[
         dict(type="statement", sid="P1.2", h2="Our mission", text="We engineer robots and AI that take on the careful, repetitive work, so people can focus on the work that needs a person."),
         dict(type="statement", sid="P1.3", h2="Our vision", light=True, text="To grow from custom builds and prototypes into a family of robotics and AI products that labs, hospitals and workplaces around the world rely on."),
         dict(type="cards", sid="P1.4", h2="What we're building"),
-        dict(type="tiles", sid="P1.5", h2="How we work", numbered=True, cols=5, items=[
+        dict(type="tiles", sid="P1.5", h2="How we work", numbered=True, cols=5, light=True, items=[
             ("Understand", "We start from your problem: what you need to see, clean, move or build, and where."),
             ("Design", "We design the system and share it with you before anything is built."),
             ("Prototype", "We build a first version and test it on real conditions."),
             ("Build", "We build the final system in our lab in Hyderabad."),
             ("Support", "The engineers who built it set it up and stay with you.")]),
-        dict(type="table", sid="P1.6", h2="Inside the lab", light=True, cols=("Discipline", "What they do"), intro="One in-house team covers every part of a robot. Lab photos: [[TODO(founder) F8]]", rows=[
+        dict(type="table", sid="P1.6", h2="Inside the lab", cols=("Discipline", "What they do"), intro="One in-house team covers every part of a robot. Lab photos: [[TODO(founder) F8]]", rows=[
             ("AI engineering", "Computer vision and the software that decides what to do"), ("Mechatronics", "Motors, sensors and control, working together"),
             ("Mechanical", "Frames, joints, grippers and enclosures"), ("Electronics", "Boards, power and wiring")], ctas=[("Meet the team", "/team")]),
         dict(type="tiles", sid="P1.7", h2="Why Cybertronix", items=[

@@ -252,6 +252,15 @@ def hero(p, m):
         return f'<section class="gd" style="padding: 24px 80px 96px; display: flex; flex-direction: column; gap: 28px; border-bottom: 1px solid #1A212B">{cr.replace("padding: 0 80px", "padding: 0")}<div style="display: flex; flex-direction: column; gap: 28px; max-width: 820px; padding-top: 48px">{eyebrow}{h1}{lead}{ctas}</div></section>'
     if m:
         return f'<section class="gd" style="padding: 24px 20px 48px; display: flex; flex-direction: column; gap: 20px; border-bottom: 1px solid #1A212B">{cr.replace("padding: 0 20px", "padding: 0")}{eyebrow}{h1}{lead}{ctas}{media(p["media"], True, 300 if p["media"] != "vision" else 0)}</section>'
+    if p.get("hero") == "cinematic":
+        vid = (f'<video src="{B["hero_mp4"]}" poster="{B["hero_jpg"]}" muted loop playsinline aria-label="Robotic arm in a lab (stock footage)" '
+               'style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></video>')
+        shade = '<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,12,16,0.96) 0%, rgba(10,12,16,0.82) 38%, rgba(10,12,16,0.35) 70%, rgba(10,12,16,0.2) 100%), linear-gradient(0deg, rgba(10,12,16,0.9) 0%, rgba(10,12,16,0) 40%)"></div>'
+        big = h1.replace("font-size: 60px; line-height: 1.1", "font-size: 92px; line-height: 1.02; letter-spacing: -0.02em; max-width: 980px")
+        chip = '<div class="mono" style="position: absolute; right: 80px; bottom: 32px; padding: 6px 12px; border: 1px solid #2E3846; background: #0A0C10; font-size: 11px; color: #B7C0CD">Illustrative footage · head-turn frames replace this</div>'
+        return (f'<section style="position: relative; height: 860px; overflow: hidden; border-bottom: 1px solid #1A212B">{vid}{shade}{chip}'
+                f'<div style="position: relative; height: 100%; box-sizing: border-box; padding: 0 80px 110px; display: flex; flex-direction: column; justify-content: flex-end; gap: 30px">'
+                f'{eyebrow}{big}{lead.replace("max-width: 560px", "max-width: 640px")}{ctas}</div></section>')
     hh = 640 if p["id"] == "P1" else 560
     return f"""<section class="gd" style="padding: 16px 80px 96px; display: flex; flex-direction: column; gap: 32px; border-bottom: 1px solid #1A212B">
 {cr.replace("padding: 0 80px", "padding: 0")}
