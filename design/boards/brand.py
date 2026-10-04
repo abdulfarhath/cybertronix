@@ -8,7 +8,12 @@ ROOT = HERE + "/canvas/project"
 D, L = TOK["color"]["dark"], TOK["color"]["light"]
 ACC, SIG = TOK["accent"], TOK["signal"]
 
-LOGO = '<svg width="{s}" height="{s}" viewBox="0 0 36 36" role="img" aria-label="Cybertronix logo"><path d="M18 2 L32 10 L32 26 L18 34 L4 26 L4 10 Z" fill="{f}" stroke="{a}" stroke-width="2"/><path d="M23 13 C21 11 14 11 13 18 C14 25 21 25 23 23" fill="none" stroke="{c}" stroke-width="2.5" stroke-linecap="square"/></svg>'
+# Cybertronix mark L4 "Head-turn" (D36), simple level. {c} = ink, {a} = the one accent (the leading eye); {f} unused.
+LOGO = ('<svg width="{s}" height="{s}" viewBox="0 0 48 48" role="img" aria-label="Cybertronix logo">'
+        '<rect x="6" y="6" width="36" height="6" fill="{c}"/><rect x="6" y="36" width="36" height="6" fill="{c}"/>'
+        '<rect x="6" y="6" width="6" height="36" fill="{c}"/><rect x="36" y="6" width="6" height="8" fill="{c}"/>'
+        '<rect x="36" y="34" width="6" height="8" fill="{c}"/><rect x="22" y="17" width="8" height="8" fill="{c}"/>'
+        '<rect x="33" y="17" width="8" height="8" fill="{a}"/></svg>')
 
 
 def refresh_x(ink, acc, size):
@@ -53,20 +58,15 @@ def build():
     dont = ["Invent clients, logos, numbers, faces, prices or years.", "Use blue or orange for decoration or long text.", "Round corners, shadows, gradients on UI.",
             "Put the H1 or any text inside a video or image.", "Animate anything except the P1 hero head-turn."]
     li = lambda xs, c, mark: "".join(f'<li style="display: flex; gap: 10px; padding: 8px 0; border-top: 2px solid {L["rule"]}"><span class="mono" style="color: {c}; font-weight: 500">{mark}</span><span>{x}</span></li>' for x in xs)
-    body = f"""<div style="width: 1440px; height: 2080px; box-sizing: border-box; background: {D['bg']}; color: {D['text']}; display: flex; flex-direction: column">
+    body = f"""<div style="width: 1440px; height: 1960px; box-sizing: border-box; background: {D['bg']}; color: {D['text']}; display: flex; flex-direction: column">
 <header style="padding: 56px 80px 40px; border-bottom: 2px solid {D['rule']}; display: flex; justify-content: space-between; align-items: flex-end">
 <div style="display: flex; flex-direction: column; gap: 12px"><div class="mono" style="font-size: 12px; color: {D['text-muted']}">[B1] · one-page brand guide · source: design/tokens.json</div><h1 class="disp" style="margin: 0; font-size: 44px; font-weight: 500">Cybertronix · Midnight Lab</h1></div>
 <div style="font-size: 15px; color: {D['text-2']}; max-width: 460px; line-height: 1.6">Dark cinematic hero, calm technical sections with blueprint grid lines. Square, honest, one accent.</div></header>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0">
 <section style="padding: 40px 80px; border-right: 2px solid {D['rule']}; border-bottom: 2px solid {D['rule']}; display: flex; flex-direction: column; gap: 20px">{h2("Logo", D['text'])}
-<div style="display: flex; align-items: center; gap: 18px">{LOGO.format(s=72, f=D['surface'], a=ACC['dark'], c=D['text'])}<span class="disp" style="font-size: 32px; font-weight: 500">Cybertronix</span></div>
+<div style="display: flex; align-items: center; gap: 18px">{LOGO.format(s=72, f=D['surface'], a=ACC['dark'], c=D['text'])}<span class="disp" style="font-size: 34px; font-weight: 600; letter-spacing: -0.02em">cybertronix</span></div>
 <div style="display: flex; align-items: flex-end; gap: 28px">{logos}</div>
-<div style="display: flex; gap: 12px"><div style="padding: 16px; border: 2px solid {D['rule']}">{mono}</div><div style="padding: 16px; background: {L['bg']}; border: 2px solid {L['rule']}">{mono_l}</div><div style="font-size: 13px; color: {D['text-muted']}; line-height: 1.6; align-self: center">Mono versions. Simple mark at ≤ 64 px; favicon = the hex mark alone.<br>Refresh options below.</div></div>
-<div style="display: flex; flex-direction: column; gap: 12px; padding-top: 16px; border-top: 2px solid {D['rule']}"><div class="mono" style="font-size: 12px; color: {D['text-muted']}">Refresh options (founder decides; current hex C stays until then)</div>
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
-<div style="padding: 16px; border: 2px solid {D['rule']}; display: flex; flex-direction: column; gap: 10px"><div style="display: flex; align-items: flex-end; gap: 14px">{refresh_x(D['text'], ACC['dark'], 72)}{refresh_x(D['text'], ACC['dark'], 32)}{refresh_x(D['text'], ACC['dark'], 16)}<div style="padding: 4px; background: {L['bg']}">{refresh_x(L['text'], ACC['light'], 32)}</div></div><b>X · Detection C</b><span style="font-size: 13px; color: {D['text-2']}; line-height: 1.5">Detection-box brackets around a square C. The blue square is the thing the camera found: the AI vision story.</span></div>
-<div style="padding: 16px; border: 2px solid {D['rule']}; display: flex; flex-direction: column; gap: 10px"><div style="display: flex; align-items: flex-end; gap: 14px">{refresh_y(D['text'], ACC['dark'], 72)}{refresh_y(D['text'], ACC['dark'], 32)}{refresh_y(D['text'], ACC['dark'], 16)}<div style="padding: 4px; background: {L['bg']}">{refresh_y(L['text'], ACC['light'], 32)}</div></div><b>Y · Hex corners</b><span style="font-size: 13px; color: {D['text-2']}; line-height: 1.5">Today's hexagon, kept only at its corners like detection brackets, around a square C with the blue found-square.</span></div>
-</div></div>
+<div style="display: flex; gap: 12px"><div style="padding: 16px; border: 2px solid {D['rule']}">{mono}</div><div style="padding: 16px; background: {L['bg']}; border: 2px solid {L['rule']}">{mono_l}</div><div style="font-size: 13px; color: {D['text-muted']}; line-height: 1.6; align-self: center">Mono versions. Chosen mark: L4 Head-turn (D36).<br>Rules, sizes and lock-ups: logo canvas [L4] Final.<br>Files: design/logo/.</div></div>
 </section>
 <section style="padding: 40px 80px; border-bottom: 2px solid {D['rule']}; display: flex; flex-direction: column; gap: 20px">{h2("One accent, one meaning", D['text'])}
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
@@ -113,7 +113,7 @@ a{{color:{D['link']}}}a:hover{{color:#C4D6FF}}
 </helmet>
 {body}
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{{"$preview":{{"width":1440,"height":2080}}}}'>
+<script type="text/x-dc" data-dc-script data-props='{{"$preview":{{"width":1440,"height":1960}}}}'>
 class Component extends DCLogic {{
 renderVals() {{
 return {{}};
@@ -124,7 +124,7 @@ return {{}};
 </html>
 """
     open(ROOT + "/StyleGuide.dc.html", "w").write(src)
-    return 1440, 2080
+    return 1440, 1960
 
 
 if __name__ == "__main__":

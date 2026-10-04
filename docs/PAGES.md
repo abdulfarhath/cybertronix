@@ -19,7 +19,7 @@
 ## Product design boards (not site pages)
 | ID | Board | Design |
 |---|---|---|
-| R1 | Raqib logo | Options A, B, C on canvas page "Raqib R1–R3"; founder picks |
+| R1 | Raqib logo | **Option A chosen (D37).** `[R1] Final` board with rules and lock-ups; files in `design/raqib-logo/` |
 | R2 | Raqib terminal app redesign | 1:1 replica (reference) + proposed dark and light (D34) |
 | R3 | Raqib web dashboard (localhost:7070) | Dark + light boards, labelled "Proposed" (D34) |
 
@@ -27,11 +27,11 @@
 ## Logo boards (D35, canvas "Cybertronix · Logo" https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj)
 | ID | Board | Design |
 |---|---|---|
-| L0 | Comparison of all versions + do/don't | Done, awaiting founder pick |
+| L0 | Comparison of all versions + do/don't | Done; L4 chosen (D36) |
 | L1 | X refined | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L2 | C-head | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L3 | Visor | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
-| L4 | Head-turn | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L4 | Head-turn | **Chosen (D36).** Plus `[L4] Final` board: clear space, sizes, colour versions, lock-ups, proposed hero tie-in |
 | L5 | Lens eye | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L6 | Sensor mast | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L7 | Pixel 8×8 | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |

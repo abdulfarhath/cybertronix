@@ -86,7 +86,51 @@ def rich(s, light=False):
     return out
 
 
-LOGO = '<svg width="{s}" height="{s}" viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2 L32 10 L32 26 L18 34 L4 26 L4 10 Z" fill="#141A22" stroke="#3D7BFF" stroke-width="2"/><path d="M23 13 C21 11 14 11 13 18 C14 25 21 25 23 23" fill="none" stroke="#E8ECF2" stroke-width="2.5" stroke-linecap="round"/></svg>'
+# Cybertronix mark L4 "Head-turn" (D36), simple level, on dark. Same geometry as design/boards/logo.py m4.
+LOGO = ('<svg width="{s}" height="{s}" viewBox="0 0 48 48" role="img" aria-label="Cybertronix logo">'
+        '<rect x="6" y="6" width="36" height="6" fill="#E8ECF2"/><rect x="6" y="36" width="36" height="6" fill="#E8ECF2"/>'
+        '<rect x="6" y="6" width="6" height="36" fill="#E8ECF2"/><rect x="36" y="6" width="6" height="8" fill="#E8ECF2"/>'
+        '<rect x="36" y="34" width="6" height="8" fill="#E8ECF2"/><rect x="22" y="17" width="8" height="8" fill="#E8ECF2"/>'
+        '<rect x="33" y="17" width="8" height="8" fill="#3D7BFF"/></svg>')
+# 16 px pixel favicon (same rows as design/boards/export.py PIX16["cybertronix"]), on white
+_FAV = ["................", ".##############.", ".##############.", ".##.........##..", ".##.........##..", ".##.............",
+        ".##....##..@@...", ".##....##..@@...", ".##.............", ".##.............", ".##.............", ".##.........##..",
+        ".##.........##..", ".##############.", ".##############.", "................"]
+FAVICON = ('<svg width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect width="16" height="16" fill="#FFFFFF"/>'
+           + "".join(f'<rect x="{x}" y="{y}" width="1" height="1" fill="{"#0F141B" if ch == "#" else "#2457C8"}"/>'
+                     for y, row in enumerate(_FAV) for x, ch in enumerate(row) if ch in "#@") + "</svg>")
+def raqib_mark(sz, ink="#E8ECF2", mid="#8A94A4", acc="#3D7BFF"):
+    """Raqib mark, option A "Panel + pulse" (D37), simple level. Same geometry as design/boards/raqib.py mark_a."""
+    rr = lambda x, y, w, h, c: f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{c}"/>'
+    return (f'<svg width="{sz}" height="{sz}" viewBox="0 0 48 48" role="img" aria-label="Raqib logo" style="flex-shrink: 0">'
+            + rr(3, 3, 6, 4, ink) + rr(19, 3, 26, 4, ink) + rr(3, 3, 4, 42, ink) + rr(41, 3, 4, 42, ink) + rr(3, 41, 42, 4, ink)
+            + f'<polyline points="9,18 16,18 19,12 23,24 26,18 39,18" fill="none" stroke="{ink}" stroke-width="3.5"/>'
+            + rr(10, 28, 12, 9, mid) + rr(26, 28, 12, 9, acc) + "</svg>")
+
+
+REPO = os.environ.get("CYX_REPO", "/home/user/cybertronix")
+
+
+def page_title(pid):
+    import glob
+    for f in glob.glob(os.path.join(REPO, "content", f"{pid}-*.md")):
+        m = re.search(r'^title: "(.*)"', open(f).read(), re.M)
+        if m:
+            return m.group(1)
+    return "Cybertronix"
+
+
+def tabstrip(p, m):
+    urls = {"P1": "/", "P2": "/humanoid-robots", "P3": "/robotic-arm", "P4": "/cleaning-robot", "P5": "/ai-vision", "P6": "/about",
+            "P7": "/contact", "P8": "/industries/manufacturing", "P9": "/industries/pharma-healthcare", "P10": "/team",
+            "P11": "/industries/retail", "P12": "/software", "P13": "/software/raqib"}
+    url = "cybertronix.tech" + urls.get(p["id"], "/")
+    title = html.escape(page_title(p["id"]))
+    w = "100%" if m else "280px"
+    return (f'<div aria-hidden="true" style="height: 40px; display: flex; align-items: flex-end; gap: 12px; padding: 0 {"8" if m else "16"}px; background: #141A22; border-bottom: 2px solid #232B36">'
+            f'<div style="display: flex; align-items: center; gap: 8px; height: 32px; padding: 0 12px; background: #0A0C10; max-width: {w}; min-width: 0">{FAVICON}'
+            f'<span style="font-size: 12px; color: #B7C0CD; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{title}</span></div>'
+            + ("" if m else f'<span class="mono" style="margin: 0 0 8px auto; font-size: 11px; color: #8A94A4">{url}</span>') + '</div>')
 NAV = [("AI vision", "/ai-vision", ("P5",)), ("Cleaning robot", "/cleaning-robot", ("P4",)), ("Custom robots ▾", "/humanoid-robots", ("P2", "P3")),
        ("Industries ▾", "/industries/pharma-healthcare", ("P8", "P9", "P11")), ("Software", "/software", ("P12", "P13")), ("About", "/about", ("P6",)), ("Team", "/team", ("P10",)), ("Contact", "/contact", ("P7",))]
 PRODUCTS = [("AI vision", "/ai-vision"), ("Cleaning robot", "/cleaning-robot"), ("Custom humanoid robots", "/humanoid-robots"), ("Custom robotic arms", "/robotic-arm")]
@@ -104,7 +148,7 @@ def btn(text, href, primary=True, m=False):
 def nav(active, m):
     if m:
         return f"""<nav aria-label="Main" style="height: 72px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #1A212B; background: #0A0C10">
-<a href="/" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=30)}<span class="disp" style="font-size: 16px; font-weight: 500">Cybertronix</span></a>
+<a href="/" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=30)}<span class="disp" style="font-size: 16px; font-weight: 600; letter-spacing: -0.02em">cybertronix</span></a>
 <div style="display: flex; gap: 8px; align-items: center">
 <a href="/contact" style="padding: 12px 16px; background: #2F66E0; color: #FFFFFF; border-radius: 999px; text-decoration: none; font-size: 13px; font-weight: 500">Contact us</a>
 <button type="button" aria-label="Open menu" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #2E3846; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0"><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M1 1 H17 M1 7 H17 M1 13 H17" stroke="#E8ECF2" stroke-width="2" stroke-linecap="round"/></svg></button>
@@ -117,7 +161,7 @@ def nav(active, m):
         cur = ' aria-current="page"' if on else ""
         links += f'<a href="{h}"{cur} style="padding: 12px 11px; border-radius: 999px; {style}; text-decoration: none; font-size: 14px; white-space: nowrap">{t}</a>\n'
     return f"""<nav aria-label="Main" style="height: 104px; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; background: #0A0C10">
-<a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=36)}<span class="disp" style="font-size: 18px; font-weight: 500; letter-spacing: 0.02em">Cybertronix</span></a>
+<a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=36)}<span class="disp" style="font-size: 19px; font-weight: 600; letter-spacing: -0.02em">cybertronix</span></a>
 <div style="display: flex; gap: 2px; padding: 6px; background: #141A22; border: 1px solid #232B36; border-radius: 999px">
 {links}</div>
 <a href="/contact" style="padding: 14px 22px; background: #2F66E0; color: #FFFFFF; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 500; white-space: nowrap">Tell us your requirement</a>
@@ -157,7 +201,7 @@ def media(kind, m, h):
         rows = "".join(f'<div style="display: flex; justify-content: space-between"><span>{n}</span><span style="color: #B7C0CD">{v}</span></div>' for n, v in [("Isolated Web Co", "1.2 GB"), ("firefox", "904 MB"), ("brave", "700 MB")])
         b = lambda p, c: f'<div style="flex: 1; height: 8px; background: #1A212B; border-radius: 2px; overflow: hidden"><div style="width: {p}%; height: 100%; background: {c}"></div></div>'
         return f'''<figure class="mono" style="margin: 0; height: {h}px; box-sizing: border-box; background: #0D1016; border: 1px solid #232B36; border-radius: {r}; padding: {16 if m else 24}px; display: flex; flex-direction: column; gap: 14px; font-size: {11 if m else 13}px; color: #E8ECF2; overflow: hidden">
-<div style="color: #8A94A4"><b style="color: #E8ECF2">raqib</b> · 0 workloads · web <span style="color: #8FB2FF">localhost:7070</span></div>
+<div style="display: flex; align-items: center; gap: 10px; color: #8A94A4">{raqib_mark(22)}<b style="color: #E8ECF2">raqib</b> · 0 workloads · web <span style="color: #8FB2FF">localhost:7070</span></div>
 <div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">RAM</span>{b(69, "#B7C0CD")}<span>69%</span></div>
 <div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">VRAM</span>{b(18, "#B7C0CD")}<span>18%</span></div>
 <div style="color: #8A94A4">CPU load 1.09 1.46 1.48 · cpus 12</div>
@@ -258,7 +302,7 @@ def tiles(items, m, light, numbered=False):
     out = ""
     for k, (t, txt) in enumerate(items):
         num = f'<div class="mono" style="font-size: 12px; color: {acc}">{k + 1:02d}</div>' if numbered else ""
-        out += f'<article style="background: {surf}; border: 1px solid {bd}; border-radius: {16 if m else 20}px; padding: {18 if m else 24}px; display: flex; flex-direction: column; gap: 10px">{num}<h3 class="disp" style="margin: 0; font-size: {16 if m else 19}px; font-weight: 500; line-height: 1.35">{e(t)}</h3><p style="margin: 0; font-size: 15px; color: {c2}; line-height: 1.55">{rich(txt, light)}</p></article>'
+        out += f'<article style="background: {surf}; border: 1px solid {bd}; border-radius: {16 if m else 20}px; padding: {18 if m else 24}px; display: flex; flex-direction: column; gap: 10px">{num}{raqib_mark(40, *(("#0F141B", "#9AA3B2", "#2457C8") if light else ())) if t.startswith("Raqib") else ""}<h3 class="disp" style="margin: 0; font-size: {16 if m else 19}px; font-weight: 500; line-height: 1.35">{e(t)}</h3><p style="margin: 0; font-size: 15px; color: {c2}; line-height: 1.55">{rich(txt, light)}</p></article>'
     return f'<div style="display: grid; grid-template-columns: repeat({cols}, minmax(0, 1fr)); gap: {12 if m else 20}px">{out}</div>'
 
 
@@ -360,7 +404,7 @@ def footer(m):
     pad = "40px 20px" if m else "72px 80px 40px"
     return f"""<footer style="margin-top: auto; padding: {pad}; border-top: 1px solid #1A212B; background: #0A0C10; display: flex; flex-direction: column; gap: 40px">
 <div style="display: grid; grid-template-columns: {cols}; gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 16px"><a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=30)}<span class="disp" style="font-size: 16px; font-weight: 500">Cybertronix</span></a>{nap}</div>
+<div style="display: flex; flex-direction: column; gap: 16px"><a href="/" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #E8ECF2">{LOGO.format(s=30)}<span class="disp" style="font-size: 16px; font-weight: 600; letter-spacing: -0.02em">cybertronix</span></a>{nap}</div>
 <div><div {colh}>Robots</div><ul {ul}>{prod}</ul></div>
 <div><div {colh}>Industries</div><ul {ul}>{ind}</ul></div>
 <div><div {colh}>Company</div><ul {ul}>{co}</ul></div>
@@ -434,7 +478,7 @@ def est_height(p, m):
 def board(p, m):
     w = 390 if m else 1440
     h = est_height(p, m)
-    body = nav(p["id"], m) + "\n<main>\n" + hero(p, m) + "\n" + "\n".join(render_section(s, m) for s in p["sections"]) + "\n</main>\n" + footer(m)
+    body = tabstrip(p, m) + nav(p["id"], m) + "\n<main>\n" + hero(p, m) + "\n" + "\n".join(render_section(s, m) for s in p["sections"]) + "\n</main>\n" + footer(m)
     return doc(f'{p["id"]} {p["name"]}, {"phone" if m else "desktop"}', w, h, body), w, h
 
 

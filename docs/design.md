@@ -163,3 +163,16 @@ New components on the boards: status pill (hero + section), people card ("Photo 
 (`pages.py` = page data from `content/`, `raqib.py` = R1–R3). Run `python3 gen.py` in a folder holding the canvas's
 `project/` files, then `node measure.cjs > m.json && python3 fit.py` to fit frame heights, and publish to the canvas.
 P4 has no spec table until the cleaning modes are confirmed (hub ruling 2026-10-03, D8 vs D29).
+
+## 10. Chosen logos (D36, D37)
+| Brand | Mark | Files | Rules board |
+|---|---|---|---|
+| Cybertronix | L4 Head-turn: the C is a robot head, eyes looking out of the opening; only the leading eye is blue | `design/logo/` | Logo canvas `[L4] Final` |
+| Raqib | A Panel + pulse: terminal box, pulse line, only the watched workload is blue | `design/raqib-logo/` | Main canvas `[R1] Final` |
+
+- Each folder: SVG marks (full, simple, 16 px pixel) in dark, light, mono black, mono white, on-accent; horizontal and stacked lock-ups; PNG icons 16 32 48 180 192 512; `favicon.ico`; `*-og-1200x630.png`.
+- Clear space: x = one sixth of the mark width on every side. Minimum: 16 px (pixel mark). 48–64 px simple mark; 96 px and up full mark. Lock-up at least 120 px wide.
+- Lock-up SVGs use the brand font as text (Unbounded 600 / JetBrains Mono 700); outline before print.
+- Regenerate: `python3 design/boards/export.py` (needs Playwright Chromium and ImageMagick).
+- Proposed (not approved): the nav eyes shift once when the P1 hero head turns; no loop; off with prefers-reduced-motion.
+- Previews for the founder's phone: `design/previews/` (made by `design/boards/preview.cjs`).

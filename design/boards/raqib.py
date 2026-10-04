@@ -129,6 +129,7 @@ def r1():
         "C": ("Grid R + gauge", "A monospace R built on the terminal's cell grid. The bowl is a gauge stroke; the last cell of the leg is the reading, in blue."),
     }
     D, Lt = T["dark"], T["light"]
+    chosen = f'<div><span class="mono" style="padding: 3px 10px; background: {D["acc"]}; color: #FFFFFF; font-size: 12px">Chosen (D37)</span></div>'
     rows = ""
     for opt, (name, story) in stories.items():
         f = MARKS[opt]
@@ -139,8 +140,8 @@ def r1():
         mono_d = svg(48, f(D["text"], D["text"], D["text"], False), f"{opt} mono dark")
         icon = f'<div style="width: 96px; height: 96px; background: #FFFFFF; border: 2px solid {Lt["border"]}; display: flex; align-items: center; justify-content: center">{svg(60, f(Lt["text"], Lt["mid"], Lt["acc"], False), "app icon")}</div>'
         icon_d = f'<div style="width: 96px; height: 96px; background: {D["bg"]}; border: 2px solid {D["border"]}; display: flex; align-items: center; justify-content: center">{svg(60, f(D["text"], D["mid"], D["acc"], False), "app icon dark")}</div>'
-        rows += f"""<section style="display: grid; grid-template-columns: 300px 170px 170px 1fr; border-bottom: 2px solid {D['border']}">
-<div style="padding: 28px; background: {D['raised']}; color: {D['text']}; display: flex; flex-direction: column; gap: 10px; border-right: 2px solid {D['border']}"><div class="mono" style="font-size: 12px; color: {D['muted']}">Option {opt}</div><h2 class="disp" style="margin: 0; font-size: 22px; font-weight: 500">{name}</h2><p style="margin: 0; font-size: 14px; line-height: 1.55; color: {D['t2']}">{story}</p></div>
+        rows += f"""<section style="display: grid; grid-template-columns: 300px 170px 170px 1fr; border-bottom: 2px solid {D['border']}; {"outline: 3px solid " + D["acc"] + "; outline-offset: -3px;" if opt == "A" else ""}">
+<div style="padding: 28px; background: {D['raised']}; color: {D['text']}; display: flex; flex-direction: column; gap: 10px; border-right: 2px solid {D['border']}"><div class="mono" style="font-size: 12px; color: {D['muted']}">Option {opt}</div>{chosen if opt == "A" else ""}<h2 class="disp" style="margin: 0; font-size: 22px; font-weight: 500">{name}</h2><p style="margin: 0; font-size: 14px; line-height: 1.55; color: {D['t2']}">{story}</p></div>
 <div style="background: {D['bg']}; display: flex; align-items: center; justify-content: center; border-right: 2px solid {D['border']}">{big_d}</div>
 <div style="background: {Lt['bg']}; display: flex; align-items: center; justify-content: center; border-right: 2px solid {D['border']}">{big_l}</div>
 <div style="background: {Lt['bg']}; padding: 24px 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 24px; align-items: center">
@@ -251,7 +252,7 @@ def r2(name):
     status = f'<span style="padding: 2px 10px; background: {k["warnSoft"]}; color: {k["warn"]}; font-weight: 700">▲ DEGRADED</span>'
     legend = " ".join(f'<span style="color: {c}">{s} {l}</span>' for s, c, l in (("●", k["ok"], "ok"), ("▲", k["warn"], "degraded"), ("■", k["crit"], "critical"), ("▌", k["acc"], "selected")))
     body = f"""<div class="mono" style="position: relative; width: 1440px; height: 900px; box-sizing: border-box; background: {k['bg']}; color: {k['text']}; font-size: 13px; line-height: 1.5; padding: 18px 24px; display: flex; flex-direction: column; gap: 20px">
-<header style="display: flex; justify-content: space-between; align-items: center"><div style="display: flex; align-items: center; gap: 12px">{svg(16, mark_c(k["text"], k["mid"], k["acc"], False), "Raqib")}<b>raqib</b>{status}<span style="color: {k['t2']}">2 workloads · 1 degraded · web <span style="color: {k['link']}">localhost:7070</span></span>{prop(k)}</div><span style="color: {k['muted']}">{legend} · 21:55:25 · sample data</span></header>
+<header style="display: flex; justify-content: space-between; align-items: center"><div style="display: flex; align-items: center; gap: 12px">{svg(16, mark_a(k["text"], k["mid"], k["acc"], False), "Raqib")}<b>raqib</b>{status}<span style="color: {k['t2']}">2 workloads · 1 degraded · web <span style="color: {k['link']}">localhost:7070</span></span>{prop(k)}</div><span style="color: {k['muted']}">{legend} · 21:55:25 · sample data</span></header>
 {tbox("Vitals", vit, k)}
 {tbox("AI workloads · 2", work + empty, k, "flex: 1;")}
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px">{tops}</div>
@@ -311,7 +312,7 @@ def r3(name):
     body = f"""<div style="width: 1440px; height: 1020px; box-sizing: border-box; background: {k['bg']}; color: {k['text']}; display: flex; flex-direction: column">
 <div style="height: 44px; display: flex; align-items: center; gap: 12px; padding: 0 16px; background: {k['panel']}; border-bottom: 2px solid {k['border']}"><span class="mono" style="padding: 6px 14px; background: {k['bg']}; font-size: 12px; color: {k['t2']}">http://localhost:7070</span></div>
 <div style="flex: 1; padding: 28px 40px; display: flex; flex-direction: column; gap: 20px">
-<header style="display: flex; justify-content: space-between; align-items: center"><div style="display: flex; align-items: center; gap: 16px">{lockup("C", k, 32, by=False)}{status}{prop(k)}</div><div class="mono" style="font-size: 12px; color: {k['muted']}">same data and panels as the terminal app · updated 21:55:25 · sample data</div></header>
+<header style="display: flex; justify-content: space-between; align-items: center"><div style="display: flex; align-items: center; gap: 16px">{lockup("A", k, 32, by=False)}{status}{prop(k)}</div><div class="mono" style="font-size: 12px; color: {k['muted']}">same data and panels as the terminal app · updated 21:55:25 · sample data</div></header>
 {card("Vitals", vit)}
 <div style="position: relative">{card("AI workloads · 2", table)}{confirm}</div>
 <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">{card("Thermal", therm)}{card("Top by RAM", tl(TOP_RAM), tag=False)}{card("Top by VRAM", tl(TOP_VRAM), tag=False)}{card("Top by CPU · per core", tl(TOP_CPU), tag=False)}</div>
@@ -322,12 +323,15 @@ def r3(name):
 
 
 def write_all():
-    out = {"R1-Raqib-logo.dc.html": (r1(), 1440, 1160, "[R1] Raqib logo: options A, B, C"),
+    out = {"R1-Raqib-logo.dc.html": (r1(), 1440, 1160, "[R1] Raqib logo: options A (chosen, D37), B, C"),
            "R2-Raqib-tui-current.dc.html": (r2_replica(), 1440, 900, "[R2] Current app, 1:1 replica (reference)")}
     for n in ("dark", "light"):
         out[f"R2-Raqib-tui-{n}.dc.html"] = (r2(n), 1440, 900, f"[R2] Proposed terminal app, {n}")
     for n in ("dark", "light"):
         out[f"R3-Raqib-web-{n}.dc.html"] = (r3(n), 1440, 1020, f"[R3] Proposed web view (localhost:7070), {n}")
+    import finals
+    fsrc, fh = finals.board("raqib", *finals.STORIES["raqib"])
+    out = {"R1-Raqib-final.dc.html": (fsrc, 1440, fh, "[R1] Final · option A Panel + pulse · Chosen (D37)"), **out}
     for f, (src, *_r) in out.items():
         open(f"{ROOT}/{f}", "w").write(src)
     return {f: v[1:] for f, v in out.items()}
