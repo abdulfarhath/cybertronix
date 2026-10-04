@@ -5,7 +5,7 @@ canonical: https://cybertronix.tech/software
 title: "Software & Projects · AI Tools from Hyderabad · Cybertronix"
 description: "Software built by the Cybertronix engineering team in Hyderabad, including Raqib, a terminal monitor for AI workloads. Early builds and projects."
 eyebrow: "Software & projects · Cybertronix"
-h1: "Software from our engineering team."
+h1: "Tools we built for ourselves"
 keyword: "Cybertronix software · AI software Hyderabad · AI developer tools India"
 schema: [CollectionPage, BreadcrumbList]
 ---
@@ -18,10 +18,10 @@ schema: [CollectionPage, BreadcrumbList]
 
 Software & projects · Cybertronix
 
-# Software from our engineering team.
+# Tools we built for ourselves
 
-Alongside our robots and AI vision, our engineers build software tools for AI developers. Here's what
-we're working on.
+Alongside our robots and AI vision, our engineers build software tools for AI developers. They start as
+tools we need in our own lab, and we share them when they're useful to others.
 
 ## P12.2 Tools
 

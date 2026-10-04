@@ -72,7 +72,8 @@ keep an eye on it in a browser tab.
 
 ## P13.5 Why we built it
 
-`TODO(founder)`: one or two lines in your own words on why the team built Raqib. Hidden until answered.
+Our team built Raqib to watch our own AI workloads: to see at a glance how much memory, CPU and VRAM
+our models were using, and how hot the machine was running. We're sharing it as an early build.
 
 ## P13.6 Status and availability
 

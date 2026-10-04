@@ -283,7 +283,7 @@ Generated from the front matter and headings in `content/`. If the two ever diff
 | Title | Software & Projects · AI Tools from Hyderabad · Cybertronix [59] |
 | Meta | Software built by the Cybertronix engineering team in Hyderabad, including Raqib, a terminal monitor for AI workloads. Early builds and projects. [145] |
 | Eyebrow | Software & projects · Cybertronix |
-| H1 | Software from our engineering team. |
+| H1 | Tools we built for ourselves |
 | Schema | `CollectionPage`, `BreadcrumbList`, plus site-wide `Organization` |
 
 **H2 outline:** Hero · Tools · Built by the same team · Questions
