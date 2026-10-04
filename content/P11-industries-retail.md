@@ -5,7 +5,8 @@ canonical: https://cybertronix.tech/industries/retail
 status: "D28. Both offers are invitations: vision = custom project, cleaning robot = in development."
 title: "AI Vision & Floor Cleaning Robots for Retail · Cybertronix"
 description: "Custom AI vision for supermarkets on your existing CCTV, and a floor-cleaning robot for malls in development. Hyderabad engineers. Tell us your need."
-h1: "AI vision and robots for supermarkets and malls"
+eyebrow: "AI vision & floor-cleaning robots · retail & malls"
+h1: "Cameras that notice, floors that clean themselves."
 keyword: "AI vision for supermarkets · retail video analytics India · floor cleaning robot for malls"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
@@ -15,10 +16,12 @@ schema: [Service, FAQPage, BreadcrumbList]
 
 ## P11.1 Hero
 
-# AI vision and robots for supermarkets and malls
+AI vision & floor-cleaning robots · retail & malls
 
-Have a store problem you'd like a camera to solve? Our engineers build custom computer vision on your
-existing CCTV. Our floor-cleaning robot for malls is also in development.
+# Cameras that notice, floors that clean themselves.
+
+Have a store problem you'd like a camera to solve? Our engineers build custom AI vision for supermarkets
+and retail on your existing CCTV. Our floor-cleaning robot for malls is in development.
 
 **CTA:** Tell us your requirement → /contact?topic=ai-vision
 

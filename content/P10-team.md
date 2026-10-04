@@ -4,7 +4,8 @@ url: /team
 canonical: https://cybertronix.tech/team
 title: "Our Team · Robotics Engineers in Hyderabad · Cybertronix"
 description: "Meet the Cybertronix team: in-house AI, mechatronics, mechanical and electronics engineers in Jubilee Hills, Hyderabad, building robots and AI vision."
-h1: "The Cybertronix team"
+eyebrow: "Our team · robotics & AI engineers in Hyderabad"
+h1: "Four kinds of engineer. One team."
 keyword: "Cybertronix team · robotics engineers Hyderabad"
 schema: [AboutPage, Organization, BreadcrumbList]
 ---
@@ -16,10 +17,12 @@ schema: [AboutPage, Organization, BreadcrumbList]
 
 ## P10.1 Hero
 
-# The Cybertronix team
+Our team · robotics & AI engineers in Hyderabad
 
-One in-house team of engineers in Hyderabad. The people who design our systems are the people who build
-them.
+# Four kinds of engineer. One team.
+
+Our robotics and AI engineers work together in one in-house team in Hyderabad. The people who design our
+systems are the people who build them.
 
 ## P10.2 What our engineers do
 

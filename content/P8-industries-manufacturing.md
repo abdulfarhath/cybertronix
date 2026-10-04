@@ -5,7 +5,8 @@ canonical: https://cybertronix.tech/industries/manufacturing
 status: "D13. Rewritten for D21: vision is a prototype / custom project; arms are built to order."
 title: "Factory Automation & Custom Robots, Hyderabad · Cybertronix"
 description: "Custom robotic arms and computer vision for factories in Hyderabad and Telangana, built to your requirement by in-house engineers. Quote on request."
-h1: "Custom robots and computer vision for Hyderabad factories"
+eyebrow: "Factory automation · custom robots & vision"
+h1: "Your line, your task, our engineers."
 keyword: "factory automation Hyderabad · industrial automation company Hyderabad · custom automation Telangana"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
@@ -15,10 +16,12 @@ schema: [Service, FAQPage, BreadcrumbList]
 
 ## P8.1 Hero
 
-# Custom robots and computer vision for Hyderabad factories
+Factory automation · custom robots & vision
 
-Have a task a standard machine doesn't fit? Our engineers design and build a robot or vision system
-around it.
+# Your line, your task, our engineers.
+
+Have a task a standard machine doesn't fit? For factory automation, our engineers in Hyderabad design
+and build a custom robot or vision system around it, for plants in India and abroad.
 
 **CTA:** Tell us your requirement → /contact?topic=robotic-arm
 
@@ -61,8 +64,8 @@ Not if you have standard IP CCTV cameras (RTSP). It's designed to work with thos
 ### How much does it cost?
 It depends on the task. We quote on request.
 
-### Do you work outside Telangana?
-`TODO(founder)`
+### Do you work outside Telangana or India?
+Yes. We're based in Hyderabad, India, and open to pilots and projects worldwide.
 
 **CTA:** Tell us your requirement → /contact
 

@@ -4,7 +4,8 @@ url: /cleaning-robot
 canonical: https://cybertronix.tech/cleaning-robot
 title: "Floor Cleaning Robot for Offices & Malls · Cybertronix"
 description: "Cybertronix is building an autonomous floor-cleaning robot for offices and malls in Hyderabad. In development. Pilot partners welcome."
-h1: "Autonomous floor-cleaning robot for offices and malls"
+eyebrow: "Floor-cleaning robot for offices & malls · in development"
+h1: "Clean floors, without anyone pushing a machine."
 keyword: "floor cleaning robot for offices and malls · commercial cleaning robot India · cleaning robot Hyderabad"
 schema: [WebPage, FAQPage, BreadcrumbList]
 ---
@@ -15,12 +16,14 @@ schema: [WebPage, FAQPage, BreadcrumbList]
 
 ## P4.1 Hero
 
-# Autonomous floor-cleaning robot for offices and malls
+Floor-cleaning robot for offices & malls · in development
+
+# Clean floors, without anyone pushing a machine.
 
 **In development · pilot partners welcome**
 
-We're building a robot that cleans office and mall floors on its own, on a schedule, so your
-housekeeping team can focus on the jobs that need a person.
+We're building an autonomous floor-cleaning robot for offices and malls. It's designed to clean on its
+own, on a schedule, so your housekeeping team can focus on the jobs that need a person.
 
 **CTA:** Become a pilot partner → /contact?topic=cleaning-pilot
 

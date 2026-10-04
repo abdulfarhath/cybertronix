@@ -4,7 +4,8 @@ url: /humanoid-robots
 canonical: https://cybertronix.tech/humanoid-robots
 title: "Humanoid Robot Development in Hyderabad · Cybertronix"
 description: "Cybertronix designs and builds custom humanoid robots in Hyderabad. In-house AI, mechatronics and electronics engineers. Tell us your requirement."
-h1: "Humanoid robot development in Hyderabad"
+eyebrow: "Custom humanoid robot development · Hyderabad, India"
+h1: "Your humanoid robot, designed from the job up."
 keyword: "humanoid robot company Hyderabad · humanoid robot developer India · custom humanoid robot"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
@@ -16,10 +17,13 @@ schema: [Service, FAQPage, BreadcrumbList]
 
 ## P2.1 Hero
 
-# Humanoid robot development in Hyderabad
+Custom humanoid robot development · Hyderabad, India
 
-Need a humanoid robot for a specific job? Our engineers design and build it to your requirement, from
-the first sketch to a working robot.
+# Your humanoid robot, designed from the job up.
+
+Need a humanoid robot for a specific job? Our engineers in Hyderabad offer custom humanoid robot
+development: we design and build it to your requirement, from the first sketch to a working robot, for
+teams in India and around the world.
 
 **CTA:** Tell us your requirement → /contact?topic=humanoid
 

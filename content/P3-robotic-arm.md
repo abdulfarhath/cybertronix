@@ -4,7 +4,8 @@ url: /robotic-arm
 canonical: https://cybertronix.tech/robotic-arm
 title: "Custom Robotic Arm Design & Build, Hyderabad · Cybertronix"
 description: "Cybertronix designs and builds custom robotic arms in Hyderabad for your task. In-house mechatronics, mechanical and AI engineers. Quote on request."
-h1: "Custom robotic arm design and build"
+eyebrow: "Custom robotic arm design & build"
+h1: "An arm shaped around your task."
 keyword: "custom robotic arm manufacturer · robotic arm Hyderabad · robotic arm company India"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
@@ -16,10 +17,13 @@ schema: [Service, FAQPage, BreadcrumbList]
 
 ## P3.1 Hero
 
-# Custom robotic arm design and build
+Custom robotic arm design & build
 
-Have a task a standard arm can't handle, or one that doesn't need a big brand robot? We design and build
-a robotic arm for your task, in Hyderabad.
+# An arm shaped around your task.
+
+Have a task a standard arm can't handle, or one that doesn't need a big brand robot? We're a custom
+robotic arm manufacturer: we design and build an arm for your task in our Hyderabad lab, for teams
+anywhere.
 
 **CTA:** Tell us your requirement → /contact?topic=robotic-arm
 

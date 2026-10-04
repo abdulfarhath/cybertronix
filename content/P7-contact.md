@@ -4,7 +4,8 @@ url: /contact
 canonical: https://cybertronix.tech/contact
 title: "Contact Cybertronix · Jubilee Hills, Hyderabad"
 description: "Contact Cybertronix in Jubilee Hills, Hyderabad: +91 90598 97807, info@cybertronix.com. Join a pilot or tell us your requirement."
-h1: "Contact Cybertronix in Hyderabad"
+eyebrow: "Contact · Jubilee Hills, Hyderabad"
+h1: "Tell us what you want to see, clean or build."
 keyword: "Cybertronix Hyderabad contact / address · Cybertronix Jubilee Hills"
 schema: [ContactPage, LocalBusiness, BreadcrumbList]
 ---
@@ -23,9 +24,12 @@ schema: [ContactPage, LocalBusiness, BreadcrumbList]
 
 ## P7.1 Hero
 
-# Contact Cybertronix in Hyderabad
+Contact · Jubilee Hills, Hyderabad
 
-Join a pilot, ask about a custom build or just ask a question. An engineer on our team will reply.
+# Tell us what you want to see, clean or build.
+
+Contact Cybertronix in Hyderabad, from anywhere in the world. Join a pilot, ask about a custom build or
+just ask a question. An engineer on our team will reply.
 
 ## P7.2 Tell us your requirement
 
@@ -77,8 +81,8 @@ Please call or email first so the right engineer is free to meet you.
 ### How do I join a pilot?
 Choose "AI vision pilot" or "Cleaning robot pilot" in the form and tell us about your site.
 
-### Do you work with clients outside Hyderabad?
-`TODO(founder)`
+### Do you work with teams outside Hyderabad or India?
+Yes. We're based in Hyderabad, India, and open to pilots and projects worldwide.
 
 ### Can I get a quote by email?
 Yes. Tell us your requirement and we'll send a quote. Every quote is on request.

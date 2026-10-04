@@ -4,7 +4,8 @@ url: /software/raqib
 canonical: https://cybertronix.tech/software/raqib
 title: "Raqib: Terminal Monitor for AI Workloads · Cybertronix"
 description: "Raqib is a terminal app with a local web view that watches AI workloads: RAM, CPU load, VRAM, temperatures and top processes. Early build by Cybertronix."
-h1: "Raqib: a terminal monitor for AI workloads"
+eyebrow: "Raqib · terminal monitor for AI workloads · early build"
+h1: "See what your AI is really using."
 keyword: "AI workload monitor · VRAM monitor for local LLMs · terminal system monitor for AI · Raqib"
 schema: [SoftwareApplication, FAQPage, BreadcrumbList]
 ---
@@ -21,13 +22,15 @@ schema: [SoftwareApplication, FAQPage, BreadcrumbList]
 
 ## P13.1 Hero
 
-# Raqib: a terminal monitor for AI workloads
+Raqib · terminal monitor for AI workloads · early build
+
+# See what your AI is really using.
 
 **Early build**
 
-Running AI models on your own machine? Raqib shows, in one terminal screen, how much RAM, CPU and VRAM
-they're using, how hot the machine is running, and which processes are using the most. A local web view
-shows it in your browser too.
+Running AI models on your own machine? Raqib is a terminal monitor for AI workloads: one screen shows how
+much RAM, CPU and VRAM they're using, how hot the machine is running, and which processes are using the
+most. A local web view shows it in your browser too.
 
 **CTA:** `TODO(founder)`: download, GitHub or "Get notified". Until then: Ask about Raqib → /contact
 

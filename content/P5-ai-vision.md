@@ -4,7 +4,8 @@ url: /ai-vision
 canonical: https://cybertronix.tech/ai-vision
 title: "AI Gowning & PPE Compliance for Cleanrooms · Cybertronix"
 description: "Our AI vision prototype checks gowning and PPE (gloves, masks, shoe covers, gowns) on your existing CCTV, for pharma cleanrooms and surgery. Pilots open."
-h1: "AI vision for gowning and PPE compliance"
+eyebrow: "AI gowning & PPE compliance · prototype"
+h1: "A second pair of eyes at the gowning-room door."
 keyword: "cleanroom gowning compliance AI · surgical PPE detection · GMP video analytics India · AI CCTV for existing cameras Hyderabad"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
@@ -15,13 +16,15 @@ schema: [Service, FAQPage, BreadcrumbList]
 
 ## P5.1 Hero
 
-# AI vision for gowning and PPE compliance
+AI gowning & PPE compliance · prototype
+
+# A second pair of eyes at the gowning-room door.
 
 **Prototype · pilot partners welcome**
 
 A wrong glove, a missing mask or an uncovered shoe can compromise a cleanroom or an operating theatre.
-Our AI vision prototype is designed to check gowning and PPE on the CCTV cameras you already have, and
-to alert your team before someone walks into a critical zone.
+Our AI vision prototype is designed for cleanroom gowning compliance and surgical PPE detection: it
+checks gowning on your existing IP CCTV and alerts your team before someone walks into a critical zone.
 
 **CTA:** Become a pilot partner → /contact?topic=ai-vision
 

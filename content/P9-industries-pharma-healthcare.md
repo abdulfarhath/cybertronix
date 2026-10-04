@@ -5,7 +5,8 @@ canonical: https://cybertronix.tech/industries/pharma-healthcare
 status: "D28. Replaces the dropped Hospitality page."
 title: "AI Gowning Compliance for Pharma & Hospitals · Cybertronix"
 description: "AI vision designed to check cleanroom gowning and surgical PPE on your existing CCTV, with video kept on-site. Prototype from Hyderabad. Pilots open."
-h1: "AI gowning checks for pharma cleanrooms and operating theatres"
+eyebrow: "AI gowning checks · pharma cleanrooms & operating theatres"
+h1: "Every glove, every mask, before the clean zone."
 keyword: "cleanroom gowning compliance AI · pharma GMP AI India · surgeon PPE detection · pharma automation Hyderabad"
 schema: [Service, FAQPage, BreadcrumbList]
 ---
@@ -16,12 +17,15 @@ schema: [Service, FAQPage, BreadcrumbList]
 
 ## P9.1 Hero
 
-# AI gowning checks for pharma cleanrooms and operating theatres
+AI gowning checks · pharma cleanrooms & operating theatres
+
+# Every glove, every mask, before the clean zone.
 
 **Prototype · pilot partners welcome**
 
 Gowning mistakes are easy to make and hard to spot on a busy shift. Our AI vision prototype is designed
-to check every person's gowning on your existing CCTV, before they enter a clean zone or theatre.
+for cleanroom gowning compliance in pharma and for surgical PPE checks in hospitals: it checks every
+person's gowning on your existing IP CCTV, before they enter a clean zone or theatre.
 
 **CTA:** Become a pilot partner → /contact?topic=ai-vision
 
