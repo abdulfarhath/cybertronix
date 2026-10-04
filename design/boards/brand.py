@@ -8,12 +8,13 @@ ROOT = HERE + "/canvas/project"
 D, L = TOK["color"]["dark"], TOK["color"]["light"]
 ACC, SIG = TOK["accent"], TOK["signal"]
 
-# Cybertronix mark L4 "Head-turn" (D36), simple level. {c} = ink, {a} = the one accent (the leading eye); {f} unused.
+# Cybertronix mark L6 "Sensor mast" (D38), simple level. {c} = ink, {a} = the one accent (the seeing eye); {f} unused.
 LOGO = ('<svg width="{s}" height="{s}" viewBox="0 0 48 48" role="img" aria-label="Cybertronix logo">'
-        '<rect x="6" y="6" width="36" height="6" fill="{c}"/><rect x="6" y="36" width="36" height="6" fill="{c}"/>'
-        '<rect x="6" y="6" width="6" height="36" fill="{c}"/><rect x="36" y="6" width="6" height="8" fill="{c}"/>'
-        '<rect x="36" y="34" width="6" height="8" fill="{c}"/><rect x="22" y="17" width="8" height="8" fill="{c}"/>'
-        '<rect x="33" y="17" width="8" height="8" fill="{a}"/></svg>')
+        '<rect x="6" y="13" width="36" height="6" fill="{c}"/><rect x="6" y="36" width="36" height="6" fill="{c}"/>'
+        '<rect x="6" y="13" width="6" height="29" fill="{c}"/><rect x="36" y="13" width="6" height="7" fill="{c}"/>'
+        '<rect x="36" y="35" width="6" height="7" fill="{c}"/><rect x="22" y="4" width="4" height="9" fill="{c}"/>'
+        '<rect x="19" y="2" width="10" height="4" fill="{c}"/><rect x="14" y="21" width="8" height="8" fill="{c}"/>'
+        '<rect x="26" y="21" width="8" height="8" fill="{a}"/></svg>')
 
 
 def refresh_x(ink, acc, size):
@@ -66,7 +67,7 @@ def build():
 <section style="padding: 40px 80px; border-right: 2px solid {D['rule']}; border-bottom: 2px solid {D['rule']}; display: flex; flex-direction: column; gap: 20px">{h2("Logo", D['text'])}
 <div style="display: flex; align-items: center; gap: 18px">{LOGO.format(s=72, f=D['surface'], a=ACC['dark'], c=D['text'])}<span class="disp" style="font-size: 34px; font-weight: 600; letter-spacing: -0.02em">cybertronix</span></div>
 <div style="display: flex; align-items: flex-end; gap: 28px">{logos}</div>
-<div style="display: flex; gap: 12px"><div style="padding: 16px; border: 2px solid {D['rule']}">{mono}</div><div style="padding: 16px; background: {L['bg']}; border: 2px solid {L['rule']}">{mono_l}</div><div style="font-size: 13px; color: {D['text-muted']}; line-height: 1.6; align-self: center">Mono versions. Chosen mark: L4 Head-turn (D36).<br>Rules, sizes and lock-ups: logo canvas [L4] Final.<br>Files: design/logo/.</div></div>
+<div style="display: flex; gap: 12px"><div style="padding: 16px; border: 2px solid {D['rule']}">{mono}</div><div style="padding: 16px; background: {L['bg']}; border: 2px solid {L['rule']}">{mono_l}</div><div style="font-size: 13px; color: {D['text-muted']}; line-height: 1.6; align-self: center">Mono versions. Chosen mark: L6 Sensor mast (D38).<br>Rules, sizes and lock-ups: logo canvas [L6] Final.<br>Files: design/logo/.</div></div>
 </section>
 <section style="padding: 40px 80px; border-bottom: 2px solid {D['rule']}; display: flex; flex-direction: column; gap: 20px">{h2("One accent, one meaning", D['text'])}
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">

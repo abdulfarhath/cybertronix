@@ -259,7 +259,7 @@ def board(lid, name, fn, story):
     icon = lambda th, bgc: f'<div style="width: 120px; height: 120px; background: {bgc}; border: 2px solid {K[th]["rule"]}; display: flex; align-items: center; justify-content: center">{mark(fn, th, 76, full=False)}</div>'
     body = f"""<div style="width: 1440px; height: 780px; display: grid; grid-template-columns: 320px 360px 1fr; grid-template-rows: auto 1fr; background: {Lk['bg']}">
 <header style="grid-column: 1 / -1; padding: 24px 32px; background: {Dk['bg']}; color: {Dk['ink']}; border-bottom: 2px solid {Dk['rule']}; display: flex; gap: 32px; align-items: baseline">
-<span class="mono" style="font-size: 13px; color: {Dk['mu']}">[{lid}]</span>{CHOSEN_TAG if lid == "L4" else ""}<h1 class="disp" style="margin: 0; font-size: 28px; font-weight: 500">{name}</h1><p style="margin: 0; font-size: 16px; color: {Dk['t2']}; line-height: 1.5; max-width: 760px">{story}</p></header>
+<span class="mono" style="font-size: 13px; color: {Dk['mu']}">[{lid}]</span>{tag(lid)}<h1 class="disp" style="margin: 0; font-size: 28px; font-weight: 500">{name}</h1><p style="margin: 0; font-size: 16px; color: {Dk['t2']}; line-height: 1.5; max-width: 760px">{story}</p></header>
 <div style="background: {Dk['bg']}; border-right: 2px solid {Dk['rule']}; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 24px">
 {mark(fn, "dark", 200)}{cap("full · dark", "dark")}
 <div style="display: flex; align-items: flex-end; gap: 16px">{sizes_d}</div>
@@ -284,7 +284,13 @@ def board(lid, name, fn, story):
     return page(f"{lid} {name}", 1440, 780, body)
 
 
-CHOSEN_TAG = f'<span class="mono" style="padding: 3px 10px; background: {TOK["accent"]["dark"]}; color: #FFFFFF; font-size: 12px">Chosen (D36)</span>'
+CHOSEN = "L6"
+CHOSEN_TAG = f'<span class="mono" style="padding: 3px 10px; background: {TOK["accent"]["dark"]}; color: #FFFFFF; font-size: 12px">Chosen (D38)</span>'
+PREV_TAG = '<span class="mono" style="padding: 3px 10px; border: 2px solid #8A94A4; color: #8A94A4; font-size: 12px">Previous pick (D36)</span>'
+
+
+def tag(lid):
+    return CHOSEN_TAG if lid == CHOSEN else PREV_TAG if lid == "L4" else ""
 
 
 def dont_tile(inner, label):
@@ -297,9 +303,9 @@ def l0():
     Dk, Lk = K["dark"], K["light"]
     cells = ""
     for lid, name, fn, _s in MARKS:
-        cells += (f'<div style="padding: 20px; background: {Dk["bg"]}; border: 2px solid {TOK["accent"]["dark"] if lid == "L4" else Dk["rule"]}; display: flex; flex-direction: column; align-items: center; gap: 14px">'
+        cells += (f'<div style="padding: 20px; background: {Dk["bg"]}; border: 2px solid {TOK["accent"]["dark"] if lid == CHOSEN else Dk["rule"]}; display: flex; flex-direction: column; align-items: center; gap: 14px">'
                   f'{mark(fn, "dark", 120)}<div style="display: flex; gap: 12px; align-items: flex-end">{mark(fn, "dark", 32)}{mark(fn, "dark", 16)}<div style="padding: 4px; background: {Lk["bg"]}">{mark(fn, "light", 32)}</div></div>'
-                  f'<div style="text-align: center"><div class="mono" style="font-size: 12px; color: {Dk["mu"]}">{lid}</div>{CHOSEN_TAG if lid == "L4" else ""}<div style="font-size: 16px; font-weight: 600; color: {Dk["ink"]}">{name}</div></div></div>')
+                  f'<div style="text-align: center"><div class="mono" style="font-size: 12px; color: {Dk["mu"]}">{lid}</div>{tag(lid)}<div style="font-size: 16px; font-weight: 600; color: {Dk["ink"]}">{name}</div></div></div>')
     k = dict(Lk)
     base = m2(k, True)
     rounded = svg(96, f'<rect x="6" y="6" width="36" height="36" rx="10" fill="none" stroke="{k["ink"]}" stroke-width="5"/>' + r(15, 17, 6, 6, k["ink"]) + r(27, 17, 6, 6, k["acc"]), "rounded, wrong")
@@ -338,11 +344,11 @@ def write_all():
         open(f"{ROOT}/{f}", "w").write(src)
     import finals
     fsrc, fh = finals.board("cybertronix", *finals.STORIES["cybertronix"])
-    open(f"{ROOT}/L4-Final.dc.html", "w").write(fsrc)
+    open(f"{ROOT}/{CHOSEN}-Final.dc.html", "w").write(fsrc)
     boards, order = {}, []
-    l4 = [f for f in out if f.startswith("L4-")][0]
-    boards["L4-Final.dc.html"] = {"x": 0, "y": 0, "w": 1440, "h": fh, "title": "[L4] Final · Chosen (D36) · rules and lock-ups"}
-    boards[l4] = {"x": 1520, "y": 0, "w": 1440, "h": 780, "title": "[L4] Head-turn · Chosen (D36)"}
+    l4 = [f for f in out if f.startswith(CHOSEN + "-")][0]
+    boards[f"{CHOSEN}-Final.dc.html"] = {"x": 0, "y": 0, "w": 1440, "h": fh, "title": f"[{CHOSEN}] Final · Chosen (D38) · rules and lock-ups"}
+    boards[l4] = {"x": 1520, "y": 0, "w": 1440, "h": 780, "title": f"[{CHOSEN}] Sensor mast · Chosen (D38)"}
     y0 = fh + 340
     boards["Main.dc.html"] = {"x": 0, "y": y0, "w": 1440, "h": 1340, "title": out["Main.dc.html"][3]}
     i = 0
@@ -350,16 +356,16 @@ def write_all():
         if f in ("Main.dc.html", l4):
             continue
         col, row = i % 2, i // 2
-        boards[f] = {"x": col * 1520, "y": y0 + 1340 + 340 + row * (780 + 140), "w": 1440, "h": 780, "title": v[3]}
+        boards[f] = {"x": col * 1520, "y": y0 + 1340 + 340 + row * (780 + 140), "w": 1440, "h": 780, "title": v[3] + (" · Previous pick (D36)" if f.startswith("L4-") else "")}
         i += 1
     order = list(boards)
     canvas = {"v": 3, "createdOnFiles": {"v": 1, "at": "2026-10-03T17:10:00Z"}, "title": "Cybertronix · Logo",
               "launch": {"view": "canvas"}, "pages": [], "boards": boards, "order": order, "designSystems": [],
-              "notes": {"t0": {"kind": "title1", "text": "Chosen: L4 Head-turn (D36)", "x": 0, "y": -300, "maxW": 2960},
+              "notes": {"t0": {"kind": "title1", "text": "Chosen: L6 Sensor mast (D38)", "x": 0, "y": -300, "maxW": 2960},
                         "t2": {"kind": "title1", "text": "Comparison of all versions", "x": 0, "y": y0 - 300, "maxW": 2960},
                         "t1": {"kind": "title1", "text": "Versions L1–L10 · each: full + simple marks, mono, app icon, favicon, lock-up", "x": 0, "y": y0 + 1340 + 40, "maxW": 2960},
                         "n1": {"x": 3040, "y": 0, "w": 420, "fill": "blue", "text": "Built from square primitives on a 48-unit grid. Colours from design/tokens.json. Generator: design/boards/logo.py in the repo."},
-                        "n2": {"x": 3040, "y": 420, "w": 420, "fill": "blue", "text": "L4 is chosen (D36). Asset files: design/logo/ in the repo (SVG, PNG icons 16–512, favicon.ico, og-image), generated by design/boards/export.py."}}}
+                        "n2": {"x": 3040, "y": 420, "w": 420, "fill": "blue", "text": "L6 is chosen (D38; L4 was the previous pick, D36). Asset files: design/logo/ in the repo (SVG, PNG icons 16–512, favicon.ico, og-image), generated by design/boards/export.py."}}}
     json.dump(canvas, open(ROOT + "/canvas.json", "w"), ensure_ascii=False, indent=1)
     return list(out)
 

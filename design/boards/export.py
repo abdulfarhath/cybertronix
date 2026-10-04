@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Export the chosen logos as real asset files (D36, D37).
+"""Export the chosen logos as real asset files (D38, D39).
 
   python3 design/boards/export.py            # from the repo root
   node design/boards/render.cjs design/build-png.json   # renders the PNGs (Playwright)
   (export.py runs render.cjs and ImageMagick for you when they are available)
 
-Writes design/logo/ (Cybertronix, L4 Head-turn) and design/raqib-logo/ (Raqib, option A Panel + pulse):
+Writes design/logo/ (Cybertronix, L6 Sensor mast, D38) and design/raqib-logo/ (Raqib, option A Panel + pulse):
 SVG full / simple / mono / light / dark / on-accent, horizontal and stacked lock-ups,
 PNG app icons 16 32 48 180 192 512, favicon.ico, and a 1200x630 og-image.
-Colours come from design/tokens.json. Marks come from logo.py (m4) and raqib.py (mark_a)."""
+Colours come from design/tokens.json. Marks come from logo.py (m6) and raqib.py (mark_a)."""
 import json, os, shutil, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -37,7 +37,7 @@ FONTS = ('<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@60
 
 
 def cyx(ink, mid, eye, full):
-    return logo.m4({"ink": ink, "mid": mid, "acc": eye}, full)
+    return logo.m6({"ink": ink, "mid": mid, "acc": eye}, full)
 
 
 def rqb(ink, mid, eye, full):
@@ -93,16 +93,16 @@ def html_page(w, h, body, bg="transparent"):
 # Hand-drawn 16x16 pixel versions for 16 and 32 px (crisp at small sizes).
 # '#' ink, 'm' mid grey, '@' the one accent element, '.' empty.
 PIX16 = {
-    "cybertronix": ["................",
+    "cybertronix": ["......####......",
+                    ".......##.......",
+                    ".......##.......",
+                    ".......##.......",
                     ".##############.",
                     ".##############.",
                     ".##.........##..",
                     ".##.........##..",
-                    ".##.............",
-                    ".##....##..@@...",
-                    ".##....##..@@...",
-                    ".##.............",
-                    ".##.............",
+                    ".##..##..@@.....",
+                    ".##..##..@@.....",
                     ".##.............",
                     ".##.........##..",
                     ".##.........##..",

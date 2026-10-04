@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Final logo rule boards (D36 Cybertronix L4, D37 Raqib A): clear space, minimum sizes,
+"""Final logo rule boards (D38 Cybertronix L6, D39 Raqib A): clear space, minimum sizes,
 colour versions, lock-ups, and (Cybertronix) the proposed nav tie-in to the hero head-turn."""
 import os, re, sys
 
@@ -63,10 +63,11 @@ def h2(t):
     return f'<h2 class="disp" style="margin: 0; font-size: 18px; font-weight: 500; color: {L["text"]}">{t}</h2>'
 
 
-def eyes_forward(ink, mid, eye):
-    """Cybertronix head before the turn: eyes centred (frame 1 of the proposed nav tie-in)."""
+def mast_off(ink, mid, eye):
+    """L6 with the sensor-mast cap dimmed: frame 2 of the proposed nav tie-in (the blink)."""
     lg = X.logo
-    return lg.chead(6, c=ink) + lg.r(14, 17, 8, 8, ink) + lg.r(26, 17, 8, 8, eye)
+    return (lg.chead(6, top=13, stub=7, c=ink) + lg.r(22, 4, 4, 9, ink) + lg.r(19, 2, 10, 4, mid)
+            + lg.r(14, 21, 8, 8, ink) + lg.r(26, 21, 8, 8, eye))
 
 
 def board(key, lid, decision, story):
@@ -99,16 +100,16 @@ def board(key, lid, decision, story):
     tie = ""
     if key == "cybertronix":
         k = X.VERSIONS["dark"]
-        f1 = sized(X.svg_mark(eyes_forward(k[0], k[1], k[2]), 40), 40)
-        f2 = simple("dark", 40)
+        f1 = simple("dark", 40)
+        f2 = sized(X.svg_mark(mast_off(k[0], "#2E3846", k[2]), 40), 40)
         nav = lambda m, note: (f'<div style="display: flex; flex-direction: column; gap: 8px"><div style="display: flex; align-items: center; gap: 12px; padding: 14px 18px; background: {D["bg"]}; border: 2px solid {D["rule"]}">'
                                f'{m}<span class="disp" style="font-size: 18px; font-weight: 600; color: {D["text"]}">cybertronix</span>'
                                f'<span style="margin-left: auto; font-size: 13px; color: {D["text-2"]}">AI vision · Cleaning robot · …</span></div>{cap(note)}</div>')
         tie = (f'<section style="display: flex; flex-direction: column; gap: 12px">{h2("Hero tie-in")}'
                f'<div style="display: flex; gap: 10px; align-items: center"><span class="mono" style="padding: 2px 8px; border: 2px solid {X.ACC_L}; color: {X.ACC_L}; font-size: 11px">Proposed</span>'
-               f'<span style="font-size: 14px; color: {L["text-2"]}">The nav eyes shift once when the P1 hero head turns. One move, no loop, nothing with prefers-reduced-motion (D10).</span></div>'
-               f'<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px">{nav(f1, "Frame 1 · page load: eyes ahead")}{nav(f2, "Frame 2 · after the hero head-turn: eyes look out (L4)")}</div></section>')
-    name = "Cybertronix · L4 Head-turn" if key == "cybertronix" else "Raqib · A Panel + pulse"
+               f'<span style="font-size: 14px; color: {L["text-2"]}">The sensor mast blinks off and on once (about 200 ms) while the P1 hero head turns. Once per page load, no loop, nothing with prefers-reduced-motion (D10).</span></div>'
+               f'<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px">{nav(f1, "Frame 1 · resting: mast on")}{nav(f2, "Frame 2 · hero head turns: mast blinks off, then back to frame 1")}</div></section>')
+    name = "Cybertronix · L6 Sensor mast" if key == "cybertronix" else "Raqib · A Panel + pulse"
     H = 1500 if key == "cybertronix" else 1340
     body = f"""<div style="width: 1440px; height: {H}px; box-sizing: border-box; background: {L['bg']}; display: flex; flex-direction: column">
 <header style="padding: 32px; background: {D['bg']}; color: {D['text']}; display: flex; gap: 40px; align-items: center; border-bottom: 2px solid {D['rule']}">
@@ -132,8 +133,8 @@ def board(key, lid, decision, story):
 
 
 STORIES = {
-    "cybertronix": ("L4", "D36", "A machine that sees. The C is a robot's head; its eyes have turned to look out through the opening. Only the leading eye is blue. It echoes the hero head-turn."),
-    "raqib": ("R1", "D37", "A Raqib panel seen whole: the terminal box with its title-slot gap, a pulse line and a row of workloads. Only the watched workload is blue."),
+    "cybertronix": ("L6", "D38", "A machine that sees and senses. The C is a robot's head with a sensor mast on top; two eyes look out, and only the seeing eye is blue."),
+    "raqib": ("R1", "D39", "A Raqib panel seen whole: the terminal box with its title-slot gap, a pulse line and a row of workloads. Only the watched workload is blue."),
 }
 
 if __name__ == "__main__":

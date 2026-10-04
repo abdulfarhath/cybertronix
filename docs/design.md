@@ -15,7 +15,7 @@ Rule of thumb: **dark cinematic hero, then calm technical sections with faint bl
 | Square, 2 px | Radius 0 on every container, button and input. Rules and borders 2 px. Round shapes only for status dots and the play button. |
 | Light + dark, 360 px | Every page board has desktop 1440 and phone 390; layouts stack down to 360. |
 | One-page brand guide | Canvas board `[B1] Brand guide and tokens`: logo, colours, type, shape, tone, do/don't. |
-| Logo canvas (D35) | https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj: L1–L10 versions of mark X, story "a machine that sees", only the seeing eye is blue. Generator: `design/boards/logo.py`. |
+| Logo canvas (D35, D38) | https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj: L6 chosen; L1–L10 versions of mark X, story "a machine that sees", only the seeing eye is blue. Generator: `design/boards/logo.py`. |
 | Logo options | Raqib: 3 options on `[R1]` (A Panel + pulse, B Brackets + dot, C Grid R + gauge). Cybertronix: current hex C stays; 2 refresh options on `[B1]` (X Detection C, Y Hex corners). Founder picks. |
 Values marked *(canvas)* are copied from the canvas. Values marked *(new)* are defined here by Design
 and are on the canvas style guide and page boards.
@@ -164,15 +164,18 @@ New components on the boards: status pill (hero + section), people card ("Photo 
 `project/` files, then `node measure.cjs > m.json && python3 fit.py` to fit frame heights, and publish to the canvas.
 P4 has no spec table until the cleaning modes are confirmed (hub ruling 2026-10-03, D8 vs D29).
 
-## 10. Chosen logos (D36, D37)
+## 10. Chosen logos (D38, D39)
 | Brand | Mark | Files | Rules board |
 |---|---|---|---|
-| Cybertronix | L4 Head-turn: the C is a robot head, eyes looking out of the opening; only the leading eye is blue | `design/logo/` | Logo canvas `[L4] Final` |
+| Cybertronix | L6 Sensor mast: the C is a robot head with a sensor mast; only the seeing eye is blue (L4 Head-turn was the previous pick, D36) | `design/logo/` | Logo canvas `[L6] Final` |
 | Raqib | A Panel + pulse: terminal box, pulse line, only the watched workload is blue | `design/raqib-logo/` | Main canvas `[R1] Final` |
 
 - Each folder: SVG marks (full, simple, 16 px pixel) in dark, light, mono black, mono white, on-accent; horizontal and stacked lock-ups; PNG icons 16 32 48 180 192 512; `favicon.ico`; `*-og-1200x630.png`.
 - Clear space: x = one sixth of the mark width on every side. Minimum: 16 px (pixel mark). 48–64 px simple mark; 96 px and up full mark. Lock-up at least 120 px wide.
 - Lock-up SVGs use the brand font as text (Unbounded 600 / JetBrains Mono 700); outline before print.
 - Regenerate: `python3 design/boards/export.py` (needs Playwright Chromium and ImageMagick).
-- Proposed (not approved): the nav eyes shift once when the P1 hero head turns; no loop; off with prefers-reduced-motion.
+- Proposed (not approved): the nav logo's sensor mast blinks off and on once (about 200 ms) while the P1 hero head turns; no loop; off with prefers-reduced-motion.
 - Previews for the founder's phone: `design/previews/` (made by `design/boards/preview.cjs`).
+
+## 11. Raqib app states (D39)
+Boards R4–R11 on the main canvas page "Raqib R1–R11": normal, degraded, critical, kill confirm, history (h), help (?), first run, narrow (80 columns / phone). Each state has a terminal board and a web board, dark then light. Colour meaning: green ok, amber degraded, red critical, blue = selected / actionable. Kill always asks to confirm. Generator: `design/boards/raqib_states.py` (measured web heights in `design/boards/rs/h.json`).

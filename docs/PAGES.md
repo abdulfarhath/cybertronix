@@ -19,21 +19,29 @@
 ## Product design boards (not site pages)
 | ID | Board | Design |
 |---|---|---|
-| R1 | Raqib logo | **Option A chosen (D37).** `[R1] Final` board with rules and lock-ups; files in `design/raqib-logo/` |
-| R2 | Raqib terminal app redesign | 1:1 replica (reference) + proposed dark and light (D34) |
-| R3 | Raqib web dashboard (localhost:7070) | Dark + light boards, labelled "Proposed" (D34) |
+| R1 | Raqib logo | **Option A confirmed (D39).** `[R1] Final` board with rules and lock-ups; files in `design/raqib-logo/` |
+| R2 | Raqib terminal app redesign | 1:1 replica (reference) + proposed dark and light; approved direction (D39) |
+| R3 | Raqib web dashboard (localhost:7070) | Dark + light; approved direction (D39) |
+| R4 | Raqib state: Normal: workloads running | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R5 | Raqib state: Degraded | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R6 | Raqib state: Critical / overheating | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R7 | Raqib state: Kill confirm | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R8 | Raqib state: History view (h) | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R9 | Raqib state: Help overlay (?) | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R10 | Raqib state: First run / empty | Terminal board + web board, each dark then light. "Proposed · approved D39" |
+| R11 | Raqib state: Narrow: 80-column terminal, web at phone width | Terminal board + web board, each dark then light. "Proposed · approved D39" |
 
 
 ## Logo boards (D35, canvas "Cybertronix · Logo" https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj)
 | ID | Board | Design |
 |---|---|---|
-| L0 | Comparison of all versions + do/don't | Done; L4 chosen (D36) |
+| L0 | Comparison of all versions + do/don't | Done; L6 chosen (D38) |
 | L1 | X refined | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L2 | C-head | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L3 | Visor | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
-| L4 | Head-turn | **Chosen (D36).** Plus `[L4] Final` board: clear space, sizes, colour versions, lock-ups, proposed hero tie-in |
+| L4 | Head-turn | Previous pick (D36), replaced by L6 (D38) |
 | L5 | Lens eye | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
-| L6 | Sensor mast | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
+| L6 | Sensor mast | **Chosen (D38).** Plus `[L6] Final` board: clear space, sizes, pixel marks, colour versions, lock-ups, proposed mast-blink tie-in. Files: `design/logo/` |
 | L7 | Pixel 8×8 | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L8 | Detection lock | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |
 | L9 | Blueprint (wildcard) | Done: full + simple marks, mono, app icon, favicon, lock-up (dark + light) |

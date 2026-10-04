@@ -23,8 +23,8 @@ a{color:#8FB2FF}a:hover{color:#C4D6FF}
 .disp{font-family:Unbounded,Geist,sans-serif}
 .gd{background-color:#0A0C10;background-image:linear-gradient(rgba(143,178,255,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(143,178,255,0.06) 1px,transparent 1px);background-size:40px 40px}
 .gl{background-color:#F3F5F8;background-image:linear-gradient(rgba(36,87,200,0.12) 1px,transparent 1px),linear-gradient(90deg,rgba(36,87,200,0.12) 1px,transparent 1px),linear-gradient(rgba(36,87,200,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(36,87,200,0.06) 1px,transparent 1px);background-size:120px 120px,120px 120px,24px 24px,24px 24px}
-.ph{display:flex;align-items:center;justify-content:center;text-align:center;border:1px dashed #2E3846;background:#10141B;color:#8A94A4;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;box-sizing:border-box}
-.todo{font-family:'JetBrains Mono',monospace;font-size:12px;padding:2px 8px;border:1px dashed currentColor;border-radius:6px;white-space:nowrap}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;border:2px dashed #2E3846;background:#10141B;color:#8A94A4;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.5;padding:16px;box-sizing:border-box}
+.todo{font-family:'JetBrains Mono',monospace;font-size:12px;padding:2px 8px;border:2px dashed currentColor;border-radius:6px;white-space:nowrap}
 details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}
 </style>
 </helmet>"""
@@ -86,15 +86,16 @@ def rich(s, light=False):
     return out
 
 
-# Cybertronix mark L4 "Head-turn" (D36), simple level, on dark. Same geometry as design/boards/logo.py m4.
+# Cybertronix mark L6 "Sensor mast" (D38), simple level, on dark. Same geometry as design/boards/logo.py m6.
 LOGO = ('<svg width="{s}" height="{s}" viewBox="0 0 48 48" role="img" aria-label="Cybertronix logo">'
-        '<rect x="6" y="6" width="36" height="6" fill="#E8ECF2"/><rect x="6" y="36" width="36" height="6" fill="#E8ECF2"/>'
-        '<rect x="6" y="6" width="6" height="36" fill="#E8ECF2"/><rect x="36" y="6" width="6" height="8" fill="#E8ECF2"/>'
-        '<rect x="36" y="34" width="6" height="8" fill="#E8ECF2"/><rect x="22" y="17" width="8" height="8" fill="#E8ECF2"/>'
-        '<rect x="33" y="17" width="8" height="8" fill="#3D7BFF"/></svg>')
+        '<rect x="6" y="13" width="36" height="6" fill="#E8ECF2"/><rect x="6" y="36" width="36" height="6" fill="#E8ECF2"/>'
+        '<rect x="6" y="13" width="6" height="29" fill="#E8ECF2"/><rect x="36" y="13" width="6" height="7" fill="#E8ECF2"/>'
+        '<rect x="36" y="35" width="6" height="7" fill="#E8ECF2"/><rect x="22" y="4" width="4" height="9" fill="#E8ECF2"/>'
+        '<rect x="19" y="2" width="10" height="4" fill="#E8ECF2"/><rect x="14" y="21" width="8" height="8" fill="#E8ECF2"/>'
+        '<rect x="26" y="21" width="8" height="8" fill="#3D7BFF"/></svg>')
 # 16 px pixel favicon (same rows as design/boards/export.py PIX16["cybertronix"]), on white
-_FAV = ["................", ".##############.", ".##############.", ".##.........##..", ".##.........##..", ".##.............",
-        ".##....##..@@...", ".##....##..@@...", ".##.............", ".##.............", ".##.............", ".##.........##..",
+_FAV = ["......####......", ".......##.......", ".......##.......", ".......##.......", ".##############.", ".##############.",
+        ".##.........##..", ".##.........##..", ".##..##..@@.....", ".##..##..@@.....", ".##.............", ".##.........##..",
         ".##.........##..", ".##############.", ".##############.", "................"]
 FAVICON = ('<svg width="16" height="16" viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect width="16" height="16" fill="#FFFFFF"/>'
            + "".join(f'<rect x="{x}" y="{y}" width="1" height="1" fill="{"#0F141B" if ch == "#" else "#2457C8"}"/>'
@@ -201,13 +202,13 @@ def media(kind, m, h):
         rows = "".join(f'<div style="display: flex; justify-content: space-between"><span>{n}</span><span style="color: #B7C0CD">{v}</span></div>' for n, v in [("Isolated Web Co", "1.2 GB"), ("firefox", "904 MB"), ("brave", "700 MB")])
         b = lambda p, c: f'<div style="flex: 1; height: 8px; background: #1A212B; border-radius: 2px; overflow: hidden"><div style="width: {p}%; height: 100%; background: {c}"></div></div>'
         return f'''<figure class="mono" style="margin: 0; height: {h}px; box-sizing: border-box; background: #0D1016; border: 1px solid #232B36; border-radius: {r}; padding: {16 if m else 24}px; display: flex; flex-direction: column; gap: 14px; font-size: {11 if m else 13}px; color: #E8ECF2; overflow: hidden">
-<div style="display: flex; align-items: center; gap: 10px; color: #8A94A4">{raqib_mark(22)}<b style="color: #E8ECF2">raqib</b> · 0 workloads · web <span style="color: #8FB2FF">localhost:7070</span></div>
+<div style="display: flex; align-items: center; gap: 10px; color: #8A94A4">{raqib_mark(22)}<b style="color: #E8ECF2">raqib</b>{"" if m else " · 0 workloads"} · <span style="color: #8FB2FF">localhost:7070</span></div>
 <div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">RAM</span>{b(69, "#B7C0CD")}<span>69%</span></div>
 <div style="display: flex; align-items: center; gap: 10px"><span style="width: 48px; color: #8A94A4">VRAM</span>{b(18, "#B7C0CD")}<span>18%</span></div>
 <div style="color: #8A94A4">CPU load 1.09 1.46 1.48 · cpus 12</div>
 <div style="border: 1px solid #2E3846; border-radius: 6px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px"><span style="color: #8A94A4">Top by RAM</span>{rows}</div>
-<div style="margin-top: auto; color: #B7C0CD"><span style="color: #8FB2FF">q</span> quit · <span style="color: #8FB2FF">j/k</span> select · <span style="color: #8FB2FF">k</span> kill (confirm) · <span style="color: #8FB2FF">?</span> help</div>
-<figcaption style="color: #8A94A4">Raqib terminal app · sample data</figcaption>
+<div style="margin-top: auto; color: #B7C0CD"><span style="color: #8FB2FF">q</span> quit · <span style="color: #8FB2FF">j/k</span> select · <span style="color: #8FB2FF">k</span> kill{"" if m else " (confirm)"} · <span style="color: #8FB2FF">?</span> help</div>
+<figcaption style="color: #8A94A4">{"sample data" if m else "Raqib terminal app · sample data"}</figcaption>
 </figure>'''
     raise KeyError(kind)
 
@@ -510,7 +511,22 @@ def main():
         boards[f] = {"x": rx, "y": 0, "w": w, "h": h, "title": title, "page": "raqib"}
         order.append(f)
         rx += w + 80
-    pages.insert(1, {"id": "raqib", "name": "Raqib R1–R3"})
+    pages.insert(1, {"id": "raqib", "name": "Raqib R1–R11"})
+    import raqib_states, json as _json
+    hp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rs", "h.json")
+    hm = _json.load(open(hp)) if os.path.exists(hp) else {}
+    heights = {}
+    for rid, *_x in raqib_states.STATES:
+        hh = max(hm.get(f"{rid}-dark", [0])[0], hm.get(f"{rid}-light", [0])[0])
+        if hh:
+            heights[f"{rid}-dark"] = heights[f"{rid}-light"] = hh
+    col = {}
+    for f, (w, h, title) in raqib_states.write_all(ROOT, heights).items():
+        rid = f.split("-")[0]
+        x, y = col.setdefault(rid, [len(col) * 1520, 1900])
+        boards[f] = {"x": x, "y": y, "w": w, "h": h, "title": title, "page": "raqib"}
+        order.append(f)
+        col[rid][1] = y + h + 140
     boards["Original-Home-desktop.dc.html"] = {"x": 0, "y": 0, "w": 1440, "h": 6700, "title": "Original: Home, desktop 1440 (founder canvas, archived)", "page": "original"}
     boards["Original-Home-phone.dc.html"] = {"x": 1520, "y": 0, "w": 390, "h": 2380, "title": "Original: Home, phone 390 (archived)", "page": "original"}
     order = ["Original-Home-desktop.dc.html", "Original-Home-phone.dc.html"] + order

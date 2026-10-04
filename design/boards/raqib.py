@@ -204,7 +204,7 @@ def tbar(pct, k):
 
 
 def prop(k):
-    return f'<span style="margin-left: 8px; padding: 0 6px; border: 1px solid {k["acc"]}; color: {k["acc"]}; font-weight: 400; font-size: 11px">Proposed</span>'
+    return f'<span style="margin-left: 8px; padding: 0 6px; border: 1px solid {k["acc"]}; color: {k["acc"]}; font-weight: 400; font-size: 11px">Proposed · approved D39</span>'
 
 
 def tbox(title, inner, k, extra="", tag=True):
