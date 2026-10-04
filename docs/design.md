@@ -179,3 +179,8 @@ P4 has no spec table until the cleaning modes are confirmed (hub ruling 2026-10-
 
 ## 11. Raqib app states (D39)
 Boards R4–R11 on the main canvas page "Raqib R1–R11": normal, degraded, critical, kill confirm, history (h), help (?), first run, narrow (80 columns / phone). Each state has a terminal board and a web board, dark then light. Colour meaning: green ok, amber degraded, red critical, blue = selected / actionable. Kill always asks to confirm. Generator: `design/boards/raqib_states.py` (measured web heights in `design/boards/rs/h.json`).
+
+## 12. Brand-first copy on the boards (D41–D44)
+- Every page board uses the people-first H1 and keyword eyebrow from `content/` (e.g. P1 "We build the robots the world needs next.").
+- New section styles: **statement** (mission and vision, Unbounded 44 / 26 phone) and **lab notes** placeholder (hidden until the first post).
+- Home follows D43: Hero → Mission → Vision → What we're building (AI vision, Cleaning robot, Custom robots, Raqib) → How we work (5 steps) → Inside the lab → Why Cybertronix → Pilot partner → Lab notes → FAQ → Contact.

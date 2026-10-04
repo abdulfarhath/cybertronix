@@ -292,14 +292,14 @@ def bullets(items, m, light):
     return f'<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: {cols}; column-gap: 40px; font-size: {15 if m else 16}px; line-height: 1.55; color: {c}">{lis}</ul>'
 
 
-def tiles(items, m, light, numbered=False):
+def tiles(items, m, light, numbered=False, force_cols=None):
     """items: (title, text) -> cards."""
     surf = "#FFFFFF" if light else "#141A22"
     bd = "#D8DEE7" if light else "#232B36"
     c2 = "#3A4453" if light else "#B7C0CD"
     acc = "#5A6475" if light else "#8A94A4"
     n = len(items)
-    cols = 1 if m else (4 if n == 4 else 3 if n in (3, 6) else 2)
+    cols = 1 if m else (force_cols or (4 if n == 4 else 3 if n in (3, 6) else 2))
     out = ""
     for k, (t, txt) in enumerate(items):
         num = f'<div class="mono" style="font-size: 12px; color: {acc}">{k + 1:02d}</div>' if numbered else ""
@@ -335,14 +335,17 @@ def faq(items, m, light=True):
 
 def product_cards(m):
     cards = [
-        ("AI vision", "Prototype · pilot partners welcome", "#B7C0CD", "Gowning and PPE checks on your existing CCTV, for pharma cleanrooms and surgery.", "/ai-vision", "Explore AI vision", "factory"),
-        ("Cleaning robot", "In development", "#B7C0CD", "An autonomous floor-cleaning robot for offices and malls.", "/cleaning-robot", "Explore the cleaning robot", "cleaning"),
-        ("Custom humanoid robots", "Built to order", "#B7C0CD", "We design and build humanoid robots to your requirement.", "/humanoid-robots", "Humanoid robot development", "humanoid"),
-        ("Custom robotic arms", "Built to order", "#B7C0CD", "We design and build robotic arms for your task.", "/robotic-arm", "Custom robotic arms", "arm_still"),
+        ("AI vision", "Prototype · pilot partners welcome", "#B7C0CD", "Checks gloves, masks, shoe covers and gowns on your existing IP CCTV, for pharma cleanrooms and operating theatres. Designed to run on-site, so video stays on your premises.", "/ai-vision", "Explore AI vision", "factory"),
+        ("Cleaning robot", "In development", "#B7C0CD", "An autonomous robot that cleans office and mall floors on a schedule.", "/cleaning-robot", "Explore the cleaning robot", "cleaning"),
+        ("Custom robots", "Built to order", "#B7C0CD", "Humanoid robots and robotic arms, designed and built around your task. {Humanoid robots|/humanoid-robots} · {Robotic arms|/robotic-arm}", "/humanoid-robots", "", "arm_still"),
+        ("Raqib", "Early build", "#B7C0CD", "A terminal app that shows how much RAM, CPU and VRAM your AI workloads are using.", "/software/raqib", "About Raqib", "raqib"),
     ]
     out = ""
     for t, st, sc, txt, h, link, img in cards:
-        if img == "humanoid":
+        la = f'<a href="{h}" style="font-size: 15px; margin-top: 8px">{link}</a>' if link else ""
+        if img == "raqib":
+            mh = f'<div style="height: 100%; background: #0D1016; display: flex; align-items: center; justify-content: center">{raqib_mark(120 if not m else 60)}</div>'
+        elif img == "humanoid":
             mh = '<div class="ph" style="height: 100%; border: none">[Humanoid image]<br>TODO(founder)</div>'
         elif img == "cleaning":
             mh = '<svg viewBox="0 0 300 300" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="display: block" role="img" aria-label="Cleaning robot (drawing)"><rect width="300" height="300" fill="#171D27"/><rect x="118" y="112" width="64" height="40" rx="10" fill="#1E2530" stroke="#3A4452"/><rect x="132" y="98" width="36" height="18" rx="9" fill="#0B0E13" stroke="#3D7BFF"/><rect x="40" y="150" width="220" height="70" rx="35" fill="#2E3846" stroke="#3A4452" stroke-width="2"/><path d="M60 196 L240 196" stroke="#3D7BFF" stroke-width="3" stroke-linecap="round"/><circle cx="90" cy="222" r="16" fill="#0B0E13" stroke="#2E3846" stroke-width="4"/><circle cx="210" cy="222" r="16" fill="#0B0E13" stroke="#2E3846" stroke-width="4"/></svg>'
@@ -352,7 +355,7 @@ def product_cards(m):
         if m:
             out += f'<article style="display: flex; gap: 14px; background: #141A22; border: 1px solid #232B36; border-radius: 16px; padding: 14px; align-items: center"><div style="width: 88px; height: 88px; border-radius: 12px; overflow: hidden; flex-shrink: 0">{mh.replace("[Humanoid image]<br>TODO(founder)", "TODO")}</div><div style="display: flex; flex-direction: column; gap: 4px"><div class="mono" style="font-size: 11px; color: {sc}">{st}</div><h3 class="disp" style="margin: 0; font-size: 16px; font-weight: 500"><a href="{h}" style="color: #E8ECF2; text-decoration: none">{t}</a></h3><p style="margin: 0; font-size: 14px; color: #B7C0CD; line-height: 1.5">{rich(txt)}</p></div></article>'
         else:
-            out += f'<article style="display: flex; flex-direction: column; background: #141A22; border: 1px solid #232B36; border-radius: 20px; overflow: hidden"><div style="height: 260px; border-bottom: 1px solid #232B36; overflow: hidden">{mh}</div><div style="padding: 24px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1"><div class="mono" style="font-size: 12px; color: {sc}">{st}</div><h3 class="disp" style="margin: 0; font-size: 20px; font-weight: 500">{t}</h3><p style="margin: 0; font-size: 15px; color: #B7C0CD; line-height: 1.55; flex-grow: 1">{rich(txt)}</p><a href="{h}" style="font-size: 15px; margin-top: 8px">{link}</a></div></article>'
+            out += f'<article style="display: flex; flex-direction: column; background: #141A22; border: 1px solid #232B36; border-radius: 20px; overflow: hidden"><div style="height: 260px; border-bottom: 1px solid #232B36; overflow: hidden">{mh}</div><div style="padding: 24px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1"><div class="mono" style="font-size: 12px; color: {sc}">{st}</div><h3 class="disp" style="margin: 0; font-size: 20px; font-weight: 500">{t}</h3><p style="margin: 0; font-size: 15px; color: #B7C0CD; line-height: 1.55; flex-grow: 1">{rich(txt)}</p>{la}</div></article>'
     cols = "1fr" if m else "repeat(4, minmax(0, 1fr))"
     return f'<div style="display: grid; grid-template-columns: {cols}; gap: {12 if m else 20}px">{out}</div>'
 
@@ -433,7 +436,12 @@ def render_section(sec, m):
     if t == "cards": body = product_cards(m)
     elif t == "features": return shell(sec, m, feature_rows(sec["items"], m))
     elif t == "bullets": body = bullets(sec["items"], m, light)
-    elif t == "tiles": body = tiles(sec["items"], m, light, sec.get("numbered", False))
+    elif t == "tiles": body = tiles(sec["items"], m, light, sec.get("numbered", False), sec.get("cols"))
+    elif t == "statement":
+        body = f'<p class="disp" style="margin: 0; max-width: 1100px; font-size: {26 if m else 44}px; line-height: 1.25; font-weight: 500; color: {"#0F141B" if light else "#E8ECF2"}">{e(sec["text"])}</p>'
+        return shell(sec, m, f'<div class="mono" style="font-size: 12px; color: {"#5A6475" if light else "#8A94A4"}">{e(sec["sid"])} · {e(sec["h2"])}</div>' + body, light)
+    elif t == "labnotes":
+        body = f'<div class="ph" style="height: {140 if m else 180}px; flex-direction: column; gap: 8px">Lab notes: short posts from the lab, added later<span>Section hidden until the first post exists</span></div>'
     elif t == "table": body = table(sec["rows"], m, light, sec["cols"])
     elif t == "faq": body = faq(sec["items"], m, light)
     elif t == "text": body = "".join(f'<p style="margin: 0; max-width: 760px; font-size: {15 if m else 17}px; line-height: 1.6; color: {"#3A4453" if light else "#B7C0CD"}">{rich(x, light)}</p>' for x in sec["paras"])
@@ -463,11 +471,11 @@ def est_height(p, m):
         if m:
             base = {"cards": 280 + n * 130, "features": 150 + n * 230, "bullets": 220 + n * 75, "tiles": 220 + n * 170,
                     "table": 260 + n * 72, "faq": 240 + n * 95 + 120, "text": 200 + n * 150, "links": 220 + n * 80,
-                    "media": 520, "contact": 1100, "split": 720, "cta": 440, "people": 900}[t]
+                    "media": 520, "contact": 1100, "split": 720, "cta": 440, "people": 900, "statement": 360, "labnotes": 340}[t]
         else:
             base = {"cards": 820, "features": 300 + n * 140, "bullets": 360 + ((n + 1) // 2) * 60, "tiles": 380 + ((n + 2) // 3) * 210,
                     "table": 400 + n * 58, "faq": 360 + n * 76 + 90, "text": 320 + n * 90, "links": 340,
-                    "media": 900, "contact": 1050, "split": 780, "cta": 500, "people": 700}[t]
+                    "media": 900, "contact": 1050, "split": 780, "cta": 500, "people": 700, "statement": 420, "labnotes": 420}[t]
         if s.get("intro"): base += 60 if m else 0
         if s.get("after"): base += 110 if m else 60
         if s.get("ctas") and t != "cta": base += 130 if m else 80

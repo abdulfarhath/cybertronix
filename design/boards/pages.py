@@ -7,33 +7,44 @@ TEAM4 = [("AI engineering", "Computer vision, machine learning and decision soft
          ("Mechanical", "Frames, joints, grippers and enclosures"), ("Electronics", "Circuit boards, power and wiring")]
 PAGES = []
 
-PAGES.append(dict(id="P1", name="Home", file="Main", eyebrow="Robotics engineering · Jubilee Hills, Hyderabad",
-    h1="Cybertronix: robotics company in Hyderabad",
-    lead="We're a Hyderabad engineering team building AI vision that checks gowning and PPE on the CCTV cameras you already have, an autonomous floor-cleaning robot, and custom robots built to your requirement.",
-    ctas=[("See AI vision", "/ai-vision"), (REQ, "/contact")], media="home",
+PAGES.append(dict(id="P1", name="Home", file="Main", eyebrow="Robotics & AI engineering · Hyderabad, India",
+    h1="We build the robots the world needs next.",
+    lead="Cybertronix is a robotics and AI engineering team in Hyderabad. We're building AI vision that keeps cleanrooms safe, an autonomous floor-cleaning robot, and custom robots made to your requirement.",
+    ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), (REQ, "/contact")], media="home",
     sections=[
-        dict(type="split", sid="P1.2", h2="AI vision for gowning and PPE compliance", status=PROTO, media="vision", paras=[
-            "In pharma cleanrooms and operating theatres, one missing glove or mask matters.",
-            "Our AI vision prototype is designed to check gloves, masks, shoe covers and gowns on your existing CCTV, run on-site so video stays on your premises, and alert your team."],
-            ctas=[("See how it's designed to work", "/ai-vision"), ("Pharma and healthcare", "/industries/pharma-healthcare")]),
-        dict(type="cards", sid="P1.3", h2="What we're building"),
-        dict(type="table", sid="P1.4", h2="One in-house engineering team", light=True, cols=("Discipline", "What they do"),
-             intro="Everything we make is designed and built by our own engineers in Hyderabad.", rows=[
-            ("AI engineering", "Computer vision and the software that makes decisions."), ("Mechatronics", "Motors, sensors and control, working together."),
-            ("Mechanical", "Frames, joints and grippers."), ("Electronics", "Boards, power and wiring.")], ctas=[("Meet the team", "/team")]),
-        dict(type="links", sid="P1.5", h2="Industries", items=[("Pharma and healthcare", "/industries/pharma-healthcare"), ("Retail and malls", "/industries/retail"), ("Manufacturing", "/industries/manufacturing")]),
-        dict(type="faq", sid="P1.6", h2="Questions people ask", light=True, items=[
-            ("What does Cybertronix do?", "Cybertronix is a robotics engineering company in Hyderabad. We're building our own products, an AI vision system for gowning and PPE compliance and an autonomous floor-cleaning robot, and we take on custom projects, including humanoid robots and robotic arms built to your requirement."),
-            ("Where is Cybertronix located?", "Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad. Phone +91 90598 97807. See the {contact page|/contact}."),
-            ("Can I buy a Cybertronix product today?", "Not yet. Our AI vision is a prototype and our cleaning robot is in development. Both are open to pilot partners. Humanoid robots and robotic arms are built to order."),
-            ("Does your AI vision need new cameras?", "Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those and run on-site."),
+        dict(type="statement", sid="P1.2", h2="Our mission", text="We engineer robots and AI that take on the careful, repetitive work, so people can focus on the work that needs a person."),
+        dict(type="statement", sid="P1.3", h2="Our vision", light=True, text="To grow from custom builds and prototypes into a family of robotics and AI products that labs, hospitals and workplaces around the world rely on."),
+        dict(type="cards", sid="P1.4", h2="What we're building"),
+        dict(type="tiles", sid="P1.5", h2="How we work", numbered=True, cols=5, items=[
+            ("Understand", "We start from your problem: what you need to see, clean, move or build, and where."),
+            ("Design", "We design the system and share it with you before anything is built."),
+            ("Prototype", "We build a first version and test it on real conditions."),
+            ("Build", "We build the final system in our lab in Hyderabad."),
+            ("Support", "The engineers who built it set it up and stay with you.")]),
+        dict(type="table", sid="P1.6", h2="Inside the lab", light=True, cols=("Discipline", "What they do"), intro="One in-house team covers every part of a robot. Lab photos: [[TODO(founder) F8]]", rows=[
+            ("AI engineering", "Computer vision and the software that decides what to do"), ("Mechatronics", "Motors, sensors and control, working together"),
+            ("Mechanical", "Frames, joints, grippers and enclosures"), ("Electronics", "Boards, power and wiring")], ctas=[("Meet the team", "/team")]),
+        dict(type="tiles", sid="P1.7", h2="Why Cybertronix", items=[
+            ("Hardware and software, in-house", "The same team builds the robot and the AI that runs it."),
+            ("Your video stays on your premises", "Our AI vision is designed to run on-site, on an edge computer next to your cameras."),
+            ("Engineered in Hyderabad, for the world", "Our lab is in Hyderabad, India. Our work is for teams anywhere."),
+            ("Honest about what's ready", "Every product shows its real status: prototype, in development, built to order or early build.")]),
+        dict(type="bullets", sid="P1.8", h2="Be our first pilot partner", light=True, intro="Our AI vision prototype and our cleaning robot are ready to be tested in the real world. Pilot partners help us shape them, and get:", items=[
+            "Early access to the system before launch", "A system shaped around you: your site, your rules, your feedback", "A direct line to the engineers who are building it"],
+             after="Pilot terms are agreed per site, so talk to us.", ctas=[("Become a pilot partner", "/contact?topic=ai-vision")]),
+        dict(type="labnotes", sid="P1.9", h2="Lab notes"),
+        dict(type="faq", sid="P1.10", h2="Questions people ask", light=True, items=[
+            ("What does Cybertronix do?", "Cybertronix is a robotics and AI engineering company in Hyderabad, India. We're building our own products, an AI vision system for gowning and PPE compliance and an autonomous floor-cleaning robot, and we design and build custom robots, including humanoid robots and robotic arms, to your requirements."),
+            ("Where is Cybertronix based?", "In Jubilee Hills, Hyderabad, India. See the {contact page|/contact}."),
+            ("Do you work with teams outside India?", "Yes. We're based in Hyderabad and open to pilots and projects worldwide."),
+            ("Can I buy a Cybertronix product today?", "Not yet. Our AI vision is a prototype and our cleaning robot is in development. Both are open to pilot partners. Custom robots are built to order."),
             ("How much does a project cost?", "Every project is different, so we quote on request.")]),
-        dict(type="cta", sid="P1.7", h2=REQ, intro="Tell us what you want to check, clean or build. We'll tell you honestly what we can do.", ctas=[(REQ, "/contact")]),
+        dict(type="cta", sid="P1.11", h2="Contact", intro="Tell us what you want to see, clean or build. An engineer will reply. Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad · {+91 90598 97807|tel:+919059897807} · {info@cybertronix.com|mailto:info@cybertronix.com}", ctas=[(REQ, "/contact")]),
     ]))
 
-PAGES.append(dict(id="P2", name="Humanoid robot development", file="P2-Humanoid", eyebrow="Custom robots · Hyderabad", status="Built to order",
-    h1="Humanoid robot development in Hyderabad",
-    lead="Need a humanoid robot for a specific job? Our engineers design and build it to your requirement, from the first sketch to a working robot.",
+PAGES.append(dict(id="P2", name="Humanoid robot development", file="P2-Humanoid", eyebrow="Custom humanoid robot development · Hyderabad, India", status="Built to order",
+    h1="Your humanoid robot, designed from the job up.",
+    lead="Need a humanoid robot for a specific job? Our engineers in Hyderabad offer custom humanoid robot development: we design and build it to your requirement, from the first sketch to a working robot, for teams in India and around the world.",
     ctas=[(REQ, "/contact?topic=humanoid")], media="humanoid",
     sections=[
         dict(type="tiles", sid="P2.2", h2="What we build to order", intro="You tell us the job. We design a humanoid robot around it. Typical requirements we can work to:", items=[
@@ -59,9 +70,9 @@ PAGES.append(dict(id="P2", name="Humanoid robot development", file="P2-Humanoid"
         dict(type="cta", sid="P2.7", h2=REQ, intro="Describe the job. We'll tell you if a humanoid robot is the right answer and what it would take.", ctas=[(REQ, "/contact?topic=humanoid"), ("Custom robotic arms", "/robotic-arm")]),
     ]))
 
-PAGES.append(dict(id="P3", name="Custom robotic arms", file="P3-Arm", eyebrow="Custom robots · Hyderabad", status="Built to order",
-    h1="Custom robotic arm design and build",
-    lead="Have a task a standard arm can't handle, or one that doesn't need a big brand robot? We design and build a robotic arm for your task, in Hyderabad.",
+PAGES.append(dict(id="P3", name="Custom robotic arms", file="P3-Arm", eyebrow="Custom robotic arm design & build", status="Built to order",
+    h1="An arm shaped around your task.",
+    lead="Have a task a standard arm can't handle, or one that doesn't need a big brand robot? We're a custom robotic arm manufacturer: we design and build an arm for your task in our Hyderabad lab, for teams anywhere.",
     ctas=[(REQ, "/contact?topic=robotic-arm")], media="arm",
     sections=[
         dict(type="table", sid="P3.2", h2="Tasks we can design for", cols=("Task", "What the arm would do"), rows=[
@@ -88,9 +99,9 @@ PAGES.append(dict(id="P3", name="Custom robotic arms", file="P3-Arm", eyebrow="C
         dict(type="cta", sid="P3.8", h2=REQ, intro="Send us a photo or video of the task. We'll tell you what it would take.", ctas=[(REQ, "/contact?topic=robotic-arm"), ("Manufacturing", "/industries/manufacturing")]),
     ]))
 
-PAGES.append(dict(id="P4", name="Cleaning robot", file="P4-Cleaning", eyebrow="Our product · offices and malls", status=DEV,
-    h1="Autonomous floor-cleaning robot for offices and malls",
-    lead="We're building a robot that cleans office and mall floors on its own, on a schedule, so your housekeeping team can focus on the jobs that need a person.",
+PAGES.append(dict(id="P4", name="Cleaning robot", file="P4-Cleaning", eyebrow="Floor-cleaning robot for offices & malls · in development", status=DEV,
+    h1="Clean floors, without anyone pushing a machine.",
+    lead="We're building an autonomous floor-cleaning robot for offices and malls. It's designed to clean on its own, on a schedule, so your housekeeping team can focus on the jobs that need a person.",
     ctas=[("Become a pilot partner", "/contact?topic=cleaning-pilot")], media="cleaning",
     sections=[
         dict(type="bullets", sid="P4.2", h2="What we're building", intro="An autonomous floor-cleaning robot designed to:", items=[
@@ -109,9 +120,9 @@ PAGES.append(dict(id="P4", name="Cleaning robot", file="P4-Cleaning", eyebrow="O
         dict(type="cta", sid="P4.6", h2="Stay in touch", intro="Register your interest and we'll tell you when pilots start.", ctas=[("Register your interest", "/contact?topic=cleaning-pilot"), ("Retail and malls", "/industries/retail")]),
     ]))
 
-PAGES.append(dict(id="P5", name="AI vision", file="P5-Vision", eyebrow="Our product · existing CCTV", status=PROTO,
-    h1="AI vision for gowning and PPE compliance",
-    lead="A wrong glove, a missing mask or an uncovered shoe can compromise a cleanroom or an operating theatre. Our AI vision prototype is designed to check gowning and PPE on the CCTV cameras you already have, and to alert your team before someone walks into a critical zone.",
+PAGES.append(dict(id="P5", name="AI vision", file="P5-Vision", eyebrow="AI gowning & PPE compliance · prototype", status=PROTO,
+    h1="A second pair of eyes at the gowning-room door.",
+    lead="A wrong glove, a missing mask or an uncovered shoe can compromise a cleanroom or an operating theatre. Our AI vision prototype is designed for cleanroom gowning compliance and surgical PPE detection: it checks gowning on your existing IP CCTV and alerts your team before someone walks into a critical zone.",
     ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), ("See the prototype", "#p5-6")], media=None,
     sections=[
         dict(type="table", sid="P5.2", h2="What it's designed to check", light=True, cols=("Item", "What it looks for"), rows=[
@@ -137,33 +148,35 @@ PAGES.append(dict(id="P5", name="AI vision", file="P5-Vision", eyebrow="Our prod
         dict(type="cta", sid="P5.9", h2="Talk to us", intro="Pharma site, lab or hospital? Help us test the prototype.", ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), ("Pharma and healthcare", "/industries/pharma-healthcare")]),
     ]))
 
-PAGES.append(dict(id="P6", name="About", file="P6-About", eyebrow="Robotics engineering · Jubilee Hills, Hyderabad",
-    h1="About Cybertronix",
-    lead="Cybertronix is a robotics engineering company in Jubilee Hills, Hyderabad. We're building our own products, and we take on custom robot and computer-vision projects for clients.",
+PAGES.append(dict(id="P6", name="About", file="P6-About", eyebrow="About Cybertronix · robotics & AI engineering, Hyderabad",
+    h1="Engineers who build what they design.",
+    lead="Cybertronix is a robotics and AI engineering company based in Jubilee Hills, Hyderabad, India, and open to teams around the world. We're building our own products, and we take on custom robot and computer-vision projects.",
     ctas=[(REQ, "/contact")], media=None,
     sections=[
-        dict(type="table", sid="P6.2", h2="What we're building", cols=("Product", "Status"), rows=[
+        dict(type="statement", sid="P6.2", h2="Our mission", text="We engineer robots and AI that take on the careful, repetitive work, so people can focus on the work that needs a person."),
+        dict(type="statement", sid="P6.2", h2="Our vision", light=True, text="To grow from custom builds and prototypes into a family of robotics and AI products that labs, hospitals and workplaces around the world rely on."),
+        dict(type="table", sid="P6.3", h2="What we're building", cols=("Product", "Status"), rows=[
             ("{AI vision|/ai-vision} for gowning and PPE compliance on existing CCTV", PROTO), ("{Floor-cleaning robot|/cleaning-robot} for offices and malls", "In development"),
-            ("{Custom humanoid robots|/humanoid-robots}", "Built to order"), ("{Custom robotic arms|/robotic-arm}", "Built to order")]),
-        dict(type="text", sid="P6.3", h2="Product-first, open to projects", paras=["We want to be a product company: we build our own systems and improve them with pilot partners. We also take on client projects when our engineering fits the problem."]),
-        dict(type="table", sid="P6.4", h2="Our engineering team", light=True, cols=("Discipline", "What they do"), rows=TEAM4, ctas=[("Meet the team", "/team")]),
-        dict(type="tiles", sid="P6.5", h2="How we work", items=[
+            ("{Custom humanoid robots|/humanoid-robots}", "Built to order"), ("{Custom robotic arms|/robotic-arm}", "Built to order"), ("{Raqib|/software/raqib}, a terminal monitor for AI workloads", "Early build")]),
+        dict(type="text", sid="P6.4", h2="Product-first, open to projects", paras=["We want to be a product company: we build our own systems and improve them with pilot partners. We also take on client projects when our engineering fits the problem."]),
+        dict(type="table", sid="P6.5", h2="Our engineering team", light=True, cols=("Discipline", "What they do"), rows=TEAM4, ctas=[("Meet the team", "/team")]),
+        dict(type="tiles", sid="P6.6", h2="How we work", items=[
             ("Honest about status", "We say clearly what's a prototype, what's in development and what we build to order."),
             ("Requirement first", "We start from your problem, not from a product we need to sell."),
             ("One team, start to finish", "The engineers who design a system build it and support it.")]),
-        dict(type="split", sid="P6.6", h2="Our base in Hyderabad", media="lab", paras=["We work from Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad.", f"What happens there and visits: {F}"]),
-        dict(type="faq", sid="P6.7", h2="Questions about Cybertronix", light=True, items=[
+        dict(type="split", sid="P6.7", h2="Our base in Hyderabad", media="lab", paras=["We work from Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad.", f"What happens there and visits: {F}"]),
+        dict(type="faq", sid="P6.8", h2="Questions about Cybertronix", light=True, items=[
             ("Where is Cybertronix based?", "In Jubilee Hills, Hyderabad, Telangana. See the {contact page|/contact}."),
             ("Is Cybertronix a product company or a services company?", "Product first. We're building our own AI vision system and cleaning robot, and we also take on client projects."),
             ("What kind of engineers work at Cybertronix?", "AI, mechatronics, mechanical and electronics engineers, all in-house. {Meet the team|/team}."),
             ("Do you take on custom projects?", "Yes. Custom robots and computer-vision systems built to your requirement."),
             ("Is Cybertronix related to Cybertronix Technologies LLC in Dubai?", F)]),
-        dict(type="cta", sid="P6.8", h2="Talk to us", intro="Tell us what you want to check, clean or build.", ctas=[(REQ, "/contact")]),
+        dict(type="cta", sid="P6.9", h2="Talk to us", intro="Tell us what you want to check, clean or build.", ctas=[(REQ, "/contact")]),
     ]))
 
-PAGES.append(dict(id="P7", name="Contact", file="P7-Contact", eyebrow="Jubilee Hills, Hyderabad",
-    h1="Contact Cybertronix in Hyderabad",
-    lead="Join a pilot, ask about a custom build or just ask a question. An engineer on our team will reply.",
+PAGES.append(dict(id="P7", name="Contact", file="P7-Contact", eyebrow="Contact · Jubilee Hills, Hyderabad",
+    h1="Tell us what you want to see, clean or build.",
+    lead="Contact Cybertronix in Hyderabad, from anywhere in the world. Join a pilot, ask about a custom build or just ask a question. An engineer on our team will reply.",
     ctas=[], media=None,
     sections=[
         dict(type="contact", sid="P7.2", h2=REQ, intro="The topic is pre-selected from the page you came from."),
@@ -175,13 +188,13 @@ PAGES.append(dict(id="P7", name="Contact", file="P7-Contact", eyebrow="Jubilee H
             ("Where is your Hyderabad office?", "Rd No. 10C, Gayatri Hills, Jubilee Hills, Hyderabad."),
             ("Can I visit without an appointment?", "Please call or email first so the right engineer is free to meet you."),
             ("How do I join a pilot?", "Choose \"AI vision pilot\" or \"Cleaning robot pilot\" in the form and tell us about your site."),
-            ("Do you work with clients outside Hyderabad?", F),
+            ("Do you work with teams outside Hyderabad or India?", "Yes. We're based in Hyderabad, India, and open to pilots and projects worldwide."),
             ("Can I get a quote by email?", "Yes. Tell us your requirement and we'll send a quote. Every quote is on request.")]),
     ]))
 
-PAGES.append(dict(id="P8", name="Manufacturing", file="P8-Manufacturing", eyebrow="Industries · Manufacturing",
-    h1="Custom robots and computer vision for Hyderabad factories",
-    lead="Have a task a standard machine doesn't fit? Our engineers design and build a robot or vision system around it.",
+PAGES.append(dict(id="P8", name="Manufacturing", file="P8-Manufacturing", eyebrow="Factory automation · custom robots & vision",
+    h1="Your line, your task, our engineers.",
+    lead="Have a task a standard machine doesn't fit? For factory automation, our engineers in Hyderabad design and build a custom robot or vision system around it, for plants in India and abroad.",
     ctas=[(REQ, "/contact?topic=robotic-arm")], media="factory",
     sections=[
         dict(type="bullets", sid="P8.2", h2="Problems we can help with", items=["Repetitive tasks that tire people out and cause mistakes", "Safety or PPE rules that are hard to check on every shift", "Tasks a standard robot doesn't fit"]),
@@ -194,13 +207,13 @@ PAGES.append(dict(id="P8", name="Manufacturing", file="P8-Manufacturing", eyebro
             ("Where should a factory start with automation?", "With one task you can measure every shift. We'll help you pick it on a site visit."),
             ("Can you build a robot for one specific task?", "Yes. We design and build custom robotic arms to your requirement."),
             ("Do I need new cameras for vision checks?", "Not if you have standard IP CCTV cameras (RTSP). It's designed to work with those."),
-            ("How much does it cost?", "It depends on the task. We quote on request."), ("Do you work outside Telangana?", F)]),
+            ("How much does it cost?", "It depends on the task. We quote on request."), ("Do you work outside Telangana or India?", "Yes. We're based in Hyderabad, India, and open to pilots and projects worldwide.")]),
         dict(type="cta", sid="P8.7", h2=REQ, intro="Tell us about one task on your floor.", ctas=[(REQ, "/contact"), ("Custom robotic arms", "/robotic-arm")]),
     ]))
 
-PAGES.append(dict(id="P9", name="Pharma & healthcare", file="P9-Pharma", eyebrow="Industries · Pharma and healthcare", status=PROTO,
-    h1="AI gowning checks for pharma cleanrooms and operating theatres",
-    lead="Gowning mistakes are easy to make and hard to spot on a busy shift. Our AI vision prototype is designed to check every person's gowning on your existing CCTV, before they enter a clean zone or theatre.",
+PAGES.append(dict(id="P9", name="Pharma & healthcare", file="P9-Pharma", eyebrow="AI gowning checks · pharma cleanrooms & operating theatres", status=PROTO,
+    h1="Every glove, every mask, before the clean zone.",
+    lead="Gowning mistakes are easy to make and hard to spot on a busy shift. Our AI vision prototype is designed for cleanroom gowning compliance in pharma and for surgical PPE checks in hospitals: it checks every person's gowning on your existing IP CCTV, before they enter a clean zone or theatre.",
     ctas=[("Become a pilot partner", "/contact?topic=ai-vision")], media=None,
     sections=[
         dict(type="text", sid="P9.2", h2="Built next to India's pharma hub", paras=["Hyderabad is home to many pharma and life-sciences companies. We're a Hyderabad engineering team building this system for exactly these sites, so we can visit, test and improve it with you in person."]),
@@ -218,9 +231,9 @@ PAGES.append(dict(id="P9", name="Pharma & healthcare", file="P9-Pharma", eyebrow
         dict(type="cta", sid="P9.7", h2="Become a pilot partner", intro="A real gowning area and honest feedback help shape the product.", ctas=[("Become a pilot partner", "/contact?topic=ai-vision"), ("How AI vision works", "/ai-vision")]),
     ]))
 
-PAGES.append(dict(id="P10", name="Team", file="P10-Team", eyebrow="In-house engineers · Hyderabad",
-    h1="The Cybertronix team",
-    lead="One in-house team of engineers in Hyderabad. The people who design our systems are the people who build them.",
+PAGES.append(dict(id="P10", name="Team", file="P10-Team", eyebrow="Our team · robotics & AI engineers in Hyderabad",
+    h1="Four kinds of engineer. One team.",
+    lead="Our robotics and AI engineers work together in one in-house team in Hyderabad. The people who design our systems are the people who build them.",
     ctas=[(REQ, "/contact")], media=None,
     sections=[
         dict(type="table", sid="P10.2", h2="What our engineers do", cols=("Discipline", "What they work on"), rows=[
@@ -236,9 +249,9 @@ PAGES.append(dict(id="P10", name="Team", file="P10-Team", eyebrow="In-house engi
         dict(type="cta", sid="P10.7", h2=REQ, intro="Meet the engineers who would build it.", ctas=[(REQ, "/contact"), ("About Cybertronix", "/about")]),
     ]))
 
-PAGES.append(dict(id="P11", name="Retail & malls", file="P11-Retail", eyebrow="Industries · Retail and malls",
-    h1="AI vision and robots for supermarkets and malls",
-    lead="Have a store problem you'd like a camera to solve? Our engineers build custom computer vision on your existing CCTV. Our floor-cleaning robot for malls is also in development.",
+PAGES.append(dict(id="P11", name="Retail & malls", file="P11-Retail", eyebrow="AI vision & floor-cleaning robots · retail & malls",
+    h1="Cameras that notice, floors that clean themselves.",
+    lead="Have a store problem you'd like a camera to solve? Our engineers build custom AI vision for supermarkets and retail on your existing CCTV. Our floor-cleaning robot for malls is in development.",
     ctas=[(REQ, "/contact?topic=ai-vision")], media=None,
     sections=[
         dict(type="bullets", sid="P11.2", h2="Custom AI vision for supermarkets and retail", status="Custom project",
@@ -256,9 +269,9 @@ PAGES.append(dict(id="P11", name="Retail & malls", file="P11-Retail", eyebrow="I
         dict(type="cta", sid="P11.5", h2=REQ, intro="Tell us the question you'd like your cameras to answer.", ctas=[(REQ, "/contact"), ("AI vision", "/ai-vision")]),
     ]))
 
-PAGES.append(dict(id="P12", name="Software & projects", file="P12-Software", eyebrow="Software · built by our engineers",
-    h1="Software and projects",
-    lead="Alongside our robots and AI vision, our engineers build software tools. Some start as tools we need ourselves. Here's what we're working on.",
+PAGES.append(dict(id="P12", name="Software & projects", file="P12-Software", eyebrow="Software & projects · Cybertronix",
+    h1="Tools we built for ourselves",
+    lead="Alongside our robots and AI vision, our engineers build software tools for AI developers. They start as tools we need in our own lab, and we share them when they're useful to others.",
     ctas=[(REQ, "/contact")], media=None,
     sections=[
         dict(type="tiles", sid="P12.2", h2="Tools", items=[
@@ -273,9 +286,9 @@ PAGES.append(dict(id="P12", name="Software & projects", file="P12-Software", eye
         dict(type="cta", sid="P12.5", h2=REQ, intro="Need a tool built around your AI work?", ctas=[(REQ, "/contact"), ("Raqib", "/software/raqib")]),
     ]))
 
-PAGES.append(dict(id="P13", name="Raqib", file="P13-Raqib", eyebrow="Software · terminal app", status="Early build",
-    h1="Raqib: a terminal monitor for AI workloads",
-    lead="Running AI models on your own machine? Raqib shows, in one terminal screen, how much RAM, CPU and VRAM they're using, how hot the machine is running, and which processes are using the most. A local web view shows it in your browser too.",
+PAGES.append(dict(id="P13", name="Raqib", file="P13-Raqib", eyebrow="Raqib · terminal monitor for AI workloads · early build", status="Early build",
+    h1="See what your AI is really using.",
+    lead="Running AI models on your own machine? Raqib is a terminal monitor for AI workloads: one screen shows how much RAM, CPU and VRAM they're using, how hot the machine is running, and which processes are using the most. A local web view shows it in your browser too.",
     ctas=[("Ask about Raqib", "/contact")], media="raqib",
     sections=[
         dict(type="table", sid="P13.2", h2="What Raqib shows", light=True, cols=("Panel", "What you see"), rows=[
@@ -286,7 +299,8 @@ PAGES.append(dict(id="P13", name="Raqib", file="P13-Raqib", eyebrow="Software ·
         dict(type="table", sid="P13.3", h2="Keyboard first", cols=("Key", "Action"), intro="Raqib runs in the terminal and is driven from the keyboard.", rows=[
             ("j / k", "Select a row"), ("k", "Kill a process, with a confirmation step"), ("h", "History"), ("?", "Help"), ("q", "Quit")]),
         dict(type="text", sid="P13.4", h2="Local web view", paras=["While Raqib runs, it also serves a web view on your own machine at http://localhost:7070, so you can keep an eye on it in a browser tab."]),
-        dict(type="text", sid="P13.5–P13.6", h2="Status and availability", light=True, paras=["Raqib is an early build.", f"Why we built it, systems, install, licence and where to get it: {F} (hidden until answered)."]),
+        dict(type="text", sid="P13.5", h2="Why we built it", paras=["Our team built Raqib to watch our own AI workloads: to see at a glance how much memory, CPU and VRAM our models were using, and how hot the machine was running. We're sharing it as an early build."]),
+        dict(type="text", sid="P13.6", h2="Status and availability", light=True, paras=["Raqib is an early build.", f"Systems, install, licence and where to get it: {F} (hidden until answered)."]),
         dict(type="faq", sid="P13.7", h2="Questions about Raqib", light=True, items=[
             ("What is Raqib?", "A terminal app by Cybertronix that monitors AI workloads on a machine: RAM, CPU load, VRAM, temperatures, AI processes and the top processes by memory, GPU memory and CPU."),
             ("Can Raqib show VRAM usage for local LLMs?", f"It shows VRAM in use across the machine's GPU devices and lists the top processes by VRAM, so you can see what a model is using. {F}"),
