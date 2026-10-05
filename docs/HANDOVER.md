@@ -49,6 +49,12 @@ Chats can't be moved between accounts, so the new account starts a fresh hub and
 3. Design: republish the canvases from `design/boards/` and send the founder phone previews (the founder works from a phone and can't open artifacts, so always send PNGs in chat).
 4. Get the founder's design approval (T10). Then Build resumes `feature/T6-skeleton` → T7 pages → launch steps in `docs/FOUNDER-TODO.md`.
 
+## 5b. Notes for the new Build chat (from the old Build chat)
+- `feature/T6-skeleton` (c02d80f) is based on the 2026-10-03 main: merge main first; expect conflicts in `docs/BOARD.md` and `docs/PAGES.md`.
+- `site/src/config/site-url.mjs` has the placeholder `cybertronix.in`. Change it to **cybertronix.tech** (D15).
+- Stubs cover P1–P7 with provisional titles. Switch to the title/meta/H1/eyebrow from `content/` front matter and add P8–P13.
+- Tokens are placeholders. Use `design/tokens.json`. Logo files: `design/logo/`.
+
 ## 6. How the founder likes to work
 - Talks only to the hub. Short, visual, table-first, ADHD-friendly; next action first.
 - Often on mobile: send screenshots as images, not artifact links.
