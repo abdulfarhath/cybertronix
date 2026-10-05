@@ -26,7 +26,7 @@ Chats can't be moved between accounts, so the new account starts a fresh hub and
 | Item | What to do |
 |---|---|
 | Old chat sessions (`docs/HUB.md`) | Belong to the old account. The new hub creates new Design / Build / SEO Content sessions on this repo and updates `docs/HUB.md` |
-| Canvases (Claude artifacts) | Owned by the old account: Site `https://claude.ai/artifact/CuWwyexFMkXoxr7sUyxS2j`, Logo `https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj`. The new account can't edit them. **The source is in the repo**: `design/boards/*.py` + `design/tokens.json` regenerate every board. New Design republishes a fresh canvas from it and records the new URL in `docs/START-HERE.md` |
+| Canvases (Claude artifacts) | Owned by the old account: Site `https://claude.ai/artifact/CuWwyexFMkXoxr7sUyxS2j`, Logo `https://claude.ai/artifact/2KpSqWpNxZYqE5d9TeuGdj`. The new account can't edit them. **The source is in the repo**: footage and stills in `design/footage/` (see its README for re-uploading), `design/boards/*.py` + `design/tokens.json` regenerate every board. New Design republishes a fresh canvas from it and records the new URL in `docs/START-HERE.md` |
 | GitHub access | The new Claude account must connect the GitHub account that owns `abdulfarhath/cybertronix` (or be given access) |
 
 ## 4. Open questions for the founder (all hidden on the site until answered)
