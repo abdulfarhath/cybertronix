@@ -4,7 +4,7 @@ Cybertronix is a Hyderabad robotics engineering company. Real today: AI vision o
 cleaning robot in development. Humanoids and robotic arms are custom-build capabilities, not products
 yet (D16). Never show the founding year (D19). This repo holds its website and the team's shared memory.
 
-**New here? Read `docs/START-HERE.md` first.**
+**New here? Read `docs/HANDOVER.md`, then `docs/START-HERE.md`.**
 
 ## Always, first
 1. `git pull`, then read `docs/START-HERE.md`, `docs/BOARD.md`, `docs/DECISIONS.md` and `docs/PAGES.md`.

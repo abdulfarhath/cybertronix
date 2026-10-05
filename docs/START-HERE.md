@@ -1,5 +1,7 @@
 # Start here
 
+> **New account? Read `docs/HANDOVER.md` first** (moved 2026-10-05).
+
 ## The product
 A marketing website for **Cybertronix**, a robotics company in **Hyderabad**.
 Goal: rank #1 on Google for "robotics company in Hyderabad", the brand name, and humanoid /

@@ -2,7 +2,7 @@
 
 | # | Step | Why | Status |
 |---|---|---|---|
-| F1 | Send the Hyderabad office address and phone | Contact page, schema, Google Business | Waiting |
+| F1 | Office address and phone | Contact page, schema, Google Business | Done (D25); PIN/plot still open |
 | F2 | Domain: cybertronix.tech (confirmed D15) | The site needs a home | Done |
 | F3 | Create a free Cloudflare Pages or Vercel account and connect this repo | Hosting | Later (Build will say when) |
 | F4 | Google Search Console: add the domain, submit the sitemap | Google finds the site | At launch |
