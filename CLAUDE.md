@@ -41,7 +41,8 @@ No Media and no Marketing chats (founder decision). We use the footage we alread
   The canvas has one board per page, titled with its ID. Add a page → PAGES entry → Design board → Build.
 - **Honest.** No fake clients, logos, numbers, awards, certifications or reviews. Specs only if real.
   If a fact is unknown, leave a visible `TODO(founder)` in the docs, never invent it.
-- **Brand first, SEO underneath (D41).** Headlines are for people. Every page still targets one keyword group from `docs/seo/keywords.md`. in its title, meta, URL, eyebrow and body. Real HTML text
+- **Brand first, SEO underneath (D41).** Headlines are for people. Every page still targets one keyword group from `docs/seo/keywords.md`
+  in its title, meta, URL, eyebrow and body. Real HTML text
   (never text inside images or video), one H1, title, meta description, alt text, schema.
 - **Fast.** Green Core Web Vitals on mobile. Hero video is muted, compressed, has a poster, and does
   not autoplay on phones. The H1 is real text above it.
