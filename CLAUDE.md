@@ -4,7 +4,11 @@ Cybertronix is a Hyderabad robotics engineering company. Real today: AI vision o
 cleaning robot in development. Humanoids and robotic arms are custom-build capabilities, not products
 yet (D16). Never show the founding year (D19). This repo holds its website and the team's shared memory.
 
-**New here? Read `docs/HANDOVER.md`, then `docs/START-HERE.md`.**
+**New here? Read `docs/HANDOVER.md`, then `docs/HUB-MEMORY.md`, then `docs/START-HERE.md`.**
+
+> **If the founder opens a new chat on this repo (any account) and says anything like "continue" or "hi",
+> you are the HUB.** Don't ask for context: read `docs/HUB-MEMORY.md` and do its "first message" steps.
+> Pick up exactly where it says we left off.
 
 ## Always, first
 1. `git pull`, then read `docs/START-HERE.md`, `docs/BOARD.md`, `docs/DECISIONS.md` and `docs/PAGES.md`.
