@@ -1,4 +1,6 @@
-# Handover to a new Claude account (2026-10-05)
+# Handover to a new Claude account (2026-10-05, updated 2026-10-06)
+
+> **Hub: read `docs/memory/README.md` first.** The founder only says "continue".
 
 The founder is moving this project to a new Claude account. Everything that matters is in this repo.
 Chats can't be moved between accounts, so the new account starts a fresh hub and fresh chats.
@@ -44,7 +46,7 @@ Chats can't be moved between accounts, so the new account starts a fresh hub and
 | Q10 | Founder's choice on the optional logo blink tie-in (Proposed) |
 
 ## 5. Next steps, in order
-1. New hub: read `CLAUDE.md`, this file, `docs/DECISIONS.md`, `docs/BOARD.md`.
+1. New hub: read `docs/memory/README.md`, `docs/memory/founder-messages.md`, `CLAUDE.md`, this file, `docs/DECISIONS.md`, `docs/BOARD.md`.
 2. Create the Design, Build and SEO Content chats on this repo (brief each from `CLAUDE.md` roles); record IDs in `docs/HUB.md`.
 3. Design: republish the canvases from `design/boards/` and send the founder phone previews (the founder works from a phone and can't open artifacts, so always send PNGs in chat).
 4. Get the founder's design approval (T10). Then Build resumes `feature/T6-skeleton` → T7 pages → launch steps in `docs/FOUNDER-TODO.md`.
@@ -59,3 +61,24 @@ Chats can't be moved between accounts, so the new account starts a fresh hub and
 - Talks only to the hub. Short, visual, table-first, ADHD-friendly; next action first.
 - Often on mobile: send screenshots as images, not artifact links.
 - Delegates taste ("take your own decisions") but wants honest, impressive, brand-first work.
+
+## 7. Gotchas we already hit (don't repeat them)
+| Gotcha | Fix |
+|---|---|
+| Artifacts belong to one account | Rebuild from `design/boards/` + `design/footage/`, republish, update links in `START-HERE.md` and here |
+| Founder can't open artifacts on the phone | Send PNG screenshots in chat (`design/previews/`, or render with Playwright + `/opt/pw-browsers`) |
+| Claude's GitHub app can't create repositories | Founder creates the repo; the hub uses `add_repo` |
+| A child chat's Artifact publish may need approval in that chat | Design pushes the board files to the repo; the hub publishes if Design is blocked |
+| Publishing to an existing artifact needs a fresh `Artifact read` in that session | Read first, then publish |
+| All chats share one usage limit | Run only the chats needed; let idle ones sleep |
+| Build ran ahead of design approval | D14: Build stays paused until the founder says "approved" |
+
+## 8. First message to paste into the new hub (optional)
+`CLAUDE.md` already sends a new chat to `docs/memory/`, so the founder can just say **"continue"**. If a chat doesn't pick it up, paste:
+```
+You are the Cybertronix hub (founder's single chat). Read docs/memory/README.md and docs/memory/founder-messages.md,
+then docs/HANDOVER.md, CLAUDE.md, docs/DECISIONS.md, docs/BOARD.md and docs/PAGES.md.
+Then do docs/memory/README.md §7: create the Design, Build and SEO Content chats with create_session, record them in
+docs/HUB.md, have Design re-home the canvases, and send me the key screenshots as images so I can approve the design.
+Always answer me in short visual tables.
+```

@@ -4,11 +4,12 @@ Cybertronix is a Hyderabad robotics engineering company. Real today: AI vision o
 cleaning robot in development. Humanoids and robotic arms are custom-build capabilities, not products
 yet (D16). Never show the founding year (D19). This repo holds its website and the team's shared memory.
 
-**New here? Read `docs/HANDOVER.md`, then `docs/HUB-MEMORY.md`, then `docs/START-HERE.md`.**
+**If the founder is talking to you, you are the hub.** Before your first reply, read `docs/memory/README.md` (who the
+founder is, how they want answers, the story so far, open threads) and `docs/memory/founder-messages.md` (every message
+they sent, word for word). Never ask the founder for context: carry on as the same Claude they always talked to. A bare
+"continue" or "hi" means: do `docs/memory/README.md` §7.
 
-> **If the founder opens a new chat on this repo (any account) and says anything like "continue" or "hi",
-> you are the HUB.** Don't ask for context: read `docs/HUB-MEMORY.md` and do its "first message" steps.
-> Pick up exactly where it says we left off.
+**New here (new chat or new account)? Read `docs/HANDOVER.md`, then `docs/START-HERE.md`.**
 
 ## Always, first
 1. `git pull`, then read `docs/START-HERE.md`, `docs/BOARD.md`, `docs/DECISIONS.md` and `docs/PAGES.md`.
@@ -40,7 +41,7 @@ No Media and no Marketing chats (founder decision). We use the footage we alread
   The canvas has one board per page, titled with its ID. Add a page → PAGES entry → Design board → Build.
 - **Honest.** No fake clients, logos, numbers, awards, certifications or reviews. Specs only if real.
   If a fact is unknown, leave a visible `TODO(founder)` in the docs, never invent it.
-- **SEO first.** Every page targets one keyword group from `docs/seo/keywords.md`. Real HTML text
+- **Brand first, SEO underneath (D41).** Headlines are for people. Every page still targets one keyword group from `docs/seo/keywords.md`. in its title, meta, URL, eyebrow and body. Real HTML text
   (never text inside images or video), one H1, title, meta description, alt text, schema.
 - **Fast.** Green Core Web Vitals on mobile. Hero video is muted, compressed, has a poster, and does
   not autoplay on phones. The H1 is real text above it.
@@ -50,4 +51,6 @@ No Media and no Marketing chats (founder decision). We use the footage we alread
 
 ## Talking to the founder (hub only)
 Visual and tabular, ADHD-friendly: short lines, one idea per row, the next action first.
+The founder is usually on a phone: send screenshots as images, not artifact links.
+At the end of a hub turn, add any new founder message to `docs/memory/founder-messages.md` and update `docs/memory/README.md` §5–6.
 Only interrupt for milestones, blockers that need the founder, or a chat that died.

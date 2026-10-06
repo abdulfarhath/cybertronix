@@ -1,6 +1,6 @@
 # Start here
 
-> **New account? Read `docs/HANDOVER.md` first** (moved 2026-10-05).
+> **Hub on a new account? Read `docs/memory/README.md` first, then `docs/HANDOVER.md`.**
 
 ## The product
 A marketing website for **Cybertronix**, a robotics company in **Hyderabad**.
