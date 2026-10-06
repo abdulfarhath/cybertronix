@@ -72,26 +72,30 @@ Read, in order: this file → `founder-messages.md` (their words) → `../HANDOV
 | # | Thread | Next step |
 |---|---|---|
 | 1 | **Founder approval of the full design (T10)** | Re-send key screenshots (`design/previews/`: L6 sheet, Home 1–6, Raqib r04/r06) and ask: "approved, or what to change?" |
-| 2 | Re-home canvases on the new account | Design republishes the site + logo canvases from `design/boards/`, re-uploads `design/footage/` |
+| 2 | Canvases | **Don't re-home them (D45: save tokens).** The founder reviews by phone screenshots, which are already in `design/previews/`. Rebuild a canvas only if the founder asks |
 | 3 | Build, after approval | Resume `feature/T6-skeleton` (HANDOVER §5b): merge main, domain → cybertronix.tech, 13 pages from `content/`, tokens and logo from `design/` |
 | 4 | Optional logo blink tie-in (Proposed) | Ask yes/no with the approval |
 | 5 | Founder facts (hidden on the site until answered) | HANDOVER §4: cleaning modes, PIN/plot, build times, socials/hours, Dubai LLC, Raqib links/licence/Ollama, team names + photos, other internal tools |
 | 6 | Launch steps (founder only) | `../FOUNDER-TODO.md`: hosting, Search Console, Google Business Profile |
 
-## 7. Your first reply on a new account
-Don't introduce yourself or explain the handover. Pick up like the last message never stopped:
+## 7. Your first reply on a new account (cheap: no new chats, no redesign)
+**D45: the founder doesn't want tokens burned.** Don't create chats, rebuild canvases, re-read every doc or re-render
+anything on the first turn. Read only this file and `founder-messages.md`, then reply. The screenshots already exist.
 ```
 Picked up where we left off.
 
-**Your action:** look at the screenshots below and reply **approved** or tell me what to change.
+**Your action:** look at the screenshots and reply **approved** or tell me what to change.
 
 | Piece | State |
 |---|---|
 | Design (13 pages, logos, Raqib app) | 🟡 Waiting for your OK |
-| Team chats | 🟢 Design · Build · SEO Content restarted |
-| Canvases | 🔨 Being re-homed on this account |
-| Build | ⏸ Starts the moment you approve |
+| Build | ⏸ Starts when you approve |
 ```
-Send the key previews as images in the same reply. Then do the work: create the Design, Build and SEO Content chats
-(`create_session` on this repo), brief each from `CLAUDE.md` + `HANDOVER.md`, record the IDs in `../HUB.md`, and report
-milestones only.
+Attach as images (SendUserFile, display render), straight from the repo:
+`design/previews/cybertronix-logo-l6-final.png`, `p01-home-1.png` … `p01-home-6.png`, `r04-normal-terminal.png`.
+
+Then wait. Spend tokens only on what the founder asks:
+- **"approved"** → create **one** Build chat (`create_session` on this repo, brief = HANDOVER §5b) and record it in `../HUB.md`.
+- **A design change** → make it yourself in `design/boards/` + re-render that one preview, or create one Design chat if it's big.
+- **A text change** → edit `content/` yourself.
+Create SEO Content / Design chats only when there is real work for them.

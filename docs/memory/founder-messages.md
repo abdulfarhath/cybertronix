@@ -85,3 +85,8 @@ in message 1 (full excerpt: `chats/chat0-midnight-lab-excerpt.md`).
 
 **22**
 > go check hostelzy hub, replicate what it has done, i should just say continue and it should be done
+
+**23**
+> redesigning in new acc might burn a lot of tokens right, i dont want to burn any tokens i just want to continue the conversation
+
+(→ D45: the new hub only continues; no redesign or idle chats.)

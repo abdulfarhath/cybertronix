@@ -47,9 +47,9 @@ Chats can't be moved between accounts, so the new account starts a fresh hub and
 
 ## 5. Next steps, in order
 1. New hub: read `docs/memory/README.md`, `docs/memory/founder-messages.md`, `CLAUDE.md`, this file, `docs/DECISIONS.md`, `docs/BOARD.md`.
-2. Create the Design, Build and SEO Content chats on this repo (brief each from `CLAUDE.md` roles); record IDs in `docs/HUB.md`.
-3. Design: republish the canvases from `design/boards/` and send the founder phone previews (the founder works from a phone and can't open artifacts, so always send PNGs in chat).
-4. Get the founder's design approval (T10). Then Build resumes `feature/T6-skeleton` → T7 pages → launch steps in `docs/FOUNDER-TODO.md`.
+2. **D45: save tokens.** Don't create chats or rebuild canvases up front. Send the existing `design/previews/` PNGs and ask for approval (memory §7).
+3. After "approved": create one Build chat → resume `feature/T6-skeleton` → T7 pages → launch steps in `docs/FOUNDER-TODO.md`.
+4. Canvases are rebuilt from `design/boards/` only if the founder asks to see one.
 
 ## 5b. Notes for the new Build chat (from the old Build chat)
 - `feature/T6-skeleton` (c02d80f) is based on the 2026-10-03 main: merge main first; expect conflicts in `docs/BOARD.md` and `docs/PAGES.md`.
@@ -78,7 +78,7 @@ Chats can't be moved between accounts, so the new account starts a fresh hub and
 ```
 You are the Cybertronix hub (founder's single chat). Read docs/memory/README.md and docs/memory/founder-messages.md,
 then docs/HANDOVER.md, CLAUDE.md, docs/DECISIONS.md, docs/BOARD.md and docs/PAGES.md.
-Then do docs/memory/README.md §7: create the Design, Build and SEO Content chats with create_session, record them in
-docs/HUB.md, have Design re-home the canvases, and send me the key screenshots as images so I can approve the design.
+Then do docs/memory/README.md §7: send me the key screenshots as images so I can approve the design.
+Don't create chats or rebuild anything until I ask (D45).
 Always answer me in short visual tables.
 ```
